@@ -1,0 +1,78 @@
+name: Research notebook execution and integrity
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/research-notebook-validation.yml"
+      - "Grid-Capex-to-Alpha-U.S.-Electric-Equipment/**"
+      - "Housing-Permits-to-Alpha-U.S.-Building-Materials/**"
+      - "Gas-Oil-Divergence-to-Alpha-U.S.-LNG/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: research-notebook-validation
+  cancel-in-progress: false
+
+jobs:
+  verify-and-save:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install analysis and notebook execution tools
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pandas numpy scipy scikit-learn matplotlib statsmodels jupyter nbformat nbclient ipykernel pytest
+          python -m pip install -r Grid-Capex-to-Alpha-U.S.-Electric-Equipment/requirements.txt
+          python -m pip install -r Housing-Permits-to-Alpha-U.S.-Building-Materials/requirements.txt
+          python -m pip install -r Gas-Oil-Divergence-to-Alpha-U.S.-LNG/requirements.txt
+      - name: Run reproducibility tests
+        run: |
+          python -m pytest -q Grid-Capex-to-Alpha-U.S.-Electric-Equipment/test_grid_alpha.py
+          python -m pytest -q Housing-Permits-to-Alpha-U.S.-Building-Materials/test_housing_alpha.py
+          (cd Gas-Oil-Divergence-to-Alpha-U.S.-LNG && python -m unittest discover -s tests -v)
+      - name: Execute all research notebooks and persist actual figures
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from nbclient import NotebookClient
+          import nbformat
+
+          notebooks = [
+              Path("Grid-Capex-to-Alpha-U.S.-Electric-Equipment/grid_capex_alpha_research.ipynb"),
+              Path("Housing-Permits-to-Alpha-U.S.-Building-Materials/housing_permits_alpha_research.ipynb"),
+              Path("Gas-Oil-Divergence-to-Alpha-U.S.-LNG/research.ipynb"),
+          ]
+          for path in notebooks:
+              nb = nbformat.read(path, as_version=4)
+              client = NotebookClient(nb, timeout=900, kernel_name="python3",
+                resources={"metadata": {"path": str(path.parent.resolve())}})
+              client.execute()
+              executed = sum(cell.cell_type == "code" and cell.execution_count is not None for cell in nb.cells)
+              with_outputs = sum(cell.cell_type == "code" and bool(cell.outputs) for cell in nb.cells)
+              if executed < 12 or with_outputs < 8:
+                  raise RuntimeError(f"{path}: too few executed cells ({executed}) or outputs ({with_outputs})")
+              nbformat.write(nb, path)
+              print(f"{path}: executed={executed} code cells, with_outputs={with_outputs}")
+          PY
+      - name: Commit only fully executed notebooks
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Grid-Capex-to-Alpha-U.S.-Electric-Equipment/grid_capex_alpha_research.ipynb
+          git add Housing-Permits-to-Alpha-U.S.-Building-Materials/housing_permits_alpha_research.ipynb
+          git add Gas-Oil-Divergence-to-Alpha-U.S.-LNG/research.ipynb
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(research): store verified notebook figures and tables [skip ci]"
+            git push origin HEAD:main
+          fi
