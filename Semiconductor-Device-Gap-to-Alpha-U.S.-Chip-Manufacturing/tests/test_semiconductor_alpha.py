@@ -1,4 +1,8 @@
+import sys
+from pathlib import Path
 import pandas as pd
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 from semiconductor_alpha import load_data, make_panel, walk_forward, metrics
 
 def test_snapshot():
@@ -6,7 +10,7 @@ def test_snapshot():
     assert len(d) == 189
     assert d.index.max() == pd.Timestamp("2026-09-01")
 
-def test_no_forward_data_in_signal():
+def test_no_future_data():
     d = load_data()
     t = pd.Timestamp("2018-01-01")
     original = make_panel(d).loc[t, "gap"]
@@ -14,13 +18,11 @@ def test_no_forward_data_in_signal():
     modified.loc[modified.index > t - pd.DateOffset(months=2), :] *= 2
     assert make_panel(modified).loc[t, "gap"] == original
 
-def test_purged_forecasts():
-    d = load_data()
-    oos = walk_forward(make_panel(d))
+def test_purge():
+    oos = walk_forward(make_panel(load_data()))
     assert len(oos) == 108
     for t, row in oos.iterrows():
         assert pd.Timestamp(row.last_training_origin) <= t - pd.DateOffset(months=5)
 
-def test_finite_metrics():
-    oos = walk_forward(make_panel(load_data()))
-    assert metrics(oos)["full"]["rmse"] > 0
+def test_rmse():
+    assert metrics(walk_forward(make_panel(load_data())))["full"]["rmse"] > 0
