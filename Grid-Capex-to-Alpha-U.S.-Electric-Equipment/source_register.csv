@@ -1,0 +1,6 @@
+dataset,coverage,quality,source,release_or_vintage,role,point_in_time_caution,url
+IPG2211S,2022-01 to 2026-08,A,US Federal Reserve G.17 via FRED,visible snapshot last updated 2026-09-18,power output signal,latest-revised series not historical vintage,https://fred.stlouisfed.org/series/IPG2211S
+IPG3353S,2022-01 to 2026-08,A,US Federal Reserve G.17 via FRED,visible snapshot last updated 2026-10-16,equipment outcome and controls,latest-revised series not historical vintage,https://fred.stlouisfed.org/series/IPG3353S
+IEA Energy and AI,2024 baseline and 2030 scenario,A,International Energy Agency,report 2025,industry scenario NOT traded signal,conditional global forecast rather than US measured series,https://www.iea.org/reports/energy-and-ai/executive-summary
+EIA STEO electricity,2026-2027 forecast,A,US Energy Information Administration,September 2026 report,industry context NOT traded signal,forecast not realized series,https://www.eia.gov/outlooks/steo/report/electricity.php
+Equity adjusted total-return panel,NOT COLLECTED,N/A,N/A,N/A,H3 planned only,no investable alpha computed,N/A

@@ -13,7 +13,7 @@
 <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" height="26">
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" height="26">
 
-[Overview](#-overview) · [Studies](#-studies) · [Method](#-method--k-food-study) · [Getting Started](#-getting-started) · [Structure](#%EF%B8%8F-project-structure) · [Notes](#-notes--limitations)
+[Overview](#-overview) · [Studies](#-studies) · [Summaries](#-research-summaries) · [Method](#-method--k-food-study) · [Getting Started](#-getting-started) · [Structure](#%EF%B8%8F-project-structure) · [Notes](#-notes--limitations)
 
 </div>
 
@@ -28,7 +28,16 @@ A collection of research notebooks that turn **real-economy signals** — trade 
 | Study | Question | Status |
 |---|---|---|
 | [**Consumption-to-Alpha**](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/) — a U.S. K-Food alternative-data factor model | Can K-food demand at *t* predict revenue growth and excess equity returns at *t + 1*? | Research-grade pilot (v3) |
+| [**Grid Capex-to-Alpha**](Grid-Capex-to-Alpha-U.S.-Electric-Equipment/) — U.S. electricity / electrical-equipment lead-factor pilot | Does power-system output growth lead U.S. electrical-equipment production and imply testable alpha? | Fixed-vintage macro pilot · **no equity alpha established** |
 | [**Revenue Dip Lab**](Revenue-Dip-Lab/) — fundamental resilience & price-drawdown backtesting engine | Do companies with resilient revenue offer systematic opportunities after sharp price declines? | Interactive platform · rule-based backtests |
+
+## 🧾 Research Summaries
+
+### 🍜 Consumption-to-Alpha — K-Food demand
+The economic hypothesis is that K-Food demand growth precedes related food producers' reported sales growth and possibly market-adjusted equity returns. The pilot's fundamental signal appears more encouraging than its equity signal, especially after 2022, but equity performance is concentrated in Samyang Foods and weakens materially without it. Annual public customs observations become available after year-end and five annual periods cannot establish a point-in-time executable factor. **Verdict: plausible fundamental demand indicator; sector-wide investable alpha unproven.**
+
+### ⚡ Grid Capex-to-Alpha — U.S. power and electrical equipment
+IEA's outlook suggests strong medium-term demand for power infrastructure, but projected electricity use is not itself a tradable equity signal. In official Federal Reserve monthly indices, August 2026 U.S. power output rose about **7.00% YoY** and electrical-equipment production about **5.38% YoY** (latest/mixed-vintage snapshot). The proposed load-equipment gap marginally improved six-month Ridge forecast RMSE against historical growth controls (**4.124 vs 4.228 percentage points**) but lost to a historical-mean forecast (**3.524 percentage points**) and did not survive an exploratory time-shift placebo (**p≈0.32**). **Verdict: promising structural industry thesis; macro predictor unproven, equity alpha not tested, and historical vintages still need auditing.** [Study, code and sources](Grid-Capex-to-Alpha-U.S.-Electric-Equipment/).
 
 ## 🔬 Method — K-Food Study
 
@@ -67,6 +76,7 @@ jupyter notebook kfood_research_grade_alpha_v3.ipynb
 
 ```text
 Signals-to-Alpha
+├── Grid-Capex-to-Alpha-U.S.-Electric-Equipment/        grid-equipment macro factor pilot
 ├── Revenue-Dip-Lab/                               backtesting platform — see its README
 └── Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/
     ├── kfood_research_grade_alpha_v3.ipynb        research notebook (v3)
