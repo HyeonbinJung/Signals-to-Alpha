@@ -47,6 +47,12 @@ The Census/FRED August 2026 data show housing starts of **1.275 million SAAR** a
 ### 🔥 Gas–Oil Divergence-to-Alpha — U.S. LNG and natural gas
 EIA's 2026 LNG export outlook supports a structural capacity/volume growth thesis, but that does not establish predictable spot-price or equity returns. Across **242** expanding-window monthly OOS forecasts (2006-05–2026-06), the oil–gas relative-price spread **worsened** the primary forecast RMSE to **32.707 pp** versus **30.911 pp** for momentum controls and **30.825 pp** for a historical-mean baseline. One-/six-month horizons, LNG-era regime checks, 2022 exclusion and stale-spread placebos failed to establish robust incremental forecasting power. **Verdict: promising LNG industry, failed spot-price factor, unaudited historical data vintages, and no tested futures/equity alpha.** [Study, reproducible code and source register](Gas-Oil-Divergence-to-Alpha-U.S.-LNG/).
 
+## ✅ Research Quality & Reproduction
+
+Every new study is evaluated against the original [K-Food v3 research notebook](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/kfood_research_grade_alpha_v3.ipynb), not merely by repository file count. See the [**Research Quality Standard**](RESEARCH_QUALITY_STANDARD.md) for required research design, frozen data provenance, point-in-time caveats, hypotheses, forecasting baselines, falsification, execution validation and a complete notebook with interpretable charts.
+
+The three subsequent macro/commodity pilots have now been expanded into 34–35-cell auditable notebooks. **This is a documentation and diagnostic-code improvement, not a change to the reported empirical evidence.** Executed figures and additional diagnostic outputs are validated and saved only if the [notebook integrity workflow](.github/workflows/research-notebook-validation.yml) passes all study tests and executes every cell. A macro-output forecast does not establish equity alpha.
+
 ## 🔬 Method — K-Food Study
 
 | Step | What it does |
