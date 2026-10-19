@@ -1,0 +1,198 @@
+{
+  "as_of": "2026-10-19",
+  "study": "housing permits and starts -> building materials production",
+  "classification": "fixed-vintage macro forecasting association; not investable equity alpha",
+  "sample": {
+    "n_months": 200,
+    "first": "2010-01-01",
+    "last": "2026-08-01"
+  },
+  "oos": {
+    "n": 98,
+    "first": "2018-01-01",
+    "last": "2026-02-01",
+    "horizon_months": 6,
+    "label_delay_months": 2
+  },
+  "latest": {
+    "PERMIT_2026_08_thousand_SAAR": 1403,
+    "HOUST_2026_08_thousand_SAAR": 1275,
+    "IPG327S_2026_08_index": 97.5588,
+    "IPG327S_2026_08_yoy_log_pct": 1.37827018130085
+  },
+  "main": {
+    "mean": {
+      "rmse_pp": 4.807942146935425,
+      "mae_pp": 3.4700941088693775,
+      "direction_accuracy": 0.5
+    },
+    "ar": {
+      "rmse_pp": 4.869030125601899,
+      "mae_pp": 3.5638408524571425,
+      "direction_accuracy": 0.42857142857142855
+    },
+    "macro": {
+      "rmse_pp": 4.873730965978551,
+      "mae_pp": 3.424629502108886,
+      "direction_accuracy": 0.6326530612244898
+    },
+    "housing": {
+      "rmse_pp": 5.10938391275089,
+      "mae_pp": 3.619693998436041,
+      "direction_accuracy": 0.5918367346938775
+    },
+    "gap": {
+      "rmse_pp": 4.875133964994336,
+      "mae_pp": 3.4231381673454564,
+      "direction_accuracy": 0.6224489795918368
+    }
+  },
+  "wood_product_negative_control": {
+    "n": 98,
+    "metrics": {
+      "mean": {
+        "rmse_pp": 5.393180117828309,
+        "mae_pp": 4.237438846530388,
+        "direction_accuracy": 0.45918367346938777
+      },
+      "ar": {
+        "rmse_pp": 5.202469039235269,
+        "mae_pp": 4.108601902998135,
+        "direction_accuracy": 0.47959183673469385
+      },
+      "macro": {
+        "rmse_pp": 5.819377215697258,
+        "mae_pp": 4.848445092214654,
+        "direction_accuracy": 0.6326530612244898
+      },
+      "housing": {
+        "rmse_pp": 5.64007254549484,
+        "mae_pp": 4.71832283869614,
+        "direction_accuracy": 0.6632653061224489
+      },
+      "gap": {
+        "rmse_pp": 5.8212684899219616,
+        "mae_pp": 4.83971275384445,
+        "direction_accuracy": 0.6326530612244898
+      }
+    }
+  },
+  "three_month_horizon": {
+    "n": 101,
+    "metrics": {
+      "mean": {
+        "rmse_pp": 4.709641687539858,
+        "mae_pp": 3.371963161035949,
+        "direction_accuracy": 0.5148514851485149
+      },
+      "ar": {
+        "rmse_pp": 4.304918632692282,
+        "mae_pp": 3.1302914723699047,
+        "direction_accuracy": 0.5544554455445545
+      },
+      "macro": {
+        "rmse_pp": 4.293015809715738,
+        "mae_pp": 3.1055110116087703,
+        "direction_accuracy": 0.6435643564356436
+      },
+      "housing": {
+        "rmse_pp": 4.462659845408249,
+        "mae_pp": 3.2380499712443296,
+        "direction_accuracy": 0.5841584158415841
+      },
+      "gap": {
+        "rmse_pp": 4.309914531908805,
+        "mae_pp": 3.13724415131458,
+        "direction_accuracy": 0.6435643564356436
+      }
+    }
+  },
+  "lag_only_placebos": {
+    "12": {
+      "n": 98,
+      "housing_rmse_pp": 4.9262282510734305,
+      "warning": "Lag-only diagnostic; different sample lengths, not a p-value."
+    },
+    "24": {
+      "n": 98,
+      "housing_rmse_pp": 5.12435480134739,
+      "warning": "Lag-only diagnostic; different sample lengths, not a p-value."
+    },
+    "36": {
+      "n": 98,
+      "housing_rmse_pp": 5.005459220501601,
+      "warning": "Lag-only diagnostic; different sample lengths, not a p-value."
+    }
+  },
+  "regime_sensitivity": {
+    "excluding_covid_2020_03_to_2021_12": {
+      "n": 76,
+      "metrics": {
+        "mean": {
+          "rmse_pp": 4.809750370523653,
+          "mae_pp": 3.5020528873492522,
+          "direction_accuracy": 0.40789473684210525
+        },
+        "ar": {
+          "rmse_pp": 4.67985221426455,
+          "mae_pp": 3.4401519980436754,
+          "direction_accuracy": 0.35526315789473684
+        },
+        "macro": {
+          "rmse_pp": 4.411784282815123,
+          "mae_pp": 3.1920588155777208,
+          "direction_accuracy": 0.618421052631579
+        },
+        "housing": {
+          "rmse_pp": 4.72467217406,
+          "mae_pp": 3.3964869199735155,
+          "direction_accuracy": 0.5657894736842105
+        },
+        "gap": {
+          "rmse_pp": 4.416804262253758,
+          "mae_pp": 3.1929165129578156,
+          "direction_accuracy": 0.6052631578947368
+        }
+      }
+    },
+    "post_2022": {
+      "n": 50,
+      "metrics": {
+        "mean": {
+          "rmse_pp": 4.408394493055291,
+          "mae_pp": 3.508913276463699,
+          "direction_accuracy": 0.36
+        },
+        "ar": {
+          "rmse_pp": 4.340569221271661,
+          "mae_pp": 3.6006362266282035,
+          "direction_accuracy": 0.28
+        },
+        "macro": {
+          "rmse_pp": 4.03226699949453,
+          "mae_pp": 3.0971862445839924,
+          "direction_accuracy": 0.68
+        },
+        "housing": {
+          "rmse_pp": 4.0589205953069625,
+          "mae_pp": 3.1844038237214476,
+          "direction_accuracy": 0.68
+        },
+        "gap": {
+          "rmse_pp": 4.031497975542498,
+          "mae_pp": 3.0958959642239394,
+          "direction_accuracy": 0.68
+        }
+      }
+    }
+  },
+  "warnings": [
+    "All historic FRED values are latest/revised snapshot, not ALFRED point-in-time vintages.",
+    "Two-month lag is a conservative approximation, not a verified release calendar.",
+    "Six-month overlapping targets imply strongly dependent forecast errors.",
+    "This is an industrial-production nowcast/forecast test, not a securities-return test.",
+    "Housing activity is cyclical and nonmetallic mineral output has nonhousing uses.",
+    "Fixed hyperparameters are researcher choices, not a pre-registered 2018 design.",
+    "Lag-only placebos are diagnostics, not formal randomization inference."
+  ]
+}

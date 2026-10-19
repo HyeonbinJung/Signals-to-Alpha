@@ -29,6 +29,7 @@ A collection of research notebooks that turn **real-economy signals** — trade 
 |---|---|---|
 | [**Consumption-to-Alpha**](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/) — a U.S. K-Food alternative-data factor model | Can K-food demand at *t* predict revenue growth and excess equity returns at *t + 1*? | Research-grade pilot (v3) |
 | [**Grid Capex-to-Alpha**](Grid-Capex-to-Alpha-U.S.-Electric-Equipment/) — U.S. electricity / electrical-equipment lead-factor pilot | Does power-system output growth lead U.S. electrical-equipment production and imply testable alpha? | Fixed-vintage macro pilot · **no equity alpha established** |
+| [**Housing Permits-to-Alpha**](Housing-Permits-to-Alpha-U.S.-Building-Materials/) — U.S. building-materials macro factor falsification | Do housing permits and starts improve forward building-materials output forecasts? | Fixed-vintage OOS test · **housing factor fails baselines** |
 | [**Revenue Dip Lab**](Revenue-Dip-Lab/) — fundamental resilience & price-drawdown backtesting engine | Do companies with resilient revenue offer systematic opportunities after sharp price declines? | Interactive platform · rule-based backtests |
 
 ## 🧾 Research Summaries
@@ -38,6 +39,9 @@ The economic hypothesis is that K-Food demand growth precedes related food produ
 
 ### ⚡ Grid Capex-to-Alpha — U.S. power and electrical equipment
 IEA's outlook suggests strong medium-term demand for power infrastructure, but projected electricity use is not itself a tradable equity signal. In official Federal Reserve monthly indices, August 2026 U.S. power output rose about **7.00% YoY** and electrical-equipment production about **5.38% YoY** (latest/mixed-vintage snapshot). The proposed load-equipment gap marginally improved six-month Ridge forecast RMSE against historical growth controls (**4.124 vs 4.228 percentage points**) but lost to a historical-mean forecast (**3.524 percentage points**) and did not survive an exploratory time-shift placebo (**p≈0.32**). **Verdict: promising structural industry thesis; macro predictor unproven, equity alpha not tested, and historical vintages still need auditing.** [Study, code and sources](Grid-Capex-to-Alpha-U.S.-Electric-Equipment/).
+
+### 🏠 Housing Permits-to-Alpha — U.S. building materials
+The Census/FRED August 2026 data show housing starts of **1.275 million SAAR** and revised permits of **1.403 million SAAR**, but these cyclical pipeline measures are not themselves equity-return signals. Across **98** six-month-ahead expanding-window forecasts (2018-01 to 2026-02), housing-enhanced Ridge **worsened** building-materials output-growth RMSE to **5.109 pp**, versus **4.874 pp** for manufacturing/rate controls and **4.808 pp** for a historical-mean forecast. Three-month, wood-product, regime and lag-only placebo checks did not establish stable incremental predictive value. **Verdict: plausible industrial-demand mechanism but no validated point-in-time forecast advantage or investable equity alpha; historical FRED revisions remain unaudited.** [Study, code and source register](Housing-Permits-to-Alpha-U.S.-Building-Materials/).
 
 ## 🔬 Method — K-Food Study
 
@@ -76,6 +80,7 @@ jupyter notebook kfood_research_grade_alpha_v3.ipynb
 
 ```text
 Signals-to-Alpha
+├── Housing-Permits-to-Alpha-U.S.-Building-Materials/   housing-activity macro factor falsification
 ├── Grid-Capex-to-Alpha-U.S.-Electric-Equipment/        grid-equipment macro factor pilot
 ├── Revenue-Dip-Lab/                               backtesting platform — see its README
 └── Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/
