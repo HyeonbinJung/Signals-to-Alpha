@@ -1,0 +1,94 @@
+{
+  "research_date": "2026-10-19",
+  "source_snapshot_date": "2026-10-08",
+  "source_rows": 357,
+  "source_period": "1997-01 through 2026-09",
+  "method": "96-label expanding window, Ridge alpha=10, train-only standardization, labels purged to t-1, features lagged one full month",
+  "primary": {
+    "n": 242,
+    "formation_start": "2006-05",
+    "formation_end": "2026-06",
+    "target": "100 log(HenryHub[t+3]/HenryHub[t-1])",
+    "units": "percentage points",
+    "mean_rmse": 30.824804,
+    "control_rmse": 30.911366,
+    "full_rmse": 32.706874,
+    "delta_control_minus_full": -1.795508,
+    "mean_mae": 23.660276,
+    "control_mae": 23.311875,
+    "full_mae": 25.039791
+  },
+  "robustness": [
+    {
+      "name": "h1",
+      "n": 246,
+      "control_rmse": 22.026455,
+      "full_rmse": 22.665198
+    },
+    {
+      "name": "h6",
+      "n": 236,
+      "control_rmse": 40.438426,
+      "full_rmse": 44.517408
+    },
+    {
+      "name": "pre2016",
+      "n": 116,
+      "control_rmse": 25.641522,
+      "full_rmse": 29.907541
+    },
+    {
+      "name": "since2016",
+      "n": 126,
+      "control_rmse": 35.069713,
+      "full_rmse": 35.087138
+    },
+    {
+      "name": "since2020",
+      "n": 78,
+      "control_rmse": 41.899498,
+      "full_rmse": 41.906535
+    },
+    {
+      "name": "excluding2022",
+      "n": 230,
+      "control_rmse": 29.30036,
+      "full_rmse": 31.287867
+    },
+    {
+      "name": "stale_spread12",
+      "n": 230,
+      "control_rmse": 31.466028,
+      "full_rmse": 32.07108
+    },
+    {
+      "name": "stale_spread24",
+      "n": 218,
+      "control_rmse": 32.271649,
+      "full_rmse": 33.151435
+    },
+    {
+      "name": "stale_spread36",
+      "n": 206,
+      "control_rmse": 31.286583,
+      "full_rmse": 32.426513
+    }
+  ],
+  "bootstrap_crosscheck": {
+    "block_months": 12,
+    "replications": 1000,
+    "seed": 20261019,
+    "prng": "xorshift32 JS",
+    "delta_rmse_ci95": [
+      -3.540175,
+      -0.274069
+    ],
+    "note": "Python implementation uses NumPy PCG64, so CI endpoints may differ"
+  },
+  "conclusions": {
+    "validated_equity_alpha": false,
+    "validated_tradable_futures_alpha": false,
+    "historical_point_in_time_vintages_verified": false,
+    "spread_factor_beats_controls": false
+  }
+}

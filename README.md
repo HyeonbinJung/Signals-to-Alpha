@@ -30,6 +30,7 @@ A collection of research notebooks that turn **real-economy signals** — trade 
 | [**Consumption-to-Alpha**](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/) — a U.S. K-Food alternative-data factor model | Can K-food demand at *t* predict revenue growth and excess equity returns at *t + 1*? | Research-grade pilot (v3) |
 | [**Grid Capex-to-Alpha**](Grid-Capex-to-Alpha-U.S.-Electric-Equipment/) — U.S. electricity / electrical-equipment lead-factor pilot | Does power-system output growth lead U.S. electrical-equipment production and imply testable alpha? | Fixed-vintage macro pilot · **no equity alpha established** |
 | [**Housing Permits-to-Alpha**](Housing-Permits-to-Alpha-U.S.-Building-Materials/) — U.S. building-materials macro factor falsification | Do housing permits and starts improve forward building-materials output forecasts? | Fixed-vintage OOS test · **housing factor fails baselines** |
+| [**Gas–Oil Divergence-to-Alpha**](Gas-Oil-Divergence-to-Alpha-U.S.-LNG/) — U.S. LNG / natural-gas relative-price pilot | Does WTI-to-Henry Hub divergence predict future natural-gas spot prices beyond momentum? | Purged OOS · **negative factor result, no equity alpha** |
 | [**Revenue Dip Lab**](Revenue-Dip-Lab/) — fundamental resilience & price-drawdown backtesting engine | Do companies with resilient revenue offer systematic opportunities after sharp price declines? | Interactive platform · rule-based backtests |
 
 ## 🧾 Research Summaries
@@ -42,6 +43,9 @@ IEA's outlook suggests strong medium-term demand for power infrastructure, but p
 
 ### 🏠 Housing Permits-to-Alpha — U.S. building materials
 The Census/FRED August 2026 data show housing starts of **1.275 million SAAR** and revised permits of **1.403 million SAAR**, but these cyclical pipeline measures are not themselves equity-return signals. Across **98** six-month-ahead expanding-window forecasts (2018-01 to 2026-02), housing-enhanced Ridge **worsened** building-materials output-growth RMSE to **5.109 pp**, versus **4.874 pp** for manufacturing/rate controls and **4.808 pp** for a historical-mean forecast. Three-month, wood-product, regime and lag-only placebo checks did not establish stable incremental predictive value. **Verdict: plausible industrial-demand mechanism but no validated point-in-time forecast advantage or investable equity alpha; historical FRED revisions remain unaudited.** [Study, code and source register](Housing-Permits-to-Alpha-U.S.-Building-Materials/).
+
+### 🔥 Gas–Oil Divergence-to-Alpha — U.S. LNG and natural gas
+EIA's 2026 LNG export outlook supports a structural capacity/volume growth thesis, but that does not establish predictable spot-price or equity returns. Across **242** expanding-window monthly OOS forecasts (2006-05–2026-06), the oil–gas relative-price spread **worsened** the primary forecast RMSE to **32.707 pp** versus **30.911 pp** for momentum controls and **30.825 pp** for a historical-mean baseline. One-/six-month horizons, LNG-era regime checks, 2022 exclusion and stale-spread placebos failed to establish robust incremental forecasting power. **Verdict: promising LNG industry, failed spot-price factor, unaudited historical data vintages, and no tested futures/equity alpha.** [Study, reproducible code and source register](Gas-Oil-Divergence-to-Alpha-U.S.-LNG/).
 
 ## 🔬 Method — K-Food Study
 
@@ -80,6 +84,7 @@ jupyter notebook kfood_research_grade_alpha_v3.ipynb
 
 ```text
 Signals-to-Alpha
+├── Gas-Oil-Divergence-to-Alpha-U.S.-LNG/    LNG spot-price factor falsification
 ├── Housing-Permits-to-Alpha-U.S.-Building-Materials/   housing-activity macro factor falsification
 ├── Grid-Capex-to-Alpha-U.S.-Electric-Equipment/        grid-equipment macro factor pilot
 ├── Revenue-Dip-Lab/                               backtesting platform — see its README
