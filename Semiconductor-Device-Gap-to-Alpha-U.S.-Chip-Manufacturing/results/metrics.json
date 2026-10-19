@@ -1,0 +1,88 @@
+{
+  "source_snapshot": "2026-10-19",
+  "data_rows": 189,
+  "formation_n": 172,
+  "oos_first": "2017-07-01",
+  "oos_last": "2026-06-01",
+  "main": {
+    "mean": {
+      "n": 108,
+      "rmse": 5.22178034836514,
+      "mae": 4.26609521816232
+    },
+    "persistence": {
+      "n": 108,
+      "rmse": 4.467544453619717,
+      "mae": 3.5957560820829007
+    },
+    "macro": {
+      "n": 108,
+      "rmse": 4.71281390092422,
+      "mae": 3.808001852790201
+    },
+    "full": {
+      "n": 108,
+      "rmse": 4.746229300029395,
+      "mae": 3.814715266360823
+    },
+    "computer_only": {
+      "n": 108,
+      "rmse": 4.808409913297945,
+      "mae": 3.8408497490232456
+    },
+    "communications_only": {
+      "n": 108,
+      "rmse": 4.923772518508537,
+      "mae": 3.9221231126121583
+    },
+    "breadth": {
+      "n": 108,
+      "rmse": 4.75451766450667,
+      "mae": 3.8169071619256756
+    }
+  },
+  "horizon_6m": {
+    "mean": 5.436558097161951,
+    "macro": 5.273564021765766,
+    "full": 5.404100746051463
+  },
+  "publication_lag_3m": {
+    "mean": 5.288844454940802,
+    "macro": 4.772403730805399,
+    "full": 4.8273082816659345
+  },
+  "block_bootstrap": {
+    "n": 2000,
+    "block": 6,
+    "ci95": [
+      -0.14896898758369953,
+      0.07735334603662827
+    ],
+    "probability_delta_positive_descriptive": 0.258
+  },
+  "fixed_holdout_block_placebo": {
+    "n_permutations": 2000,
+    "n_holdout": 54,
+    "split": "2022-01-01",
+    "observed_delta_rmse": 0.006168582345077667,
+    "p_one_sided_exploratory": 0.7956021989005497,
+    "null_95_interval": [
+      -0.07021418508531502,
+      0.15596708131339512
+    ]
+  },
+  "exposure_weight_perturbation": {
+    "n": 1000,
+    "weight_range": [
+      0.2,
+      0.8
+    ],
+    "holdout_delta_rmse_median": -0.00953770065037407,
+    "delta_rmse_5_95": [
+      -0.07727237668862479,
+      0.01636366426234579
+    ],
+    "fraction_positive": 0.384
+  },
+  "bias_warning": "Latest-revised G.17 snapshot; no archival vintages, no company fundamentals, no stock returns; NOT investable alpha."
+}
