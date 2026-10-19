@@ -74,5 +74,13 @@ jobs:
           git add Gas-Oil-Divergence-to-Alpha-U.S.-LNG/research.ipynb
           if ! git diff --cached --quiet; then
             git commit -m "chore(research): store verified notebook figures and tables [skip ci]"
-            git push origin HEAD:main
+            for attempt in 1 2 3; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              echo "Concurrent commit detected; retrying with latest main..."
+            done
+            exit 1
           fi
