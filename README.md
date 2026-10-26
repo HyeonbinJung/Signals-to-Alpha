@@ -32,6 +32,8 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 | [Home-Care Pressure-to-Alpha — U.S. Healthcare Services](Home-Care-Pressure-to-Alpha-U.S.-Healthcare-Services/) | Home-health vs hospital employment growth → 6m-ahead nursing/residential employment growth | Fails persistence and macro baselines; retrospective revised data | [Open](Home-Care-Pressure-to-Alpha-U.S.-Healthcare-Services/research.ipynb) |
 | [Air-Travel-to-Alpha — U.S. Accommodation & Hospitality](Air-Travel-to-Alpha-U.S.-Accommodation-Hospitality/) | Lagged airline passenger-miles gap → 3m-ahead lodging employment YoY | Fails historical-mean benchmark; pandemic-sensitive, not PIT | [Open](Air-Travel-to-Alpha-U.S.-Accommodation-Hospitality/research.ipynb) |
 
+| [Basic-Chemical-to-Alpha — U.S. Pharmaceutical Manufacturing](Basic-Chemical-to-Alpha-U.S.-Pharmaceutical-Manufacturing/) | Basic-chemical vs manufacturing gap → 6m-ahead pharmaceutical output | Negative OOS incremental forecast; fixed revised data, not PIT | [Open](Basic-Chemical-to-Alpha-U.S.-Pharmaceutical-Manufacturing/research.ipynb) |
+
 ## Research Summaries
 
 ### [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/)
@@ -69,6 +71,10 @@ Using 201 latest-revised BLS monthly observations and 99 purged expanding-window
 ### [Air-Travel-to-Alpha — U.S. Accommodation & Hospitality](Air-Travel-to-Alpha-U.S.-Accommodation-Hospitality/)
 
 U.S. BTS air revenue passenger miles and BLS lodging/restaurant payrolls form a retrospective 2014–2026 fixed-snapshot panel with **82** purged expanding-window three-month-ahead forecasts. The air–restaurant gap improved bounded-control Ridge RMSE from **46.313** to **35.015 pp**, but failed the historical-mean baseline at **22.937 pp**. A 2,000-draw moving-block bootstrap interval for control-minus-full RMSE **[−1.963, 23.111] pp** spans zero, and excluding 2020 reverses the improvement. **Verdict:** a pandemic-sensitive negative macro lead-factor pilot with unaudited historical publication vintages, manually transcribed source rows and no firm-level or equity-return alpha.
+
+### [Basic-Chemical-to-Alpha — U.S. Pharmaceutical Manufacturing](Basic-Chemical-to-Alpha-U.S.-Pharmaceutical-Manufacturing/)
+
+Basic-chemical manufacturing output relative to aggregate manufacturing is an economically plausible upstream indicator for U.S. pharmaceutical production, but the 2026-10-26 revised G.17 snapshot is not a point-in-time vintage panel. Across **111** purged expanding-window six-month forecasts, the augmented model **worsened** RMSE to **4.104 pp**, versus **3.953 pp** for pharmaceutical-persistence and manufacturing controls and **4.347 pp** for the historical mean. A 1,000-refit 12-month block-shuffle placebo produced an exploratory tail fraction **0.925**, while the 2,000-draw moving-block bootstrap improvement interval **[−0.504, 0.189] pp** includes zero. **Verdict:** a negative retrospective macro-factor falsification, with unknown historical publication vintages, no firm fundamentals and no investable equity-alpha evidence.
 
 ## Common Research Format
 

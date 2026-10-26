@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "basic-chemical-pharma-us-2026-10-26",
+  "title": "Basic Chemical Input Gap \u2192 U.S. Pharmaceutical Manufacturing Output",
+  "industry": "U.S. pharmaceutical and medicine manufacturing (NAICS 3254)",
+  "research_date": "2026-10-26",
+  "notebook": "research.ipynb",
+  "source_register": "data/source_register.csv",
+  "analysis_entrypoint": "run_analysis.py",
+  "requirements": "requirements.txt",
+  "notes_file": "data/source_qa.md",
+  "equity_alpha_established": false,
+  "evidence_level": "REPRODUCED RETROSPECTIVE MACRO FACTOR FALSIFICATION \u2014 NOT PIT, NOT EQUITY ALPHA",
+  "data_files": [
+    "data/official_snapshot.csv",
+    "data/derived_panel.csv",
+    "data/source_qa.md"
+  ],
+  "result_files": [
+    "results/metrics.json",
+    "results/oos_forecasts.csv",
+    "results/placebo_1000.csv",
+    "results/bootstrap_2000.csv",
+    "results/exposure_1000.csv",
+    "results/execution.log",
+    "results/notebook_execution.log",
+    "figures/01_industrial_indices.svg",
+    "figures/02_growth_features.svg",
+    "figures/03_factor.svg",
+    "figures/04_oos_forecasts.svg",
+    "figures/05_loss_differential.svg",
+    "figures/06_placebo.svg",
+    "figures/07_bootstrap.svg",
+    "figures/08_exposure_sensitivity.svg"
+  ],
+  "test_commands": [
+    "python -m pytest tests -q",
+    "python compute_heavy.py",
+    "jupyter nbconvert --to notebook --execute research.ipynb --output reproduced.ipynb",
+    "python scripts/validate_studies.py"
+  ],
+  "caveat": "G.17 fixed 2026-10-26 revised snapshot, individual historical publication vintages UNKNOWN; no issuer fundamentals or security total returns; negative macro OOS result."
+}
