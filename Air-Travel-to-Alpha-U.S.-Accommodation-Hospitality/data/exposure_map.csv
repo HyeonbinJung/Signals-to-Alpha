@@ -1,0 +1,4 @@
+segment,series,role,transmission,weight_basis,historical_company_exposure_known
+Air travel demand,AIRRPMTSID11,Leading proxy,Air passenger activity may precede hotel room-nights and staffing,Predefined equal-unit growth comparison only,NO
+Accommodation employment,CES7072100001,Target,Payrolls reflect lodging labor demand and productivity,Observed sector outcome not issuer revenue,NO
+Food services and drinking places,CES7072200001,Macro control,Restaurant staffing proxies broader discretionary services cycle,Predefined equal-unit growth comparison only,NO

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "air-travel-accommodation-us-hospitality-2026-10-26",
+  "title": "Air-Travel-to-Accommodation — U.S. Lodging Demand",
+  "industry": "U.S. accommodation and travel hospitality",
+  "research_date": "2026-10-26",
+  "notebook": "research.ipynb",
+  "source_register": "data/source_register.csv",
+  "analysis_entrypoint": "run_analysis.py",
+  "requirements": "requirements.txt",
+  "notes_file": "data/transcription_qa.md",
+  "equity_alpha_established": false,
+  "evidence_level": "REPRODUCED RETROSPECTIVE FIXED-SNAPSHOT MACRO FALSIFICATION — NOT PIT",
+  "data_files": [
+    "data/fred_bts_bls_frozen_2026-10-26.csv",
+    "data/derived_formation_panel.csv",
+    "data/exposure_map.csv"
+  ],
+  "result_files": [
+    "results/metrics.json",
+    "results/scorecard.csv",
+    "results/walk_forward_oos.csv",
+    "results/block_placebo_null.csv",
+    "results/bootstrap_deltas.csv",
+    "results/exposure_sensitivity.csv",
+    "results/leave_one_year_out.csv",
+    "results/run_log.txt",
+    "results/notebook_execution_log.txt",
+    "figures/01_air_passenger_miles.png",
+    "figures/02_hospitality_employment.png",
+    "figures/03_travel_gap_factor.png",
+    "figures/04_oos_forecasts.png",
+    "figures/05_baseline_scorecard.png",
+    "figures/06_cumulative_loss.png",
+    "figures/07_block_placebo.png",
+    "figures/08_exposure_sensitivity.png",
+    "figures/09_bootstrap_uncertainty.png"
+  ],
+  "test_commands": [
+    "OPENBLAS_NUM_THREADS=1 python run_analysis.py",
+    "OPENBLAS_NUM_THREADS=1 PYTHONPATH=. pytest -q tests",
+    "OPENBLAS_NUM_THREADS=1 jupyter nbconvert --to notebook --execute research.ipynb --output /tmp/air-hotel-reexecuted.ipynb",
+    "python scripts/validate_studies.py"
+  ],
+  "caveat": "Latest-revised government series manually transcribed from FRED display; original publication vintages UNKNOWN; no issuer fundamentals, historical equity total returns or investable alpha."
+}

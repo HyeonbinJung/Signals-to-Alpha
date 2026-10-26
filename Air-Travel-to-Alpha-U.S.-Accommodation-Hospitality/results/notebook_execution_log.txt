@@ -1,0 +1,7 @@
+2026-10-26 local validation in Python 3.13 container:
+- run_analysis.py completed 1,000 block-shuffle refits, 2,000 moving-block bootstrap draws and 1,000 exposure perturbations.
+- pytest -q tests: 9 passed after correcting a dtype-only test issue; final rerun passed.
+- NotebookClient executed research.ipynb: 48 cells total, 33/33 code cells with execution counts, 0 error outputs, 10 embedded image/png outputs.
+- 9 standalone computed figures are stored in figures/.
+- Historical publication vintages were NOT reconstructed; original source full-row reconciliation remains NOT DONE.
+- Repository-wide scripts/validate_studies.py and GitHub Actions are separate post-commit checks, not claimed here.

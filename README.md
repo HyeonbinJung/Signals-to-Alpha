@@ -30,6 +30,7 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 | [E-Commerce Share-to-Alpha — U.S. Warehousing & Logistics](Ecommerce-Share-to-Alpha-U.S.-Warehousing-Logistics/) | E-commerce share acceleration → 2Q-ahead warehouse employment YoY | Positive retrospective OOS gain; uncertain PIT and bootstrap | [Open](Ecommerce-Share-to-Alpha-U.S.-Warehousing-Logistics/research.ipynb) |
 
 | [Home-Care Pressure-to-Alpha — U.S. Healthcare Services](Home-Care-Pressure-to-Alpha-U.S.-Healthcare-Services/) | Home-health vs hospital employment growth → 6m-ahead nursing/residential employment growth | Fails persistence and macro baselines; retrospective revised data | [Open](Home-Care-Pressure-to-Alpha-U.S.-Healthcare-Services/research.ipynb) |
+| [Air-Travel-to-Alpha — U.S. Accommodation & Hospitality](Air-Travel-to-Alpha-U.S.-Accommodation-Hospitality/) | Lagged airline passenger-miles gap → 3m-ahead lodging employment YoY | Fails historical-mean benchmark; pandemic-sensitive, not PIT | [Open](Air-Travel-to-Alpha-U.S.-Accommodation-Hospitality/research.ipynb) |
 
 ## Research Summaries
 
@@ -64,6 +65,10 @@ E-commerce share acceleration has an economically plausible transmission channel
 ### [Home-Care Pressure-to-Alpha — U.S. Healthcare Services](Home-Care-Pressure-to-Alpha-U.S.-Healthcare-Services/)
 
 Using 201 latest-revised BLS monthly observations and 99 purged expanding-window forecasts, the predeclared home-health-minus-hospital employment factor **worsened** six-month-ahead nursing/residential employment-growth RMSE to **5.562 pp**, versus **5.453 pp** for macro controls and **3.760 pp** for nursing persistence. A 1,000-refit 12-month block shuffle produced an exploratory tail fraction of **0.730**, while the 2,000-draw moving-block bootstrap 95% interval for macro-minus-full RMSE was **[-0.268, -0.017] pp**. Alternative horizons, release buffers and pre/post-2020 regimes did not rescue the base factor; the 1,000-draw segment-exposure mixture was sensitive to how overlapping ambulatory/home-care series were weighted. **Verdict:** reproducible negative macro lead-factor pilot only; retrospective CES revisions, unknown historical release vintages, absent corporate fundamentals and no securities returns prevent any point-in-time or investable-alpha claim.
+
+### [Air-Travel-to-Alpha — U.S. Accommodation & Hospitality](Air-Travel-to-Alpha-U.S.-Accommodation-Hospitality/)
+
+U.S. BTS air revenue passenger miles and BLS lodging/restaurant payrolls form a retrospective 2014–2026 fixed-snapshot panel with **82** purged expanding-window three-month-ahead forecasts. The air–restaurant gap improved bounded-control Ridge RMSE from **46.313** to **35.015 pp**, but failed the historical-mean baseline at **22.937 pp**. A 2,000-draw moving-block bootstrap interval for control-minus-full RMSE **[−1.963, 23.111] pp** spans zero, and excluding 2020 reverses the improvement. **Verdict:** a pandemic-sensitive negative macro lead-factor pilot with unaudited historical publication vintages, manually transcribed source rows and no firm-level or equity-return alpha.
 
 ## Common Research Format
 

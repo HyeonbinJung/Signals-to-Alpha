@@ -1,0 +1,28 @@
+Executed analysis; all requested calculations completed without exception.
+{
+  "oos_n": 82,
+  "scores": {
+    "mean": {
+      "rmse": 22.93702917653903,
+      "mae": 14.962535901121095
+    },
+    "persistence": {
+      "rmse": 26.029081746996926,
+      "mae": 20.343758063527748
+    },
+    "controls": {
+      "rmse": 46.31271181488885,
+      "mae": 24.420931139076046
+    },
+    "full": {
+      "rmse": 35.014832916116575,
+      "mae": 21.407329631250438
+    }
+  },
+  "delta_rmse_controls_minus_full": 11.297878898772275,
+  "block_shuffle_exploratory_upper_tail": 0.02197802197802198,
+  "block_bootstrap_ci95": [
+    -1.9626810011159554,
+    23.110393256618902
+  ]
+}
