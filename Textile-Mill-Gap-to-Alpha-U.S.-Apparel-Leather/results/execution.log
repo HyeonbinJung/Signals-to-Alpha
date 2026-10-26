@@ -1,0 +1,136 @@
+{
+  "source_n": 201,
+  "source_start": "2010-01-01",
+  "source_end": "2026-09-01",
+  "panel_n": 181,
+  "oos_n": 111,
+  "oos_start": "2017-01-01",
+  "oos_end": "2026-03-01",
+  "scores": {
+    "mean": {
+      "rmse": 8.56820584139044,
+      "mae": 5.756163105002516
+    },
+    "persistence": {
+      "rmse": 8.888890614934462,
+      "mae": 6.325669209202248
+    },
+    "macro": {
+      "rmse": 9.28021054041492,
+      "mae": 6.765953390992912
+    },
+    "full": {
+      "rmse": 9.50726684044255,
+      "mae": 7.048088768223653
+    },
+    "factor_only": {
+      "rmse": 8.679691056357266,
+      "mae": 5.875254203820112
+    }
+  },
+  "delta_macro_minus_full_rmse": -0.22705630002763044,
+  "regimes": {
+    "pre_2020": {
+      "n": 36,
+      "delta_rmse": 0.00045573336440973833
+    },
+    "pandemic_2020_21": {
+      "n": 24,
+      "delta_rmse": -0.2810140130082033
+    },
+    "post_2022": {
+      "n": 51,
+      "delta_rmse": -0.4469370684673599
+    },
+    "excluding_2020_21": {
+      "n": 87,
+      "delta_rmse": -0.21455682636636375
+    }
+  },
+  "sensitivity": {
+    "horizon_3m": {
+      "n": 114,
+      "delta_rmse": -0.20372512603087056
+    },
+    "horizon_9m": {
+      "n": 108,
+      "delta_rmse": -0.1044819997262767
+    },
+    "lag_3m": {
+      "n": 111,
+      "delta_rmse": -0.20687998300076949
+    },
+    "stale_textile_12m": {
+      "n": 111,
+      "delta_rmse": -0.13413779341875376
+    },
+    "rolling_72m": {
+      "n": 111,
+      "delta_rmse": -0.2037623311793979
+    }
+  },
+  "leave_one_year_out": [
+    {
+      "excluded_year": 2017,
+      "n": 99,
+      "delta_rmse": -0.2426981879278891
+    },
+    {
+      "excluded_year": 2018,
+      "n": 99,
+      "delta_rmse": -0.23848763919017024
+    },
+    {
+      "excluded_year": 2019,
+      "n": 99,
+      "delta_rmse": -0.2869647047238164
+    },
+    {
+      "excluded_year": 2020,
+      "n": 99,
+      "delta_rmse": -0.17672996915280592
+    },
+    {
+      "excluded_year": 2021,
+      "n": 99,
+      "delta_rmse": -0.27044203127832844
+    },
+    {
+      "excluded_year": 2022,
+      "n": 99,
+      "delta_rmse": -0.1125980687221304
+    },
+    {
+      "excluded_year": 2023,
+      "n": 99,
+      "delta_rmse": -0.2370656384740375
+    },
+    {
+      "excluded_year": 2024,
+      "n": 99,
+      "delta_rmse": -0.24578903382272088
+    },
+    {
+      "excluded_year": 2025,
+      "n": 99,
+      "delta_rmse": -0.24124769079794106
+    },
+    {
+      "excluded_year": 2026,
+      "n": 108,
+      "delta_rmse": -0.2296298889481836
+    }
+  ],
+  "PIT_verified": false,
+  "equity_alpha_established": false,
+  "bootstrap_95pct": [
+    -0.4895047975621713,
+    -0.046220345159812035
+  ],
+  "placebo_exploratory_tail_fraction": 0.8551448551448552,
+  "exposure_positive_fraction": 0.0,
+  "exposure_95pct": [
+    -0.25509942713801087,
+    -0.13958161624562493
+  ]
+}

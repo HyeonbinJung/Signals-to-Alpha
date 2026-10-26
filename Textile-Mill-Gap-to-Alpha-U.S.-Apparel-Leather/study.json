@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "textile-apparel-leather-us-2026-10-26",
+  "title": "Textile-Mill Gap → U.S. Apparel and Leather Manufacturing Output",
+  "industry": "U.S. apparel and leather goods manufacturing (NAICS 315–316)",
+  "research_date": "2026-10-26",
+  "notebook": "research.ipynb",
+  "source_register": "data/source_register.csv",
+  "analysis_entrypoint": "run_analysis.py",
+  "requirements": "requirements.txt",
+  "notes_file": "data/source_qa.md",
+  "equity_alpha_established": false,
+  "evidence_level": "REPRODUCED RETROSPECTIVE MACRO FACTOR FALSIFICATION — NOT PIT, NOT EQUITY ALPHA",
+  "data_files": [
+    "data/frozen_g17_2010_2026.csv",
+    "data/derived_panel.csv",
+    "data/source_qa.md"
+  ],
+  "result_files": [
+    "results/metrics.json",
+    "results/oos_forecasts.csv",
+    "results/bootstrap_2000.csv",
+    "results/block_placebo_1000.csv",
+    "results/exposure_1000.csv",
+    "results/leave_one_year_out.csv",
+    "results/execution.log",
+    "results/notebook_execution.log",
+    "figures/01_industry_levels.svg",
+    "figures/02_yoy_growth.svg",
+    "figures/03_fixed_factor.svg",
+    "figures/04_oos_predictions.svg",
+    "figures/05_loss_difference.svg",
+    "figures/06_placebo_sorted.svg",
+    "figures/07_bootstrap_sorted.svg",
+    "figures/08_exposure_sorted.svg"
+  ],
+  "test_commands": [
+    "OPENBLAS_NUM_THREADS=1 python run_analysis.py",
+    "OPENBLAS_NUM_THREADS=1 python make_figures.py",
+    "OPENBLAS_NUM_THREADS=1 python -m pytest tests -q",
+    "OPENBLAS_NUM_THREADS=1 jupyter nbconvert --to notebook --execute research.ipynb --output reexecuted.ipynb",
+    "python scripts/validate_studies.py"
+  ],
+  "caveat": "Frozen 2026-10-26 third-party mirror of latest-revised G.17; historical publication vintages UNKNOWN; latest-date official check only; no firm fundamentals or equity returns."
+}
