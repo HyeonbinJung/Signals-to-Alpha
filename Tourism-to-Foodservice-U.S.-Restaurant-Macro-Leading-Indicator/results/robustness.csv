@@ -1,0 +1,6 @@
+experiment,n,delta_rmse
+horizon_1m,72,1.513302646604167
+horizon_6m,67,-1.9416109131025223
+air_release_lag_5m,69,-4.38054573857363
+air_release_lag_6m,68,0.041608049212499054
+bls_release_lag_3m,70,-1.0011873181181272

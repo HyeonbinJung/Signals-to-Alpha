@@ -1,0 +1,4 @@
+sector,NAICS,role,model_weight,evidence,effective_as_of,company_specific_weights
+Food services and drinking places,722,outcome,0,BLS CES7072200001; 2026-10-02,2026-10-26,UNKNOWN
+Accommodation,721,tourism proxy,-1.0,BLS CES7072100001; 2026-10-02,2026-10-26,UNKNOWN
+Air transport,481,tourism proxy,1.0,BTS AIRRPMTSID11; 2026-10-01,2026-10-26,UNKNOWN

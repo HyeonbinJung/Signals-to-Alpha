@@ -36,6 +36,8 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Textile-Mill Gap-to-Alpha — U.S. Apparel & Leather](Textile-Mill-Gap-to-Alpha-U.S.-Apparel-Leather/) | Textile-mill output gap → 6m-ahead apparel/leather manufacturing output | Negative retrospective OOS; not PIT, no equity alpha | [Open](Textile-Mill-Gap-to-Alpha-U.S.-Apparel-Leather/research.ipynb) |
 
+| [Tourism-to-Foodservice — U.S. Restaurants](<Tourism-to-Foodservice-U.S.-Restaurant-Macro-Leading-Indicator/>) | Lagged air travel–lodging gap → 3m-ahead restaurant payroll growth | Negative OOS; fails mean and control baselines, not PIT | [Open](<Tourism-to-Foodservice-U.S.-Restaurant-Macro-Leading-Indicator/research.ipynb>) |
+
 ## Research Summaries
 
 ### [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/)
@@ -81,6 +83,10 @@ Basic-chemical manufacturing output relative to aggregate manufacturing is an ec
 ### [Textile-Mill Gap-to-Alpha — U.S. Apparel & Leather](Textile-Mill-Gap-to-Alpha-U.S.-Apparel-Leather/)
 
 Textile-and-product-mill production growth relative to manufacturing was tested against subsequent U.S. apparel-and-leather output using 201 latest-revised monthly observations and 111 purged expanding-window forecasts. The textile-augmented model worsened RMSE to **9.507 pp** versus **9.280 pp** for macro controls and **8.568 pp** for the historical mean. A 1,000-refit exploratory block shuffle yielded a **0.855** tail fraction, and a 2,000-draw paired moving-block bootstrap gave **[−0.490, −0.046] pp** for control-minus-full RMSE. **Verdict:** a negative retrospective macro-factor pilot with historical publication vintages unverified, no issuer fundamentals and no investable equity-return evidence.
+
+### [Tourism-to-Foodservice — U.S. Restaurants](Tourism-to-Foodservice-U.S.-Restaurant-Macro-Leading-Indicator/)
+
+Using a previously frozen BTS/BLS 2014–2026 panel, 70 purged expanding-window origins forecast three-month-ahead U.S. foodservice employment growth; this is a distinct NAICS 722 outcome, not an independent new data source. The tourism-gap-augmented Ridge worsened RMSE to **71.659 pp** from **66.047 pp** for lodging/momentum controls and **15.186 pp** for the historical mean. A 1,000-refit block-shuffle tail fraction of **0.896**, a 2,000-draw paired block-bootstrap interval **[−9.725, −0.115] pp**, and zero positive gains in 1,000 exposure perturbations fail to support incremental predictive value. **Verdict:** negative retrospective macro-factor falsification; inherited manual transcription, missing historical vintages and absent issuer fundamentals/returns preclude PIT or equity-alpha claims.
 
 ## Common Research Format
 

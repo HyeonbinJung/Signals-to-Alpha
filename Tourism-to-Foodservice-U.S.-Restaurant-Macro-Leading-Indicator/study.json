@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "tourism-foodservice-us-restaurants-2026-10-26",
+  "title": "Tourism Gap to U.S. Foodservice Employment: Retrospective Macro Leading-Indicator Falsification",
+  "industry": "NAICS 722 Food Services and Drinking Places",
+  "notebook": "research.ipynb",
+  "source_register": "data/source_register.csv",
+  "analysis_entrypoint": "run_analysis.py",
+  "requirements": "requirements.txt",
+  "notes_file": "data/inherited_transcription_qa.md",
+  "data_files": ["data/bts_bls_snapshot_2026-10-26.csv", "data/derived_formation_panel.csv", "data/exposure_map.csv", "data/inherited_transcription_qa.md"],
+  "result_files": ["results/metrics.json", "results/scorecard.csv", "results/walk_forward_oos.csv", "results/block_shuffle_1000.csv", "results/bootstrap_2000.csv", "results/exposure_1000.csv", "results/robustness.csv", "results/leave_one_year_out.csv", "results/execution.log", "results/notebook_execution.log", "results/test.log", "figures/01_air_traffic.png", "figures/02_sector_employment.png", "figures/03_signal_components.png", "figures/04_oos_predictions.png", "figures/05_baselines.png", "figures/06_loss_difference.png", "figures/07_block_shuffle.png", "figures/08_bootstrap.png", "figures/09_exposure_perturbation.png"],
+  "test_commands": ["OPENBLAS_NUM_THREADS=1 python -m pytest -q tests", "OPENBLAS_NUM_THREADS=1 python run_analysis.py", "OPENBLAS_NUM_THREADS=1 jupyter nbconvert --to notebook --execute --inplace research.ipynb", "python scripts/validate_studies.py"],
+  "equity_alpha_established": false,
+  "historical_point_in_time_verified": false,
+  "data_status": "latest revised manually transcribed fixed snapshot; original-release vintage unknown",
+  "evidence_level": "retrospective macro forecast falsification; no corporate fundamentals or securities returns",
+  "publication_status": "local executed study; GitHub CI pending"
+}

@@ -1,0 +1,377 @@
+{
+  "industry": "U.S. food services and drinking places (NAICS 722)",
+  "claim": "retrospective fixed-revision macro forecast; NOT PIT or equity alpha",
+  "raw_sha256": "98ad34cabef652c021869fcfa74515a322272ddfb53c3e84dcfa65a5d9af5cc0",
+  "raw_rows": 153,
+  "raw_range": [
+    "2014-01-01",
+    "2026-09-01"
+  ],
+  "panel_rows": 134,
+  "oos_n": 70,
+  "oos_range": [
+    "2019-09-01",
+    "2025-06-01"
+  ],
+  "scores": {
+    "mean": {
+      "rmse": 15.185849252245893,
+      "mae": 9.367536360189499,
+      "n": 70
+    },
+    "persistence": {
+      "rmse": 15.618605251820226,
+      "mae": 8.71420066491475,
+      "n": 70
+    },
+    "controls": {
+      "rmse": 66.04746039649163,
+      "mae": 23.879138892562437,
+      "n": 70
+    },
+    "full": {
+      "rmse": 71.65892736501807,
+      "mae": 25.18528523557775,
+      "n": 70
+    },
+    "factor_only": {
+      "rmse": 15.08933845231564,
+      "mae": 9.38130685162877,
+      "n": 70
+    }
+  },
+  "delta_controls_minus_full": -5.611466968526443,
+  "placebo_draws": 1000,
+  "placebo_exploratory_upper_tail": 0.8961038961038961,
+  "bootstrap_draws": 2000,
+  "bootstrap_ci95": [
+    -9.725181083249353,
+    -0.11517957291818298
+  ],
+  "exposure_draws": 1000,
+  "exposure_positive_fraction": 0.0,
+  "robustness": {
+    "horizon_1m": {
+      "n": 72,
+      "scores": {
+        "mean": {
+          "rmse": 14.81066895319518,
+          "mae": 8.882322436633167,
+          "n": 72
+        },
+        "persistence": {
+          "rmse": 16.097178578247856,
+          "mae": 8.03689621686327,
+          "n": 72
+        },
+        "controls": {
+          "rmse": 18.606728826404527,
+          "mae": 8.871316488799964,
+          "n": 72
+        },
+        "full": {
+          "rmse": 17.09342617980036,
+          "mae": 8.56557176136559,
+          "n": 72
+        },
+        "factor_only": {
+          "rmse": 15.011209211097755,
+          "mae": 9.056153467147713,
+          "n": 72
+        }
+      },
+      "delta_controls_minus_full": 1.513302646604167
+    },
+    "horizon_6m": {
+      "n": 67,
+      "scores": {
+        "mean": {
+          "rmse": 13.714849910948777,
+          "mae": 8.728176392793586,
+          "n": 67
+        },
+        "persistence": {
+          "rmse": 22.102673740446473,
+          "mae": 11.92460164888861,
+          "n": 67
+        },
+        "controls": {
+          "rmse": 101.19032733677868,
+          "mae": 31.414882012730267,
+          "n": 67
+        },
+        "full": {
+          "rmse": 103.1319382498812,
+          "mae": 31.414327171827644,
+          "n": 67
+        },
+        "factor_only": {
+          "rmse": 13.733515257548964,
+          "mae": 8.824258265883106,
+          "n": 67
+        }
+      },
+      "delta_controls_minus_full": -1.9416109131025223
+    },
+    "air_release_lag_5m": {
+      "n": 69,
+      "scores": {
+        "mean": {
+          "rmse": 15.303060083624345,
+          "mae": 9.504852454131726,
+          "n": 69
+        },
+        "persistence": {
+          "rmse": 15.685719646710364,
+          "mae": 8.779033898547587,
+          "n": 69
+        },
+        "controls": {
+          "rmse": 66.26854902568827,
+          "mae": 24.12887650367028,
+          "n": 69
+        },
+        "full": {
+          "rmse": 70.6490947642619,
+          "mae": 25.855205409668763,
+          "n": 69
+        },
+        "factor_only": {
+          "rmse": 15.367298307765418,
+          "mae": 9.713157619450273,
+          "n": 69
+        }
+      },
+      "delta_controls_minus_full": -4.38054573857363
+    },
+    "air_release_lag_6m": {
+      "n": 68,
+      "scores": {
+        "mean": {
+          "rmse": 15.42287664860439,
+          "mae": 9.64304918566259,
+          "n": 68
+        },
+        "persistence": {
+          "rmse": 15.754254959772595,
+          "mae": 8.85259111441997,
+          "n": 68
+        },
+        "controls": {
+          "rmse": 66.62857136842649,
+          "mae": 24.456294259860282,
+          "n": 68
+        },
+        "full": {
+          "rmse": 66.586963319214,
+          "mae": 25.9435684563645,
+          "n": 68
+        },
+        "factor_only": {
+          "rmse": 16.22142832313458,
+          "mae": 10.377884041564833,
+          "n": 68
+        }
+      },
+      "delta_controls_minus_full": 0.041608049212499054
+    },
+    "bls_release_lag_3m": {
+      "n": 70,
+      "scores": {
+        "mean": {
+          "rmse": 15.185849252245893,
+          "mae": 9.367536360189499,
+          "n": 70
+        },
+        "persistence": {
+          "rmse": 15.795462987852362,
+          "mae": 8.972056376771386,
+          "n": 70
+        },
+        "controls": {
+          "rmse": 113.26642785539633,
+          "mae": 35.92797237444027,
+          "n": 70
+        },
+        "full": {
+          "rmse": 114.26761517351446,
+          "mae": 36.86561844369378,
+          "n": 70
+        },
+        "factor_only": {
+          "rmse": 15.633920346361474,
+          "mae": 9.740218105507164,
+          "n": 70
+        }
+      },
+      "delta_controls_minus_full": -1.0011873181181272
+    }
+  },
+  "regimes": {
+    "pre_2020": {
+      "n": 4,
+      "delta_rmse": -0.0032440639435020735,
+      "scores": {
+        "mean": {
+          "rmse": 2.469062294115816,
+          "mae": 1.4436945452221779,
+          "n": 4
+        },
+        "persistence": {
+          "rmse": 2.447248512982417,
+          "mae": 1.5987472832030498,
+          "n": 4
+        },
+        "controls": {
+          "rmse": 2.7643315762609046,
+          "mae": 1.7580722235200619,
+          "n": 4
+        },
+        "full": {
+          "rmse": 2.7675756402044067,
+          "mae": 1.7563702409184936,
+          "n": 4
+        },
+        "factor_only": {
+          "rmse": 2.4679775611818213,
+          "mae": 1.4469896319816615,
+          "n": 4
+        }
+      }
+    },
+    "pandemic_2020_2022": {
+      "n": 36,
+      "delta_rmse": -7.825118694708536,
+      "scores": {
+        "mean": {
+          "rmse": 21.104030682002346,
+          "mae": 16.765074301946278,
+          "n": 36
+        },
+        "persistence": {
+          "rmse": 21.729644950375764,
+          "mae": 15.733051643946832,
+          "n": 36
+        },
+        "controls": {
+          "rmse": 92.08604789414036,
+          "mae": 45.1989870058256,
+          "n": 36
+        },
+        "full": {
+          "rmse": 99.9111665888489,
+          "mae": 47.710532166531614,
+          "n": 36
+        },
+        "factor_only": {
+          "rmse": 20.94758941187655,
+          "mae": 16.687695729703442,
+          "n": 36
+        }
+      }
+    },
+    "post_2022": {
+      "n": 30,
+      "delta_rmse": -0.0599915565941147,
+      "scores": {
+        "mean": {
+          "rmse": 1.6796046600160877,
+          "mae": 1.5470030720769996,
+          "n": 30
+        },
+        "persistence": {
+          "rmse": 1.335578421730862,
+          "mae": 1.2403066076378082,
+          "n": 30
+        },
+        "controls": {
+          "rmse": 1.3401221106829633,
+          "mae": 1.244796712518956,
+          "n": 30
+        },
+        "full": {
+          "rmse": 1.400113667277078,
+          "mae": 1.2788442510543514,
+          "n": 30
+        },
+        "factor_only": {
+          "rmse": 1.9744342139707831,
+          "mae": 1.6715491605587787,
+          "n": 30
+        }
+      }
+    },
+    "excluding_2020": {
+      "n": 58,
+      "delta_rmse": -0.42780865677682733,
+      "scores": {
+        "mean": {
+          "rmse": 11.988450306476834,
+          "mae": 6.451433290399259,
+          "n": 58
+        },
+        "persistence": {
+          "rmse": 13.299390773655107,
+          "mae": 6.272094879450372,
+          "n": 58
+        },
+        "controls": {
+          "rmse": 14.010079177635596,
+          "mae": 6.808777048321851,
+          "n": 58
+        },
+        "full": {
+          "rmse": 14.437887834412424,
+          "mae": 7.333445176363978,
+          "n": 58
+        },
+        "factor_only": {
+          "rmse": 11.850391771621746,
+          "mae": 6.482315915036789,
+          "n": 58
+        }
+      }
+    }
+  },
+  "leave_one_year_out": [
+    {
+      "excluded_year": 2019,
+      "n": 66,
+      "delta_rmse": -5.77926946380623
+    },
+    {
+      "excluded_year": 2020,
+      "n": 58,
+      "delta_rmse": -0.42780865677682733
+    },
+    {
+      "excluded_year": 2021,
+      "n": 58,
+      "delta_rmse": -6.195920386418962
+    },
+    {
+      "excluded_year": 2022,
+      "n": 58,
+      "delta_rmse": -6.163273866260752
+    },
+    {
+      "excluded_year": 2023,
+      "n": 58,
+      "delta_rmse": -6.164224744607509
+    },
+    {
+      "excluded_year": 2024,
+      "n": 58,
+      "delta_rmse": -6.1654005313161235
+    },
+    {
+      "excluded_year": 2025,
+      "n": 64,
+      "delta_rmse": -5.868347409688482
+    }
+  ],
+  "effective_sample_warning": "Overlapping 3-month-ahead YoY targets and monthly origins; nominal N overstates independence",
+  "data_vintage": "Single manually transcribed latest-revised 2026-10-26 snapshot; release buffers assumptions, NOT PIT",
+  "fundamentals_tested": false,
+  "equity_returns_tested": false
+}
