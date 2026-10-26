@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "ev_charging",
+  "title": "Charging-to-Adoption — Global EV Charging Infrastructure",
+  "research_date": "2026-10-26",
+  "status": "Executed retrospective annual country panel; no PIT or equity alpha",
+  "scope": "Public fast/slow charging point growth as lead indicator of national EV sales-share change",
+  "evidence_level": "RETROSPECTIVE_FIXED_SNAPSHOT_MACRO_ADOPTION_FALSIFICATION",
+  "equity_alpha_established": false,
+  "notebook": "research.ipynb",
+  "analysis_entrypoint": "ev_charging_alpha.py",
+  "requirements": "requirements.txt",
+  "source_register": "source_register.csv",
+  "data_files": [
+    "data/iea_ev_2024_selected.csv",
+    "results/feature_panel.csv"
+  ],
+  "result_files": [
+    "results/metrics.json",
+    "results/walk_forward_oos.csv",
+    "results/placebo_null_distribution.csv",
+    "results/year_rank_ic.csv",
+    "results/leave_one_country_out.csv",
+    "figures/01_ev_share_paths.png",
+    "figures/02_fast_charger_mix.png",
+    "figures/03_factor_scatter_2023.png",
+    "figures/04_oos_rmse_comparison.png",
+    "figures/05_yearly_rank_ic.png",
+    "figures/06_permutation_null.png",
+    "figures/07_leave_one_country_out.png",
+    "figures/08_oos_mae_by_year.png"
+  ],
+  "test_commands": [
+    "python -m pytest -q tests"
+  ],
+  "notes_file": "data/extract_methodology.md",
+  "caveat": "2024 IEA source snapshot is retrospective for 2018-2023; historical vintages not reconstructed; no issuer fundamentals or stock-return alpha."
+}

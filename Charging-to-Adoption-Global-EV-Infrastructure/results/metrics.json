@@ -1,0 +1,196 @@
+{
+  "dataset": {
+    "raw_rows_selected": 180,
+    "countries": 16,
+    "min_year": 2011,
+    "max_year": 2023,
+    "feature_rows": 148,
+    "oos_n": 96,
+    "oos_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  "metrics": {
+    "mean": {
+      "n": 96,
+      "rmse_pp": 5.195014463229034,
+      "mae_pp": 3.4228257762780374,
+      "bias_pp": -2.4612362341816403
+    },
+    "country_mean": {
+      "n": 96,
+      "rmse_pp": 4.9548564678026485,
+      "mae_pp": 3.3901350745319494,
+      "bias_pp": -2.605217250457876
+    },
+    "momentum": {
+      "n": 96,
+      "rmse_pp": 4.415617996573828,
+      "mae_pp": 2.9626041666666665,
+      "bias_pp": -0.6719791666666667
+    },
+    "controls": {
+      "n": 96,
+      "rmse_pp": 4.483438841413914,
+      "mae_pp": 3.090891064113658,
+      "bias_pp": -0.23284994315084617
+    },
+    "full": {
+      "n": 96,
+      "rmse_pp": 4.467923570781488,
+      "mae_pp": 3.078835658168952,
+      "bias_pp": -0.1437636392065579
+    },
+    "no_fast": {
+      "n": 96,
+      "rmse_pp": 4.490497425793771,
+      "mae_pp": 3.0864231099209545,
+      "bias_pp": -0.19696590906739772
+    },
+    "no_slow": {
+      "n": 96,
+      "rmse_pp": 4.4591570971279975,
+      "mae_pp": 3.0761823523858216,
+      "bias_pp": -0.15495107989349818
+    },
+    "no_mix": {
+      "n": 96,
+      "rmse_pp": 4.469618737617897,
+      "mae_pp": 3.078254217037268,
+      "bias_pp": -0.17370458589663793
+    }
+  },
+  "rmse_improvement_control_minus_full_pp": 0.015515270632426414,
+  "rank_ic": {
+    "per_year": [
+      {
+        "year": 2018,
+        "n": 16,
+        "rank_ic": 0.05294117647058824
+      },
+      {
+        "year": 2019,
+        "n": 16,
+        "rank_ic": -0.023529411764705882
+      },
+      {
+        "year": 2020,
+        "n": 16,
+        "rank_ic": 0.044117647058823525
+      },
+      {
+        "year": 2021,
+        "n": 16,
+        "rank_ic": -0.002943341488526301
+      },
+      {
+        "year": 2022,
+        "n": 16,
+        "rank_ic": 0.0914458255933403
+      },
+      {
+        "year": 2023,
+        "n": 16,
+        "rank_ic": 0.09271525688857848
+      }
+    ],
+    "mean": 0.04245785879301639
+  },
+  "year_block_bootstrap": {
+    "draws": 2000,
+    "ci_95_rmse_improvement_pp": [
+      -0.017269724451138835,
+      0.052362096890466336
+    ],
+    "prob_improvement_exploratory": 0.817
+  },
+  "weight_perturbation": {
+    "draws": 1000,
+    "weight_range": [
+      0.2,
+      0.8
+    ],
+    "mean_rank_ic_median": 0.04275501086073117,
+    "mean_rank_ic_p05_p95": [
+      0.022107685229815724,
+      0.062067164475150115
+    ]
+  },
+  "placebo": {
+    "draws": 1000,
+    "observed_delta_rmse_pp": 0.015515270632426414,
+    "one_sided_p_exploratory": 0.13186813186813187,
+    "null_q05_q50_q95": [
+      -0.06124992431142391,
+      -0.019356663515218475,
+      0.03538092402156278
+    ],
+    "method": "Within-year cross-country charging-feature triplet shuffle, full refit; not causal randomization"
+  },
+  "regimes": {
+    "pre_covid_2018_2019": {
+      "n": 32,
+      "delta_rmse": -0.01057881653108872
+    },
+    "covid_2020_2021": {
+      "n": 32,
+      "delta_rmse": 0.05629208307818079
+    },
+    "post_2022_2023": {
+      "n": 32,
+      "delta_rmse": -0.01211240300625338
+    },
+    "without_Norway": {
+      "n": 90,
+      "delta_rmse": -0.010895102772593646
+    },
+    "without_China": {
+      "n": 90,
+      "delta_rmse": 0.028045281786664766
+    },
+    "without_Norway_China": {
+      "n": 84,
+      "delta_rmse": 0.0018917832246092559
+    }
+  },
+  "stale_features": {
+    "controls": {
+      "n": 95,
+      "rmse_pp": 4.557530174646221,
+      "mae_pp": 3.1626952300646645,
+      "bias_pp": -0.31423412987857463
+    },
+    "full": {
+      "n": 95,
+      "rmse_pp": 4.543515540692503,
+      "mae_pp": 3.165523214089016,
+      "bias_pp": -0.30591361562112496
+    }
+  },
+  "horizon_two": {
+    "controls": {
+      "n": 80,
+      "rmse_pp": 9.65868845508433,
+      "mae_pp": 6.848835826056678,
+      "bias_pp": -1.98791771747035
+    },
+    "full": {
+      "n": 80,
+      "rmse_pp": 9.638641729824602,
+      "mae_pp": 6.8211194824525565,
+      "bias_pp": -1.9179210712524166
+    }
+  },
+  "warnings": [
+    "2024 IEA snapshot used retrospectively for ALL earlier years; NOT vintage point-in-time",
+    "Country universe chosen for data availability; ex post selection risk",
+    "Six OOS years; overlapping shocks and common policies create cross-sectional dependence",
+    "Public charging counts endogenous to EV adoption; not a causal estimate",
+    "No company revenue, equity returns, delistings, transaction costs or investable alpha tested"
+  ]
+}

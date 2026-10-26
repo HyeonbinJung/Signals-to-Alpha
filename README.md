@@ -25,6 +25,7 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 | [Housing-Permits-to-Alpha — U.S. Building Materials](Housing-Permits-to-Alpha-U.S.-Building-Materials/) | Housing permits / starts → materials output | Fails mean and macro baselines | [Open](Housing-Permits-to-Alpha-U.S.-Building-Materials/housing_permits_alpha_research.ipynb) |
 | [Gas–Oil Divergence-to-Alpha — U.S. LNG](Gas-Oil-Divergence-to-Alpha-U.S.-LNG/) | WTI–Henry Hub divergence → natural-gas spot movement | Fails mean and momentum baselines | [Open](Gas-Oil-Divergence-to-Alpha-U.S.-LNG/research.ipynb) |
 | [Device-Gap-to-Alpha — U.S. Semiconductors](Semiconductor-Device-Gap-to-Alpha-U.S.-Chip-Manufacturing/) | Downstream devices → semiconductor output | Fails persistence / macro baselines | [Open](Semiconductor-Device-Gap-to-Alpha-U.S.-Chip-Manufacturing/research.ipynb) |
+| [Charging-to-Adoption — Global EV Infrastructure](Charging-to-Adoption-Global-EV-Infrastructure/) | Public charging growth → next-year national EV sales-share change | Negligible incremental OOS gain; fails momentum | [Open](Charging-to-Adoption-Global-EV-Infrastructure/research.ipynb) |
 
 ## Research Summaries
 
@@ -47,6 +48,10 @@ Global LNG capacity expansion is a credible sector story, but relative oil–gas
 ### [Device-Gap-to-Alpha — U.S. Semiconductors](Semiconductor-Device-Gap-to-Alpha-U.S.-Chip-Manufacturing/)
 
 Downstream computer and communications-equipment output may lead chip production, but the global semiconductor demand story alone is not a predictive factor. In **108** expanding-window forecasts the device gap produced RMSE **4.746 pp**, worse than macro controls (**4.713 pp**) and semiconductor persistence (**4.468 pp**). A moving-block bootstrap interval straddles zero and an exploratory block-placebo (**p≈0.796**) offers no support; data are latest-revised snapshots. **Verdict:** no robust incremental production predictor and no tested equity alpha.
+
+### [Charging-to-Adoption — Global EV Infrastructure](Charging-to-Adoption-Global-EV-Infrastructure/)
+
+Across 16 selected national markets, 180 country-year observations from the IEA 2024 snapshot support 96 expanding-window EV sales-share forecasts for 2018–2023. Charging-augmented Ridge improves control-model RMSE only from **4.483** to **4.468 pp** and trails simple momentum at **4.416 pp**. A 1,000-refit within-year shuffle yields exploratory **p≈0.132** and a 2,000-draw year-block bootstrap interval **[−0.017, 0.052] pp** includes zero, with effects changing sign across regimes. **Verdict:** charging is a plausible infrastructure theme, but retrospective vintages, ex-post country selection and absent company returns prevent any validated point-in-time or equity-alpha claim.
 
 ## Common Research Format
 
