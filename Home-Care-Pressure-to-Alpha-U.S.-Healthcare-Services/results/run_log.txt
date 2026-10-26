@@ -1,0 +1,3 @@
+python run_analysis.py
+PASS: 1000 block-shuffle refits, 1000 exposure perturbations, 2000 bootstrap draws; figures generated.
+NOT PIT; NOT equity alpha.

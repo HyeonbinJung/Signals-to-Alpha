@@ -1,0 +1,180 @@
+{
+  "source_sha256": "f1d5a8ff28a55f2d1798cbdb9cac239d46db6c006b0a9e1801abae1b3b1665f6",
+  "raw_observations": 201,
+  "panel_observations": 181,
+  "oos_n": 99,
+  "oos_first": "2018-01-01",
+  "oos_last": "2026-03-01",
+  "scorecard": {
+    "mean": {
+      "rmse": 4.349108844806233,
+      "mae": 3.5339565791608822,
+      "n": 99
+    },
+    "persistence": {
+      "rmse": 3.7595040966604536,
+      "mae": 2.551317340149398,
+      "n": 99
+    },
+    "macro": {
+      "rmse": 5.453378265325549,
+      "mae": 3.240296937416263,
+      "n": 99
+    },
+    "full": {
+      "rmse": 5.562009264604717,
+      "mae": 3.364170351342598,
+      "n": 99
+    },
+    "factor_only": {
+      "rmse": 4.4544521711157286,
+      "mae": 3.579393427140911,
+      "n": 99
+    },
+    "home_only": {
+      "rmse": 5.578387421980441,
+      "mae": 3.28667879213192,
+      "n": 99
+    },
+    "alt_ambulatory": {
+      "rmse": 4.98896711128058,
+      "mae": 3.057337775632749,
+      "n": 99
+    },
+    "no_payroll": {
+      "rmse": 3.7394023951559414,
+      "mae": 2.572787811057956,
+      "n": 99
+    },
+    "no_hospital": {
+      "rmse": 5.560318981406524,
+      "mae": 3.3301694463074125,
+      "n": 99
+    }
+  },
+  "bootstrap": {
+    "macro_minus_full_ci95": [
+      -0.268446995754861,
+      -0.016709429129714133
+    ],
+    "persistence_minus_full_ci95": [
+      -3.9226334739321542,
+      0.2164371035164608
+    ],
+    "draws": 2000,
+    "block_months": 12
+  },
+  "block_placebo": {
+    "observed_improvement": -0.10863099927916764,
+    "tail_fraction_exploratory": 0.7302697302697303,
+    "draws": 1000,
+    "block_months": 12
+  },
+  "exposure_sensitivity": {
+    "n": 1000,
+    "median_delta_rmse": 0.02529305906169732,
+    "fraction_positive": 0.575
+  },
+  "robustness": {
+    "pre_2020": {
+      "n": 24,
+      "macro_rmse": 2.0789596546540072,
+      "full_rmse": 2.0842504108339925,
+      "persistence_rmse": 2.115940201612007
+    },
+    "2020_onward": {
+      "n": 75,
+      "macro_rmse": 6.1540927932246685,
+      "full_rmse": 6.280552379415727,
+      "persistence_rmse": 4.1501813032600845
+    },
+    "excluding_2020_2021": {
+      "n": 75,
+      "macro_rmse": 2.3743990910445447,
+      "full_rmse": 2.5780698845379773,
+      "persistence_rmse": 2.5684485697503425
+    },
+    "horizon_3m": {
+      "n": 102,
+      "macro_rmse": 3.201181913982241,
+      "full_rmse": 3.3310700600310326,
+      "persistence_rmse": 2.3960307214516856
+    },
+    "horizon_9m": {
+      "n": 96,
+      "macro_rmse": 8.814839031192026,
+      "full_rmse": 9.122143770019113,
+      "persistence_rmse": 4.713052578713104
+    },
+    "lag_3m": {
+      "n": 99,
+      "macro_rmse": 6.470802844596375,
+      "full_rmse": 6.623232215081739,
+      "persistence_rmse": 4.005290989992264
+    },
+    "lag_4m": {
+      "n": 99,
+      "macro_rmse": 7.684438952953735,
+      "full_rmse": 7.943903822854271,
+      "persistence_rmse": 4.175416939778661
+    },
+    "rolling_84m": {
+      "n": 99,
+      "macro_rmse": 6.663024621239594,
+      "full_rmse": 6.558129376693267,
+      "persistence_rmse": 3.9648481357869256
+    }
+  },
+  "leave_one_year_out": [
+    {
+      "excluded_year": 2018,
+      "n": 87,
+      "macro_minus_full_rmse": -0.11598966316100778
+    },
+    {
+      "excluded_year": 2019,
+      "n": 87,
+      "macro_minus_full_rmse": -0.11730213829143743
+    },
+    {
+      "excluded_year": 2020,
+      "n": 87,
+      "macro_minus_full_rmse": -0.12942553145396962
+    },
+    {
+      "excluded_year": 2021,
+      "n": 87,
+      "macro_minus_full_rmse": -0.13277217930652352
+    },
+    {
+      "excluded_year": 2022,
+      "n": 87,
+      "macro_minus_full_rmse": -0.05203188846711537
+    },
+    {
+      "excluded_year": 2023,
+      "n": 87,
+      "macro_minus_full_rmse": -0.1281291464548815
+    },
+    {
+      "excluded_year": 2024,
+      "n": 87,
+      "macro_minus_full_rmse": -0.10964642729328578
+    },
+    {
+      "excluded_year": 2025,
+      "n": 87,
+      "macro_minus_full_rmse": -0.1064178114989689
+    },
+    {
+      "excluded_year": 2026,
+      "n": 96,
+      "macro_minus_full_rmse": -0.1090948173597015
+    }
+  ],
+  "PIT_verified": false,
+  "equity_alpha_established": false,
+  "target": "Nursing/residential care employment YoY at formation t+6; revised-data retrospective",
+  "data_as_of": "2026-10-26",
+  "source_latest_release": "2026-10-02"
+}

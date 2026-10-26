@@ -1,0 +1,5 @@
+segment,naics,series,role,scenario_weight,company_level_mapping,asof,source
+Home health care services,6216,CES6562160001,candidate growth signal,1.0 base; 0.5-1.0 stress,NOT AVAILABLE,2026-10-26,https://fred.stlouisfed.org/series/CES6562160001
+Hospitals,622,CES6562200001,subtract sector growth and macro control,-1.0,NOT AVAILABLE,2026-10-26,https://fred.stlouisfed.org/series/CES6562200001
+Ambulatory care services,621,CES6562100001,alternative proxy (includes home health),0.0 base; 0.0-0.5 stress,NOT AVAILABLE,2026-10-26,https://fred.stlouisfed.org/series/CES6562100001
+Nursing and residential care,623,CES6562300001,independent sector outcome,0.0,NOT AVAILABLE,2026-10-26,https://fred.stlouisfed.org/series/CES6562300001

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "home-care-pressure-us-healthcare-2026-10-26",
+  "title": "Home-Care Pressure-to-Alpha \u2014 U.S. Healthcare Services",
+  "industry": "U.S. healthcare services / home health, hospitals and nursing care",
+  "notebook": "research.ipynb",
+  "source_register": "data/source_register.csv",
+  "analysis_entrypoint": "run_analysis.py",
+  "requirements": "requirements.txt",
+  "notes_file": "README.md",
+  "equity_alpha_established": false,
+  "evidence_level": "REPRODUCED MACRO FALSIFICATION \u2014 REVISED SNAPSHOT, NOT HISTORICAL PIT",
+  "as_of": "2026-10-26",
+  "data_files": [
+    "data/fred_ces_2010_2026_snapshot.csv",
+    "data/derived_factor_panel.csv",
+    "data/exposure_map.csv"
+  ],
+  "result_files": [
+    "results/metrics.json",
+    "results/scorecard.csv",
+    "results/walk_forward_oos.csv",
+    "results/block_placebo_null.csv",
+    "results/exposure_sensitivity.csv",
+    "results/robustness.csv",
+    "results/leave_one_year_out.csv",
+    "results/run_log.txt",
+    "figures/01_care_setting_levels.png",
+    "figures/02_care_setting_growth.png",
+    "figures/03_factor.png",
+    "figures/04_oos_forecasts.png",
+    "figures/05_loss_difference.png",
+    "figures/06_block_placebo.png",
+    "figures/07_exposure_sensitivity.png",
+    "figures/08_robustness.png"
+  ],
+  "test_commands": [
+    "OPENBLAS_NUM_THREADS=1 python run_analysis.py",
+    "PYTHONPATH=. pytest -q tests",
+    "jupyter nbconvert --to notebook --execute research.ipynb --output /tmp/healthcare-reexecuted.ipynb",
+    "python scripts/validate_studies.py"
+  ]
+}

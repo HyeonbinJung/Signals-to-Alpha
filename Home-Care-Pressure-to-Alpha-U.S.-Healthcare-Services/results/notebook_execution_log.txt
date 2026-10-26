@@ -1,0 +1,3 @@
+2026-10-26: nbclient NotebookClient clean notebook execution completed successfully in 19.75 seconds.
+46 total cells; 26/26 code cells executed; 0 errors; 9 computed image/png outputs saved in research.ipynb.
+This is an executed fixed-revised-snapshot macro study, NOT historical PIT and NOT equity alpha.

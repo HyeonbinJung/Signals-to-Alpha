@@ -29,6 +29,8 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [E-Commerce Share-to-Alpha — U.S. Warehousing & Logistics](Ecommerce-Share-to-Alpha-U.S.-Warehousing-Logistics/) | E-commerce share acceleration → 2Q-ahead warehouse employment YoY | Positive retrospective OOS gain; uncertain PIT and bootstrap | [Open](Ecommerce-Share-to-Alpha-U.S.-Warehousing-Logistics/research.ipynb) |
 
+| [Home-Care Pressure-to-Alpha — U.S. Healthcare Services](Home-Care-Pressure-to-Alpha-U.S.-Healthcare-Services/) | Home-health vs hospital employment growth → 6m-ahead nursing/residential employment growth | Fails persistence and macro baselines; retrospective revised data | [Open](Home-Care-Pressure-to-Alpha-U.S.-Healthcare-Services/research.ipynb) |
+
 ## Research Summaries
 
 ### [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/)
@@ -58,6 +60,10 @@ Across 16 selected national markets, 180 country-year observations from the IEA 
 ### [E-Commerce Share-to-Alpha — U.S. Warehousing & Logistics](Ecommerce-Share-to-Alpha-U.S.-Warehousing-Logistics/)
 
 E-commerce share acceleration has an economically plausible transmission channel into U.S. warehousing employment, but this is a revised-data retrospective study rather than a point-in-time trading strategy. Across 57 purged expanding-window two-quarter-ahead forecasts, the augmented model reduced RMSE to **5.172 pp**, compared with **5.869 pp** for payroll/persistence controls and **5.360 pp** for warehouse persistence alone. A 2,000-draw moving-block bootstrap interval for the macro-control improvement **[−1.486, 2.572] pp** crosses zero, while the 1,000-refit block-shuffle is exploratory and does not repair historical-vintage leakage. **Verdict:** a potentially useful macro lead-factor candidate, but historical release-vintage validity, corporate fundamentals and investable equity alpha remain unverified.
+
+### [Home-Care Pressure-to-Alpha — U.S. Healthcare Services](Home-Care-Pressure-to-Alpha-U.S.-Healthcare-Services/)
+
+Using 201 latest-revised BLS monthly observations and 99 purged expanding-window forecasts, the predeclared home-health-minus-hospital employment factor **worsened** six-month-ahead nursing/residential employment-growth RMSE to **5.562 pp**, versus **5.453 pp** for macro controls and **3.760 pp** for nursing persistence. A 1,000-refit 12-month block shuffle produced an exploratory tail fraction of **0.730**, while the 2,000-draw moving-block bootstrap 95% interval for macro-minus-full RMSE was **[-0.268, -0.017] pp**. Alternative horizons, release buffers and pre/post-2020 regimes did not rescue the base factor; the 1,000-draw segment-exposure mixture was sensitive to how overlapping ambulatory/home-care series were weighted. **Verdict:** reproducible negative macro lead-factor pilot only; retrospective CES revisions, unknown historical release vintages, absent corporate fundamentals and no securities returns prevent any point-in-time or investable-alpha claim.
 
 ## Common Research Format
 
