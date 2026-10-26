@@ -1,4 +1,4 @@
-# Signals-to-Alpha Research Quality Standard (v1)
+# Signals-to-Alpha Research Quality Standard (v2)
 
 **Reference benchmark:** [Consumption-to-Alpha v3](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/kfood_research_grade_alpha_v3.ipynb) is the *minimum narrative and analytical depth*, not a guarantee of statistical significance. Size alone is **never** sufficient; 25–40+ cells are a presentation target, not an evidence criterion.
 
@@ -32,7 +32,15 @@ A study is **NOT READY** for a research-grade claim until all relevant condition
 
 The Grid, Housing and Gas–Oil notebooks were expanded from 12/10/8 cells to **35/34/35** cells respectively. The new narrative explicitly covers formulas, source classifications, outcome definition, baselines, graphical error diagnostics, robustness limitations and bias audits. This is a **presentation and reviewability improvement**, not new evidence; original fixed-snapshot numerical results remain unchanged. Newly appended code outputs are not considered validated until [the research notebook execution workflow](.github/workflows/research-notebook-validation.yml) successfully runs and commits them.
 
-## Routine for each four-hour research run
+## Canonical study layout (2026-10-26)
+
+All indexed study directories now contain identical 15-section `README.md` structures and a `study.json` manifest. Use [STUDY_TEMPLATE.md](STUDY_TEMPLATE.md) for new work. `README.md` is the navigational research paper; the executable notebook remains the computational record. Historical detailed README text is preserved in `DETAILS.md` where needed so no numerical or citation evidence is discarded.
+
+The README must give the research question, vintage limits, formula, source register, empirical scorecard, robustness, interpretation and reproducible commands in that order. Each notebook must have matching substantive narrative and computed outputs, even when its historical cell numbering or filename is different. Do not restructure executed notebook JSON merely to make headings cosmetic. New studies should use `research.ipynb` and `data/`, `results/`, `figures/`, `tests/` plus a source register and requirements.
+
+Use `python scripts/validate_studies.py` and CI to catch missing sections/artifacts and stale legacy index content. This structural check **does not** prove numerical reproduction, original-release PIT validity or an alpha claim.
+
+## Routine for each two-hour research run
 
 1. Inspect the latest repository before selecting an **unresearched** industry.
 2. Evaluate source quality and historical PIT feasibility **before** claiming alpha.

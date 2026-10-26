@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "kfood",
+  "title": "Consumption-to-Alpha — U.S. K-Food Demand",
+  "research_date": "2026-10-06",
+  "status": "Research-grade exploratory pilot; investable alpha unproven",
+  "scope": "Annual demand-to-fundamental and equity-return association (not an executable PIT strategy)",
+  "evidence_level": "EXPLORATORY_FUNDAMENTAL_AND_EQUITY_ASSOCIATION",
+  "equity_alpha_established": false,
+  "notebook": "kfood_research_grade_alpha_v3.ipynb",
+  "analysis_entrypoint": null,
+  "requirements": null,
+  "source_register": "kfood_source_register_v3.csv",
+  "data_files": [
+    "kfood_research_grade_panel.csv",
+    "kfood_research_grade_fundamental_panel.csv",
+    "kfood_exposure_matrix_v3.csv"
+  ],
+  "result_files": [],
+  "test_commands": [],
+  "notes_file": null,
+  "caveat": "Do not describe historical latest-revised data as real-time PIT or macro forecast as security alpha."
+}

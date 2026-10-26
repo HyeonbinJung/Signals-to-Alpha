@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "housing",
+  "title": "Housing-Permits-to-Alpha — U.S. Building Materials",
+  "research_date": "2026-10-19",
+  "status": "Reproduced fixed-snapshot macro falsification; no equity alpha",
+  "scope": "Housing starts/permits as leads for building-materials production",
+  "evidence_level": "FIXED_SNAPSHOT_MACRO_OR_COMMODITY_FALSIFICATION",
+  "equity_alpha_established": false,
+  "notebook": "housing_permits_alpha_research.ipynb",
+  "analysis_entrypoint": "housing_alpha.py",
+  "requirements": "requirements.txt",
+  "source_register": "source_register.csv",
+  "data_files": [
+    "fred_housing_materials_snapshot_2010_2026.csv"
+  ],
+  "result_files": [
+    "results_snapshot.json",
+    "oos_forecasts_snapshot.csv"
+  ],
+  "test_commands": [
+    "python -m pytest -q test_housing_alpha.py"
+  ],
+  "notes_file": "DETAILS.md",
+  "caveat": "Do not describe historical latest-revised data as real-time PIT or macro forecast as security alpha."
+}

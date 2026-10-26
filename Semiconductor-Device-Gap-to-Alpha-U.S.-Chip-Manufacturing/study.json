@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "semiconductor",
+  "title": "Device-Gap-to-Alpha — U.S. Semiconductors",
+  "research_date": "2026-10-19",
+  "status": "Executed fixed-snapshot macro falsification; no equity alpha",
+  "scope": "Downstream device production as lead for chip/component output",
+  "evidence_level": "FIXED_SNAPSHOT_MACRO_OR_COMMODITY_FALSIFICATION",
+  "equity_alpha_established": false,
+  "notebook": "research.ipynb",
+  "analysis_entrypoint": "semiconductor_alpha.py",
+  "requirements": "requirements.txt",
+  "source_register": "source_register.csv",
+  "data_files": [
+    "data/fred_g17_snapshot_2011_2026.csv",
+    "data/derived_formation_panel.csv"
+  ],
+  "result_files": [
+    "results/metrics.json",
+    "results/oos_predictions_minimal.csv"
+  ],
+  "test_commands": [
+    "python -m pytest -q tests/test_semiconductor_alpha.py"
+  ],
+  "notes_file": "DETAILS.md",
+  "caveat": "Do not describe historical latest-revised data as real-time PIT or macro forecast as security alpha."
+}

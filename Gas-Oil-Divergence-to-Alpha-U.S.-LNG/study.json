@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "lng",
+  "title": "Gas–Oil Divergence-to-Alpha — U.S. LNG",
+  "research_date": "2026-10-19",
+  "status": "Reproduced fixed-snapshot price-factor falsification; no equity alpha",
+  "scope": "WTI/Henry Hub divergence as a lead for natural-gas spot-price changes",
+  "evidence_level": "FIXED_SNAPSHOT_MACRO_OR_COMMODITY_FALSIFICATION",
+  "equity_alpha_established": false,
+  "notebook": "research.ipynb",
+  "analysis_entrypoint": "run_analysis.py",
+  "requirements": "requirements.txt",
+  "source_register": "data/source_register.csv",
+  "data_files": [
+    "data/henry_hub_wti_monthly.csv"
+  ],
+  "result_files": [
+    "results/metrics_snapshot.json"
+  ],
+  "test_commands": [
+    "python -m unittest discover -s tests -v"
+  ],
+  "notes_file": "DETAILS.md",
+  "caveat": "Do not describe historical latest-revised data as real-time PIT or macro forecast as security alpha."
+}

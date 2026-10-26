@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "grid",
+  "title": "Grid-Capex-to-Alpha — U.S. Electrical Equipment",
+  "research_date": "2026-10-19",
+  "status": "Reproduced fixed-snapshot macro pilot; no equity alpha",
+  "scope": "U.S. power-output lead indicator for electrical-equipment production",
+  "evidence_level": "FIXED_SNAPSHOT_MACRO_OR_COMMODITY_FALSIFICATION",
+  "equity_alpha_established": false,
+  "notebook": "grid_capex_alpha_research.ipynb",
+  "analysis_entrypoint": "grid_alpha.py",
+  "requirements": "requirements.txt",
+  "source_register": "source_register.csv",
+  "data_files": [
+    "fed_industrial_production_snapshot_2022_2026.csv"
+  ],
+  "result_files": [],
+  "test_commands": [
+    "python -m pytest -q test_grid_alpha.py"
+  ],
+  "notes_file": "DETAILS.md",
+  "caveat": "Do not describe historical latest-revised data as real-time PIT or macro forecast as security alpha."
+}

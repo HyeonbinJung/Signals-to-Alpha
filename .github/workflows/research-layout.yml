@@ -1,0 +1,39 @@
+name: Research layout and provenance integrity
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "STUDY_TEMPLATE.md"
+      - "RESEARCH_QUALITY_STANDARD.md"
+      - "**/README.md"
+      - "**/DETAILS.md"
+      - "**/study.json"
+      - "scripts/validate_studies.py"
+      - ".github/workflows/research-layout.yml"
+  pull_request:
+    paths:
+      - "README.md"
+      - "STUDY_TEMPLATE.md"
+      - "RESEARCH_QUALITY_STANDARD.md"
+      - "**/README.md"
+      - "**/study.json"
+      - "scripts/validate_studies.py"
+      - ".github/workflows/research-layout.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-layout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check study manifests, notebooks, source files and canonical layout
+        run: python scripts/validate_studies.py
