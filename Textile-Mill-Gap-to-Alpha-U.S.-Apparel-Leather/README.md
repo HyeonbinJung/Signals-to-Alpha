@@ -124,7 +124,7 @@ OPENBLAS_NUM_THREADS=1 jupyter nbconvert --to notebook --execute research.ipynb 
 python scripts/validate_studies.py
 ```
 
-`run_analysis.py` computes the 1,000 block-shuffle refits, 2,000 block-bootstrap draws and 1,000 weight perturbations with deterministic seeds; `make_figures.py` regenerates eight actual-data SVGs. The frozen CSV and its SHA-256 (`e468485f066f10711bb20d5dead47f44e4edf03a1d33d15fa59eacb6046a0f30`) are supplied; no API key is needed. Saved `results/execution.log` and `results/notebook_execution.log` document observed local runs. The repository-wide structural check **does not prove** historical PIT validity or numerical alpha.
+`run_analysis.py` computes the 1,000 block-shuffle refits, 2,000 block-bootstrap draws and 1,000 weight perturbations with deterministic seeds; `make_figures.py` regenerates eight actual-data SVGs. The frozen CSV and its SHA-256 (`e468485f066f10711bb20d5dead47f44e4edf03a1d33d15fa59eacb6046a0f30`) are supplied; no API key is needed. Saved `results/execution.log` and `results/notebook_execution.log` document observed local runs. The repository-wide structural check **does not prove** historical PIT validity or numerical alpha. The executed notebook retains **exactly 15 canonical chapter headings** and 27 saved executed code cells.
 
 ## 14. Next-Stage Protocol
 
