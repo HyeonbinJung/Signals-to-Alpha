@@ -38,6 +38,8 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Tourism-to-Foodservice — U.S. Restaurants](<Tourism-to-Foodservice-U.S.-Restaurant-Macro-Leading-Indicator/>) | Lagged air travel–lodging gap → 3m-ahead restaurant payroll growth | Negative OOS; fails mean and control baselines, not PIT | [Open](<Tourism-to-Foodservice-U.S.-Restaurant-Macro-Leading-Indicator/research.ipynb>) |
 
+| [Paper-Input Gap — U.S. Printing & Related Support](Paper-Input-Gap-to-Alpha-U.S.-Printing-Manufacturing/) | Paper vs manufacturing growth gap → 3m-ahead printing output YoY | Negative OOS vs controls and mean; not PIT or equity alpha | [Open](Paper-Input-Gap-to-Alpha-U.S.-Printing-Manufacturing/research.ipynb) |
+
 ## Research Summaries
 
 ### [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/)
@@ -87,6 +89,10 @@ Textile-and-product-mill production growth relative to manufacturing was tested 
 ### [Tourism-to-Foodservice — U.S. Restaurants](Tourism-to-Foodservice-U.S.-Restaurant-Macro-Leading-Indicator/)
 
 Using a previously frozen BTS/BLS 2014–2026 panel, 70 purged expanding-window origins forecast three-month-ahead U.S. foodservice employment growth; this is a distinct NAICS 722 outcome, not an independent new data source. The tourism-gap-augmented Ridge worsened RMSE to **71.659 pp** from **66.047 pp** for lodging/momentum controls and **15.186 pp** for the historical mean. A 1,000-refit block-shuffle tail fraction of **0.896**, a 2,000-draw paired block-bootstrap interval **[−9.725, −0.115] pp**, and zero positive gains in 1,000 exposure perturbations fail to support incremental predictive value. **Verdict:** negative retrospective macro-factor falsification; inherited manual transcription, missing historical vintages and absent issuer fundamentals/returns preclude PIT or equity-alpha claims.
+
+### [Paper-Input Gap — U.S. Printing & Related Support](Paper-Input-Gap-to-Alpha-U.S.-Printing-Manufacturing/)
+
+Using 201 manually transcribed official Federal Reserve G.17 monthly observations (2010–2026), 114 purged expanding-window origins tested whether the paper–manufacturing gap leads U.S. printing output growth three months ahead. The paper-augmented Ridge model worsened OOS RMSE to **6.366 log pp** versus **6.184** for printing/manufacturing controls and **6.326** for the historical mean. A 1,000-refit block-aware placebo gave an exploratory upper-tail fraction **0.987**, while a 2,000-draw paired block-bootstrap 95% interval **[−0.657, 0.085] log pp** spans zero; alternate horizons, pandemic exclusions and 200 paper-weight perturbations did not rescue the factor. **Verdict:** a negative retrospective macro-factor falsification based on a manually transcribed 2026-10-16 revised snapshot, without verified historical release vintages, issuer fundamentals or investable equity returns.
 
 ## Common Research Format
 

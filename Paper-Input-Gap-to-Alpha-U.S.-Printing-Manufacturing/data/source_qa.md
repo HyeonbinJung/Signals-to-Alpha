@@ -1,0 +1,9 @@
+# Data lineage and QA — 2026-10-26
+
+- **Primary file:** Federal Reserve G.17 seasonally adjusted industrial production table, release updated **2026-10-16**, https://www.federalreserve.gov/releases/g17/Current/ipdisk/ip_sa.txt .
+- **Raw extraction:** 51 annual rows (17 each for G322, G323 and B00004) manually transcribed from the official fixed-width text, years 2010–2026; 2026 ends September. The raw transcribed rows are preserved as text and the deterministic parser is in `run_analysis.py`. **The full upstream file was not downloaded and no independent machine-to-machine row-by-row reconciliation was possible.** This limitation must be retained in any reuse.
+- **QA:** exactly 201 months × 3 series = 603 positive, unique monthly values; no missing values. Cross-checked official values for 2010-01 (99.9533 / 102.8123 / 91.0661), 2020-04 (95.7202 / 69.2298 / 79.7713) and 2026-09 (78.3155 / 74.0432 / 98.4387), ordered G322/G323/B00004. All source values retained at four decimals.
+- **Temporal availability:** Official page is a **2026-10-16 latest-revised snapshot**, not a historical vintage archive. The one-month input buffer and one-month outcome-release purge are conservative mechanical assumptions, **not proof** of original publication dates. Historical release timestamps and revisions remain **UNKNOWN**.
+- **Observed vs release:** January 2010–September 2026 are observation dates. The study does not assert those values were known at any corresponding historic forecast date.
+- **Quality grade:** A for primary government table; B for FRED metadata cross-check; C for methodology. No synthetic observations, imputed missing values, firm-level revenue or equity prices.
+- **Structural caveat:** Paper is a potential upstream input to commercial printing, but output indices can co-move with the same demand cycle. B00004 includes both industries; results cannot be interpreted as causal.

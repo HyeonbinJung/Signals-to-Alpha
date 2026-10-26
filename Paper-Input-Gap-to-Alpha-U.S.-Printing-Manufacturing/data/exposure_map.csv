@@ -1,0 +1,5 @@
+exposure_id,industry_naics,exposure_type,signal_or_target,weight,as_of_date,source_url,validation,notes
+paper_industry,322,industry proxy,input paper output,1.0,2026-10-16,https://www.federalreserve.gov/releases/g17/Current/ipdisk/ip_sa.txt,official code G322,Not an issuer revenue share
+printing_industry,323,industry proxy,outcome printing output,1.0,2026-10-16,https://www.federalreserve.gov/releases/g17/Current/ipdisk/ip_sa.txt,official code G323,Not a security universe
+manufacturing,31-33,cycle control,input total manufacturing,1.0,2026-10-16,https://www.federalreserve.gov/releases/g17/Current/ipdisk/ip_sa.txt,official code B00004,Includes both paper and printing; potential aggregate mechanical overlap
+issuer_mapping,UNKNOWN,issuer exposure,NOT TESTED,,2026-10-26,UNKNOWN,not established,No dated issuer revenue segmentation or total-return panel available

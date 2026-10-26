@@ -1,0 +1,1 @@
+PASS: clean copied directory analysis rerun, 12/12 unit tests, 46-cell notebook run-all (29/29 code cells), 10 computed image-output cells, zero notebook errors; metrics.json exact parsed-JSON match. The first two clean-copy notebook attempts timed out in the execution harness; a separate instrumented clean-copy run completed successfully.

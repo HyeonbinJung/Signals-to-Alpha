@@ -1,0 +1,59 @@
+{
+  "as_of": "2026-10-26",
+  "source_release_date": "2026-10-16",
+  "source_file_sha256": "147f482e7f59d8692fd7f2a44d0a2d5ce531156fba28325addc69e5167837459",
+  "source_status": "manually transcribed official G.17 latest-revised release, not historical vintages",
+  "observations": 201,
+  "formation_panel": 185,
+  "oos_n": 114,
+  "oos_start": "2017-01-01",
+  "oos_end": "2026-06-01",
+  "horizon_months": 3,
+  "publication_buffer_months": 1,
+  "training_target_purge_months": 5,
+  "scorecard": {
+    "mean": {
+      "n": 114,
+      "rmse": 6.325795247138413,
+      "mae": 4.348803144854577
+    },
+    "persistence": {
+      "n": 114,
+      "rmse": 7.07122237565824,
+      "mae": 4.474763712508801
+    },
+    "control": {
+      "n": 114,
+      "rmse": 6.183754032382498,
+      "mae": 3.8841333401608464
+    },
+    "full": {
+      "n": 114,
+      "rmse": 6.365870642541121,
+      "mae": 4.180734642735945
+    },
+    "paper_only": {
+      "n": 114,
+      "rmse": 6.703291812776299,
+      "mae": 4.6902230364122826
+    }
+  },
+  "delta_control_minus_full": -0.1821166101586229,
+  "bootstrap_draws": 2000,
+  "bootstrap_ci95": [
+    -0.656677800536873,
+    0.08519233499778642
+  ],
+  "placebo_draws": 1000,
+  "exploratory_block_shuffle_tail_fraction": 0.987012987012987,
+  "exposure_draws": 200,
+  "exposure_positive_share": 0.0,
+  "leave_one_year_out_range": [
+    -0.3072992884188972,
+    -0.02296820513948372
+  ],
+  "historical_pit_verified": false,
+  "firm_fundamentals_tested": false,
+  "equity_alpha_tested": false,
+  "notes": "Retrospective macro falsification only; latest-revised official release; source rows manually transcribed."
+}
