@@ -27,6 +27,8 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 | [Device-Gap-to-Alpha — U.S. Semiconductors](Semiconductor-Device-Gap-to-Alpha-U.S.-Chip-Manufacturing/) | Downstream devices → semiconductor output | Fails persistence / macro baselines | [Open](Semiconductor-Device-Gap-to-Alpha-U.S.-Chip-Manufacturing/research.ipynb) |
 | [Charging-to-Adoption — Global EV Infrastructure](Charging-to-Adoption-Global-EV-Infrastructure/) | Public charging growth → next-year national EV sales-share change | Negligible incremental OOS gain; fails momentum | [Open](Charging-to-Adoption-Global-EV-Infrastructure/research.ipynb) |
 
+| [E-Commerce Share-to-Alpha — U.S. Warehousing & Logistics](Ecommerce-Share-to-Alpha-U.S.-Warehousing-Logistics/) | E-commerce share acceleration → 2Q-ahead warehouse employment YoY | Positive retrospective OOS gain; uncertain PIT and bootstrap | [Open](Ecommerce-Share-to-Alpha-U.S.-Warehousing-Logistics/research.ipynb) |
+
 ## Research Summaries
 
 ### [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/)
@@ -52,6 +54,10 @@ Downstream computer and communications-equipment output may lead chip production
 ### [Charging-to-Adoption — Global EV Infrastructure](Charging-to-Adoption-Global-EV-Infrastructure/)
 
 Across 16 selected national markets, 180 country-year observations from the IEA 2024 snapshot support 96 expanding-window EV sales-share forecasts for 2018–2023. Charging-augmented Ridge improves control-model RMSE only from **4.483** to **4.468 pp** and trails simple momentum at **4.416 pp**. A 1,000-refit within-year shuffle yields exploratory **p≈0.132** and a 2,000-draw year-block bootstrap interval **[−0.017, 0.052] pp** includes zero, with effects changing sign across regimes. **Verdict:** charging is a plausible infrastructure theme, but retrospective vintages, ex-post country selection and absent company returns prevent any validated point-in-time or equity-alpha claim.
+
+### [E-Commerce Share-to-Alpha — U.S. Warehousing & Logistics](Ecommerce-Share-to-Alpha-U.S.-Warehousing-Logistics/)
+
+E-commerce share acceleration has an economically plausible transmission channel into U.S. warehousing employment, but this is a revised-data retrospective study rather than a point-in-time trading strategy. Across 57 purged expanding-window two-quarter-ahead forecasts, the augmented model reduced RMSE to **5.172 pp**, compared with **5.869 pp** for payroll/persistence controls and **5.360 pp** for warehouse persistence alone. A 2,000-draw moving-block bootstrap interval for the macro-control improvement **[−1.486, 2.572] pp** crosses zero, while the 1,000-refit block-shuffle is exploratory and does not repair historical-vintage leakage. **Verdict:** a potentially useful macro lead-factor candidate, but historical release-vintage validity, corporate fundamentals and investable equity alpha remain unverified.
 
 ## Common Research Format
 

@@ -1,0 +1,3 @@
+segment,NAICS,primary_outcome_weight,scenario_weight_range,dated_historical_company_exposure,description
+Warehousing and storage,493,1.0,0.5-1.0,NOT AVAILABLE,Direct demand transmission via storage and fulfillment capacity
+Couriers and messengers,492,0.0,0.0-0.5,NOT AVAILABLE,Related delivery segment used as outcome sensitivity and non-specificity check

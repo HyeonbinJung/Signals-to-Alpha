@@ -1,0 +1,129 @@
+{
+  "as_of": "2026-10-26",
+  "scope": "RETROSPECTIVE LATEST-REVISED MACRO PILOT; NOT PIT OR EQUITY ALPHA",
+  "data": {
+    "quarters": 107,
+    "ecommerce_nonmissing": 106,
+    "first": "2000-01-01",
+    "last": "2026-07-01"
+  },
+  "primary": {
+    "n_oos": 57,
+    "first_origin": "2012-01-01",
+    "last_origin": "2026-01-01",
+    "minimum_train_n": 41,
+    "horizon_quarters": 2,
+    "formation_lag_quarters": 1,
+    "maturity_purge_quarters": 3,
+    "metrics": {
+      "mean": {
+        "rmse": 7.4224597770445815,
+        "mae": 6.387624293940085,
+        "n": 57
+      },
+      "persistence": {
+        "rmse": 5.360346622334896,
+        "mae": 3.8775922321825416,
+        "n": 57
+      },
+      "macro": {
+        "rmse": 5.868533283154194,
+        "mae": 4.146733196987642,
+        "n": 57
+      },
+      "full": {
+        "rmse": 5.1721553632619806,
+        "mae": 3.6161310328985294,
+        "n": 57
+      },
+      "ecom_only": {
+        "rmse": 7.111144394554509,
+        "mae": 4.643033043191492,
+        "n": 57
+      }
+    },
+    "delta_rmse_macro_minus_full": 0.6963779198922131
+  },
+  "uncertainty": {
+    "draws": 2000,
+    "block_quarters": 4,
+    "delta_rmse_macro_minus_full_ci95": [
+      -1.4856903593613007,
+      2.5724301019198816
+    ],
+    "prob_improvement_exploratory": 0.7345
+  },
+  "placebo": {
+    "draws": 1000,
+    "block_quarters": 4,
+    "observed_delta_rmse": 0.6963779198922131,
+    "null_median": -0.04571204584599009,
+    "exploratory_right_tail_fraction": 0.000999000999000999,
+    "null_ci95": [
+      -0.35624733889580984,
+      0.2344196658157603
+    ]
+  },
+  "exposure_sensitivity": {
+    "draws": 1000,
+    "warehouse_weight_range": [
+      0.5,
+      1.0
+    ],
+    "delta_rmse_median": 0.6743014346771563,
+    "delta_rmse_ci90": [
+      0.6709151253562862,
+      0.692414876228395
+    ],
+    "fraction_positive": 1.0
+  },
+  "robustness": {
+    "horizon_1q": {
+      "n": 58,
+      "macro_rmse": 4.553099057912276,
+      "full_rmse": 4.053317367075269
+    },
+    "horizon_4q": {
+      "n": 55,
+      "macro_rmse": 7.346566004735804,
+      "full_rmse": 5.434749541420704
+    },
+    "lag_2q": {
+      "n": 57,
+      "macro_rmse": 5.978645166406837,
+      "full_rmse": 5.2995312029621395
+    },
+    "lag_3q": {
+      "n": 57,
+      "macro_rmse": 6.015304221801113,
+      "full_rmse": 5.4356821147192305
+    },
+    "pre_covid": {
+      "n": 32,
+      "macro_rmse": 3.135920564329997,
+      "full_rmse": 2.5442138030790806
+    },
+    "covid_and_after": {
+      "n": 25,
+      "macro_rmse": 8.120034472581107,
+      "full_rmse": 7.2599755613173285
+    },
+    "exclude_2020_2021": {
+      "n": 49,
+      "macro_rmse": 4.791680087973312,
+      "full_rmse": 4.014194166971987
+    },
+    "courier_negative_control": {
+      "n": 57,
+      "macro_rmse": 5.303173087498626,
+      "full_rmse": 4.757021977286915
+    }
+  },
+  "warnings": [
+    "No ALFRED/Census/BLS historical vintages: one-quarter lag is conservative assumption, not PIT proof.",
+    "Macro employment is not firm fundamentals or adjusted security returns.",
+    "Overlapping two-quarter forecast targets induce dependent errors.",
+    "Block-shuffle null is exploratory, not an exact permutation test.",
+    "Data collection snapshot contains 2026 Q3 employment but e-commerce only through Q2."
+  ]
+}

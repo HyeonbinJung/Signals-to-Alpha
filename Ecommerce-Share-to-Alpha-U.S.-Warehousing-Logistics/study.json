@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "ecommerce-share-us-warehousing-2026-10-26",
+  "title": "E-Commerce Share-to-Alpha — U.S. Warehousing and Logistics",
+  "industry": "U.S. warehousing and logistics",
+  "notebook": "research.ipynb",
+  "source_register": "data/source_register.csv",
+  "analysis_entrypoint": "run_analysis.py",
+  "requirements": "requirements.txt",
+  "notes_file": "README.md",
+  "equity_alpha_established": false,
+  "evidence_level": "REPRODUCED MACRO PILOT — RETROSPECTIVE REVISED DATA, NOT PIT",
+  "as_of": "2026-10-26",
+  "data_files": ["data/fred_quarterly_snapshot_2026-10-26.csv", "data/derived_factor_panel.csv", "data/exposure_map.csv"],
+  "result_files": ["results/metrics.json", "results/scorecard.csv", "results/walk_forward_oos.csv", "results/robustness.csv", "results/block_placebo_null.csv", "results/run_log.txt", "figures/01_ecommerce_share.png", "figures/02_logistics_employment.png", "figures/03_factor_dynamics.png", "figures/04_oos_forecasts.png", "figures/05_loss_difference.png", "figures/06_block_placebo.png"],
+  "test_commands": ["python run_analysis.py", "pytest -q tests", "jupyter nbconvert --to notebook --execute research.ipynb --output /tmp/logistics-reexecuted.ipynb", "python scripts/validate_studies.py"]
+}
