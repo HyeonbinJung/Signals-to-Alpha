@@ -42,6 +42,8 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Air-Traffic Gap — U.S. Aerospace Manufacturing](Air-Traffic-Gap-to-Alpha-U.S.-Aerospace-Manufacturing/) | Lagged airline miles vs manufacturing → 6m-ahead aerospace output YoY | Negative OOS vs mean and macro controls; not PIT | [Open](Air-Traffic-Gap-to-Alpha-U.S.-Aerospace-Manufacturing/research.ipynb) |
 
+| [Energy-Feedstock Gap — U.S. Basic Chemical Manufacturing](Energy-Feedstock-Gap-to-Alpha-U.S.-Basic-Chemicals/) | Lagged WTI–Henry Hub YoY inflation gap → 6m-ahead basic chemicals output | Negative OOS vs macro controls and mean; fixed revised snapshots, not PIT | [Open](Energy-Feedstock-Gap-to-Alpha-U.S.-Basic-Chemicals/research.ipynb) |
+
 ## Research Summaries
 
 ### [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/)
@@ -99,6 +101,10 @@ Using 201 manually transcribed official Federal Reserve G.17 monthly observation
 ### [Air-Traffic Gap — U.S. Aerospace Manufacturing](Air-Traffic-Gap-to-Alpha-U.S.-Aerospace-Manufacturing/)
 
 Using 201 revised-snapshot monthly aerospace/manufacturing observations and 150 airline observations, 77 purged expanding-window origins tested a fixed air-traffic-minus-manufacturing gap against six-month-ahead aerospace production growth. The augmented Ridge worsened OOS RMSE to **19.890 pp** from **16.967 pp** for macro controls and **13.810 pp** for the historical mean. A 1,000-refit 12-month block shuffle produced exploratory tail fraction **0.932**, while a 2,000-draw paired circular-block bootstrap interval for control-minus-full RMSE was **[−6.511, −0.369] pp** and no ±20% exposure perturbations improved the control. **Verdict:** negative retrospective aerospace macro-factor falsification; unverified historical publication vintages, reused manually transcribed inputs, and absent issuer fundamentals/total returns preclude PIT or investable equity-alpha claims.
+
+### [Energy-Feedstock Gap — U.S. Basic Chemical Manufacturing](Energy-Feedstock-Gap-to-Alpha-U.S.-Basic-Chemicals/)
+
+Using 201 fixed/revised G.17/EIA monthly observations and 111 purged expanding-window origins, the two-month-stale gas–oil inflation gap failed to improve six-month-ahead U.S. basic-chemicals production forecasts. The augmented Ridge returned **9.034 log-pp RMSE** versus **8.971** for manufacturing/oil controls and **8.271** for the historical mean. A 1,000-refit 12-month block shuffle gave an exploratory tail fraction **0.521**, and the 2,000-draw paired block-bootstrap improvement interval **[−0.373, 0.219] log pp** includes zero; all 1,000 exposure perturbations remained negative. **Verdict:** negative retrospective macro-factor falsification, with unreconstructed historical publication vintages, no issuer fundamentals and no security returns.
 
 ## Common Research Format
 

@@ -1,0 +1,5 @@
+industry_segment,naics_scope,energy_feedstock_link,empirical_weight,issuer_exposure_verified,as_of_date,evidence,limitation
+Petrochemical manufacturing,Within 3251,Gas liquids and ethane can be feedstock,NOT ESTIMATED,NO,2026-10-26,https://www.energy.gov/hgeo/articles/appalachian-petrochemical-renaissance-within-reach,Henry Hub gas price is not the ethane contract price
+Industrial gas manufacturing,Within 3251,Electricity and natural gas may affect operating costs,NOT ESTIMATED,NO,2026-10-26,https://www.census.gov/naics/,Production volumes and contracts not verified
+Other basic inorganic chemicals,Within 3251,Energy intensive but heterogeneous feedstocks,NOT ESTIMATED,NO,2026-10-26,https://www.census.gov/naics/,Exposure not uniform across producers
+Other basic organic chemicals,Within 3251,Oil and gas feedstocks may compete,NOT ESTIMATED,NO,2026-10-26,https://www.census.gov/naics/,Firm historical revenue weights not verified

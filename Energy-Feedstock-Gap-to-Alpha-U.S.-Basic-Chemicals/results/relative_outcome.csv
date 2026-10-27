@@ -1,0 +1,4 @@
+model,rmse_log_pp,n
+historical_mean,6.326551568277701,111
+macro_controls,6.702733777644189,111
+energy_gap_augmented,6.693759901323954,111

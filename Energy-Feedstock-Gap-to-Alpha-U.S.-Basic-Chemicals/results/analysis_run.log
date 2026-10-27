@@ -1,0 +1,35 @@
+{
+  "study": "US_BASIC_CHEMICALS_ENERGY_GAP",
+  "data_start": "2010-01",
+  "data_end": "2026-09",
+  "n_raw": 201,
+  "n_oos": 111,
+  "start_oos": "2017-01-01",
+  "end_oos": "2026-03-01",
+  "primary_gain_log_pp": -0.062497173797082084,
+  "bootstrap_95": [
+    -0.37304117999878617,
+    0.2194684995419408
+  ],
+  "block_shuffle_exploratory_tail": 0.5214785214785215,
+  "block_shuffle_n": 1000,
+  "bootstrap_n": 2000,
+  "exposure_n": 1000,
+  "exposure_positive_fraction": 0.0,
+  "rank_ic_descriptive": 0.05547560547560547,
+  "historical_vintage_verified": false,
+  "equity_alpha_established": false
+}
+               model  n_oos  rmse_log_pp  mae_log_pp  mean_error
+chemical_persistence    111     8.268139    5.894040    0.380382
+     historical_mean    111     8.270789    5.823729    0.080966
+     energy_gap_only    111     8.419769    5.919244    0.079769
+      macro_controls    111     8.971233    6.166720   -0.679408
+            oil_only    111     8.971233    6.166720   -0.679408
+            gas_only    111     8.999102    6.205628   -0.253381
+energy_gap_augmented    111     9.033730    6.243901   -0.391263
+           regime   n  control_rmse  full_rmse      gain
+         pre_2020  36      7.502915   7.802034 -0.299119
+        post_2021  51      5.111798   5.036648  0.075150
+exclude_2020_2021  87      6.213842   6.329226 -0.115384
+              all 111      8.971233   9.033730 -0.062497

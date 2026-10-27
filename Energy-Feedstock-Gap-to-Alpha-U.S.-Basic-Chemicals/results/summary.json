@@ -1,0 +1,22 @@
+{
+  "study": "US_BASIC_CHEMICALS_ENERGY_GAP",
+  "data_start": "2010-01",
+  "data_end": "2026-09",
+  "n_raw": 201,
+  "n_oos": 111,
+  "start_oos": "2017-01-01",
+  "end_oos": "2026-03-01",
+  "primary_gain_log_pp": -0.062497173797082084,
+  "bootstrap_95": [
+    -0.37304117999878617,
+    0.2194684995419408
+  ],
+  "block_shuffle_exploratory_tail": 0.5214785214785215,
+  "block_shuffle_n": 1000,
+  "bootstrap_n": 2000,
+  "exposure_n": 1000,
+  "exposure_positive_fraction": 0.0,
+  "rank_ic_descriptive": 0.05547560547560547,
+  "historical_vintage_verified": false,
+  "equity_alpha_established": false
+}
