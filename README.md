@@ -40,6 +40,8 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Paper-Input Gap — U.S. Printing & Related Support](Paper-Input-Gap-to-Alpha-U.S.-Printing-Manufacturing/) | Paper vs manufacturing growth gap → 3m-ahead printing output YoY | Negative OOS vs controls and mean; not PIT or equity alpha | [Open](Paper-Input-Gap-to-Alpha-U.S.-Printing-Manufacturing/research.ipynb) |
 
+| [Air-Traffic Gap — U.S. Aerospace Manufacturing](Air-Traffic-Gap-to-Alpha-U.S.-Aerospace-Manufacturing/) | Lagged airline miles vs manufacturing → 6m-ahead aerospace output YoY | Negative OOS vs mean and macro controls; not PIT | [Open](Air-Traffic-Gap-to-Alpha-U.S.-Aerospace-Manufacturing/research.ipynb) |
+
 ## Research Summaries
 
 ### [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/)
@@ -93,6 +95,10 @@ Using a previously frozen BTS/BLS 2014–2026 panel, 70 purged expanding-window 
 ### [Paper-Input Gap — U.S. Printing & Related Support](Paper-Input-Gap-to-Alpha-U.S.-Printing-Manufacturing/)
 
 Using 201 manually transcribed official Federal Reserve G.17 monthly observations (2010–2026), 114 purged expanding-window origins tested whether the paper–manufacturing gap leads U.S. printing output growth three months ahead. The paper-augmented Ridge model worsened OOS RMSE to **6.366 log pp** versus **6.184** for printing/manufacturing controls and **6.326** for the historical mean. A 1,000-refit block-aware placebo gave an exploratory upper-tail fraction **0.987**, while a 2,000-draw paired block-bootstrap 95% interval **[−0.657, 0.085] log pp** spans zero; alternate horizons, pandemic exclusions and 200 paper-weight perturbations did not rescue the factor. **Verdict:** a negative retrospective macro-factor falsification based on a manually transcribed 2026-10-16 revised snapshot, without verified historical release vintages, issuer fundamentals or investable equity returns.
+
+### [Air-Traffic Gap — U.S. Aerospace Manufacturing](Air-Traffic-Gap-to-Alpha-U.S.-Aerospace-Manufacturing/)
+
+Using 201 revised-snapshot monthly aerospace/manufacturing observations and 150 airline observations, 77 purged expanding-window origins tested a fixed air-traffic-minus-manufacturing gap against six-month-ahead aerospace production growth. The augmented Ridge worsened OOS RMSE to **19.890 pp** from **16.967 pp** for macro controls and **13.810 pp** for the historical mean. A 1,000-refit 12-month block shuffle produced exploratory tail fraction **0.932**, while a 2,000-draw paired circular-block bootstrap interval for control-minus-full RMSE was **[−6.511, −0.369] pp** and no ±20% exposure perturbations improved the control. **Verdict:** negative retrospective aerospace macro-factor falsification; unverified historical publication vintages, reused manually transcribed inputs, and absent issuer fundamentals/total returns preclude PIT or investable equity-alpha claims.
 
 ## Common Research Format
 

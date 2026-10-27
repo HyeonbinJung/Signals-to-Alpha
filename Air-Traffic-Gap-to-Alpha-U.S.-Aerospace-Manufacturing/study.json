@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "air-traffic-gap-us-aerospace-manufacturing-2026-10-26",
+  "title": "Air-Traffic Demand Gap to U.S. Aerospace Manufacturing",
+  "industry": "U.S. aerospace product and parts manufacturing NAICS 3364",
+  "region": "United States",
+  "status": "REPRODUCED MACRO PILOT / NOT PIT",
+  "equity_alpha_established": false,
+  "notebook": "research.ipynb",
+  "analysis_entrypoint": "run_analysis.py",
+  "requirements": "requirements.txt",
+  "source_register": "data/source_register.csv",
+  "notes_file": "data/provenance_audit.md",
+  "data_files": [
+    "data/frozen_observations_2026-10-26.csv",
+    "data/aerospace_values_2010_2026.txt",
+    "data/derived_formation_panel.csv",
+    "data/company_exposure_map.csv",
+    "data/provenance_audit.md"
+  ],
+  "result_files": [
+    "results/metrics.json",
+    "results/scorecard.csv",
+    "results/walk_forward_oos.csv",
+    "results/block_placebo_1000.csv",
+    "results/bootstrap_2000.csv",
+    "results/exposure_1000.csv",
+    "results/robustness.csv",
+    "results/leave_one_year_out.csv",
+    "results/analysis_execution.log",
+    "results/notebook_execution.log",
+    "results/clean_reproduction.log",
+    "results/test.log"
+  ],
+  "test_commands": [
+    "python -m pytest tests -q",
+    "jupyter nbconvert --to notebook --execute research.ipynb --output research_reexecuted.ipynb --ExecutePreprocessor.timeout=900",
+    "python execute_nb.py"
+  ],
+  "as_of_date": "2026-10-26",
+  "source_vintage_pit_verified": false,
+  "company_fundamentals_tested": false,
+  "equity_returns_tested": false,
+  "oos_n": 77,
+  "primary_delta_rmse_pp": -2.923423178030447
+}

@@ -1,0 +1,84 @@
+23:12:43 start 0 '# Air-Traffic Demand Gap → U.S. Aerospace Manufact'
+23:12:43 start 1 '## 01. Abstract\n\n**Question:** Does lagged air rev'
+23:12:43 start 2 'from pathlib import Path\nimport sys, json, hashlib'
+23:12:43 complete 2 'from pathlib import Path\nimport sys, json, hashlib'
+23:12:44 start 3 "raw=ra.load_data()\nprint('Raw rows:',len(raw),'| a"
+23:12:44 complete 3 "raw=ra.load_data()\nprint('Raw rows:',len(raw),'| a"
+23:12:44 start 4 'The principal failure standard is **not** whether '
+23:12:44 start 5 '## 02. Research Design & Hypotheses\n\n**H1:** airli'
+23:12:44 start 6 "design=pd.DataFrame({'test':['H1: incremental OOS'"
+23:12:44 complete 6 "design=pd.DataFrame({'test':['H1: incremental OOS'"
+23:12:44 start 7 '## 03. Industry Context\n\nThe [Aerospace Industries'
+23:12:44 start 8 "context=pd.DataFrame({'mechanism':['airline traffi"
+23:12:44 complete 8 "context=pd.DataFrame({'mechanism':['airline traffi"
+23:12:44 start 9 '## 04. Data & Source Integrity\n\n**Source grades:**'
+23:12:44 start 10 "sources=pd.read_csv(ROOT/'data/source_register.csv"
+23:12:44 complete 10 "sources=pd.read_csv(ROOT/'data/source_register.csv"
+23:12:44 start 11 "print('Raw SHA-256:',hashlib.sha256((ROOT/'data/fr"
+23:12:44 complete 11 "print('Raw SHA-256:',hashlib.sha256((ROOT/'data/fr"
+23:12:44 start 12 "print('Missing by column:')\ndisplay(raw.isna().sum"
+23:12:44 complete 12 "print('Missing by column:')\ndisplay(raw.isna().sum"
+23:12:44 start 13 '## 05. Point-in-Time Availability\n\nAt formation t,'
+23:12:44 start 14 "d=ra.panel()\ndisplay(d[['date','origin_month','aer"
+23:12:44 complete 14 "d=ra.panel()\ndisplay(d[['date','origin_month','aer"
+23:12:44 start 15 'o=ra.forecast(d)\nfirst=o.iloc[0]; train=d[d.origin'
+23:12:44 complete 15 'o=ra.forecast(d)\nfirst=o.iloc[0]; train=d[d.origin'
+23:12:44 start 16 '## 06. Factor Construction\n\nFor series X define `g'
+23:12:44 start 17 'sample=d.iloc[10]\nrecomputed=30*np.tanh((sample.ai'
+23:12:44 complete 17 'sample=d.iloc[10]\nrecomputed=30*np.tanh((sample.ai'
+23:12:44 start 18 'fig,ax=plt.subplots(figsize=(9,3.1));ax.plot(d.dat'
+23:12:44 complete 18 'fig,ax=plt.subplots(figsize=(9,3.1));ax.plot(d.dat'
+23:12:44 start 19 'fig,ax=plt.subplots(figsize=(9,3));ax.plot(d.date,'
+23:12:44 complete 19 'fig,ax=plt.subplots(figsize=(9,3));ax.plot(d.date,'
+23:12:44 start 20 '## 07. Exposure & Transmission\n\nDated company expo'
+23:12:44 start 21 "exposure=pd.read_csv(ROOT/'data/company_exposure_m"
+23:12:44 complete 21 "exposure=pd.read_csv(ROOT/'data/company_exposure_m"
+23:12:44 start 22 'Aerospace output is a U.S. industry aggregate, not'
+23:12:44 start 23 '## 08. Outcomes & Baselines\n\n**Common origins:** h'
+23:12:44 start 24 "print('OOS observations:',len(o),'| date range:',o"
+23:12:44 complete 24 "print('OOS observations:',len(o),'| date range:',o"
+23:12:44 start 25 'sc=ra.scorecard(o)\ndisplay(sc.round(3))\nassert (sc'
+23:12:44 complete 25 'sc=ra.scorecard(o)\ndisplay(sc.round(3))\nassert (sc'
+23:12:44 start 26 'fig,ax=plt.subplots(figsize=(9,3.5));ax.plot(o.dat'
+23:12:44 complete 26 'fig,ax=plt.subplots(figsize=(9,3.5));ax.plot(o.dat'
+23:12:45 start 27 '## 09. Empirical Findings\n\nThe predeclared improve'
+23:12:45 start 28 'delta=ra.rmse(o.actual,o.macro)-ra.rmse(o.actual,o'
+23:12:45 complete 28 'delta=ra.rmse(o.actual,o.macro)-ra.rmse(o.actual,o'
+23:12:45 start 29 'fig,ax=plt.subplots(figsize=(8,3));ax.bar(sc.model'
+23:12:45 complete 29 'fig,ax=plt.subplots(figsize=(8,3));ax.bar(sc.model'
+23:12:45 start 30 'loss=(o.actual-o.macro)**2-(o.actual-o.full)**2\nfi'
+23:12:45 complete 30 'loss=(o.actual-o.macro)**2-(o.actual-o.full)**2\nfi'
+23:12:45 start 31 'The factor can correlate with the direction of pro'
+23:12:45 start 32 '## 10. Robustness & Placebos\n\nBlock shuffling pres'
+23:12:45 start 33 '# Full 1,000/2,000/1,000 draw analyses are generat'
+23:12:45 complete 33 '# Full 1,000/2,000/1,000 draw analyses are generat'
+23:12:45 start 34 "p=pd.read_csv(ROOT/'results/block_placebo_1000.csv"
+23:12:45 complete 34 "p=pd.read_csv(ROOT/'results/block_placebo_1000.csv"
+23:12:46 start 35 "b=pd.read_csv(ROOT/'results/bootstrap_2000.csv');c"
+23:12:46 complete 35 "b=pd.read_csv(ROOT/'results/bootstrap_2000.csv');c"
+23:12:46 start 36 "pert=pd.read_csv(ROOT/'results/exposure_1000.csv')"
+23:12:46 complete 36 "pert=pd.read_csv(ROOT/'results/exposure_1000.csv')"
+23:12:46 start 37 "print('Ablation scorecard:')\ndisplay(sc[sc.model.i"
+23:12:46 complete 37 "print('Ablation scorecard:')\ndisplay(sc[sc.model.i"
+23:12:46 start 38 '## 11. Regime Sensitivity\n\nChange forecast horizon'
+23:12:46 start 39 "rob=pd.read_csv(ROOT/'results/robustness.csv')\ndis"
+23:12:46 complete 39 "rob=pd.read_csv(ROOT/'results/robustness.csv')\ndis"
+23:12:46 start 40 'fig,ax=plt.subplots(figsize=(9,4));ax.barh(rob.tes'
+23:12:46 complete 40 'fig,ax=plt.subplots(figsize=(9,4));ax.barh(rob.tes'
+23:12:46 start 41 "loo=pd.read_csv(ROOT/'results/leave_one_year_out.c"
+23:12:46 complete 41 "loo=pd.read_csv(ROOT/'results/leave_one_year_out.c"
+23:12:46 start 42 '## 12. Bias Audit & Verdict\n\n**PIT:** all three se'
+23:12:46 start 43 "verdict={'H1_incremental_rmse_positive':bool(delta"
+23:12:46 complete 43 "verdict={'H1_incremental_rmse_positive':bool(delta"
+23:12:46 start 44 '## 13. Reproduction\n\nFrom a clean checkout install'
+23:12:46 start 45 'import subprocess\np_test=subprocess.run([sys.execu'
+23:12:46 complete 45 'import subprocess\np_test=subprocess.run([sys.execu'
+23:12:50 start 46 "print('Published results:')\nfor name in ['metrics."
+23:12:50 complete 46 "print('Published results:')\nfor name in ['metrics."
+23:12:50 start 47 '## 14. Next-Stage Protocol\n\nAcquire actual ALFRED '
+23:12:50 start 48 "next_steps=pd.DataFrame({'priority':[1,2,3,4],'dat"
+23:12:50 complete 48 "next_steps=pd.DataFrame({'priority':[1,2,3,4],'dat"
+23:12:50 start 49 '## 15. Sources & Artifacts\n\nPrimary source: [Feder'
+23:12:50 start 50 "summary={'observations':len(raw),'oos_origins':len"
+23:12:50 complete 50 "summary={'observations':len(raw),'oos_origins':len"
+23:12:50 SAVED

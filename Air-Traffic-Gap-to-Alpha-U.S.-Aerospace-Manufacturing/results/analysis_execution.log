@@ -1,0 +1,3 @@
+2026-10-26 local execution: imported run_analysis and invoked run() with heavy=True; completed in 26.758852005004883 seconds (observed local run).
+Result: 77 OOS origins, macro-minus-full RMSE -2.923423 pp; placebo 1000, bootstrap 2000, exposure 1000 draws.
+This log reports the observed run and saved metrics; not an original-release point-in-time validation.

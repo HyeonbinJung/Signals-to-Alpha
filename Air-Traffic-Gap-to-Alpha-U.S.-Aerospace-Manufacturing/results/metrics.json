@@ -1,0 +1,46 @@
+{
+  "status": "REPRODUCED MACRO PILOT / NOT PIT",
+  "raw_sha256": "5b03cac3a7368d1121a83c66e751d39bfcdbfd5c146ea6ed1b43f3f6ebb6c114",
+  "n_raw_months": 201,
+  "n_air_months": 150,
+  "n_formation": 131,
+  "n_oos": 77,
+  "oos_first": "2019-11-01",
+  "oos_last": "2026-03-01",
+  "train_min": 48,
+  "train_max": 124,
+  "horizon_months": 6,
+  "target_release_buffer_months": 1,
+  "signal_lag_months": 4,
+  "ip_lag_months": 2,
+  "rmse": {
+    "mean": 13.81025728309689,
+    "persistence": 17.539142888778116,
+    "macro": 16.966869985660004,
+    "full": 19.89029316369045,
+    "air_only": 25.4209754574443,
+    "no_mfg": 20.373943756642486
+  },
+  "mae": {
+    "mean": 11.800101148135395,
+    "persistence": 12.806551937757039,
+    "macro": 13.004904005379291,
+    "full": 16.489230319392306,
+    "air_only": 18.844070087019258,
+    "no_mfg": 16.538375990112847
+  },
+  "delta_macro_full_rmse_pp": -2.923423178030447,
+  "block_placebo_draws": 1000,
+  "block_placebo_tail_fraction": 0.932,
+  "bootstrap_draws": 2000,
+  "bootstrap_delta_macro_full_ci95": [
+    -6.510845519843996,
+    -0.36897741967346726
+  ],
+  "exposure_draws": 1000,
+  "exposure_positive_fraction": 0.0,
+  "company_fundamentals_tested": false,
+  "total_returns_tested": false,
+  "historical_pit_vintages_verified": false,
+  "exploratory_tests_not_exact_pvalues": true
+}

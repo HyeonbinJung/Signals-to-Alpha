@@ -1,0 +1,4 @@
+Clean copy /mnt/data/aerospace_clean_repro: imported run_analysis and invoked run() with heavy=True; completed in 30.12 seconds, n_oos=77.
+Notebook execute_nb.py: SAVED, all 32 code cells executed with 9 image outputs and zero error outputs.
+pytest: 12 passed in 0.55s.
+SHA-256 equality: metrics.json, scorecard.csv, walk_forward_oos.csv, block_placebo_1000.csv, bootstrap_2000.csv, exposure_1000.csv — all matched original.
