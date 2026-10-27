@@ -1,0 +1,19 @@
+{
+  "clean_analysis": true,
+  "result_sha256_matches": {
+    "baseline_scorecard.csv": true,
+    "block_shuffle_placebo.csv": true,
+    "bootstrap_year_blocks.csv": true,
+    "exposure_perturbations.csv": true,
+    "fundamental_rank_diagnostics.csv": true,
+    "fundamental_rank_yearblock_uncertainty.csv": true,
+    "leave_one_company_out.csv": true,
+    "oos_predictions.csv": true,
+    "robustness_scenarios.csv": true,
+    "summary.json": true
+  },
+  "result_files_matched": 10,
+  "clean_notebook_executed": true,
+  "clean_unit_tests_passed": true,
+  "clean_svg_figures": 10
+}

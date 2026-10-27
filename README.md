@@ -48,6 +48,8 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Printing-Demand Gap — U.S. Paper Manufacturing](Printing-Demand-Gap-to-Alpha-U.S.-Paper-Manufacturing/) | Two-month-stale printing vs manufacturing gap → 3m-ahead paper output YoY | Positive retrospective OOS; pre-2020 and 12m horizon fail, not PIT | [Open](Printing-Demand-Gap-to-Alpha-U.S.-Paper-Manufacturing/research.ipynb) |
 
+| [Market Valuation → Capex — Historical U.S. Industrial Firms](Market-Valuation-to-Capex-U.S.-Industrial-Firms/) | Lagged market-value/capital proxy → firm-level gross investment, 1935–1954 | Positive control-model OOS gain but loses to persistence; non-PIT historical panel, no equity returns | [Open](Market-Valuation-to-Capex-U.S.-Industrial-Firms/research.ipynb) |
+
 ## Research Summaries
 
 ### [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/)
@@ -148,3 +150,7 @@ Automated deep-research batches are managed separately from GitHub Actions. The 
 ### [Fuel-Cost Relief — U.S. Airline Transportation](Fuel-Cost-Relief-to-Airline-Demand-U.S.-Air-Transportation/)
 
 WTI crude-oil cost relief was tested against three-month-ahead U.S. airline passenger-mile growth using **93** release-purged expanding-window origins on inherited 2014–2026 BTS/BLS/EIA snapshots. The oil-augmented model worsened RMSE to **107.776 log-pp** from **107.082** for airline/lodging/foodservice controls and **94.303** for the historical mean. A 1,000-refit year-block shuffle gave an exploratory tail fraction **0.615**, while a 2,000-draw paired block-bootstrap interval **[−2.032, 2.304] log-pp** included zero and none of 1,000 oil-horizon-weight perturbations improved the controls. **Verdict:** negative retrospective U.S. airline macro-factor pilot; historical publication vintages, issuer-level fundamentals and total returns remain unverified, so no PIT or investable equity-alpha claim.
+
+### [Market Valuation → Capex — Historical U.S. Industrial Firms](Market-Valuation-to-Capex-U.S.-Industrial-Firms/)
+
+Using 220 historical Grunfeld firm-years across 11 selected American industrial firms, 110 purged expanding-window predictions for 1945–1954 test whether a lagged market-value-to-capital proxy forecasts real gross investment. The augmented model reduces log-investment RMSE from **0.2929** to **0.2616** versus capital/momentum controls, but fails to beat simple investment persistence at **0.2544**. A 1,000-refit within-firm block shuffle gives an exploratory upper-tail fraction **0.0030**, and the 2,000-draw paired year-block bootstrap improvement interval is **[0.0112, 0.0488]**, while a documented US Steel 1946 source-version discrepancy and the selected postwar panel limit external validity. **Verdict:** a retrospective firm-fundamentals lead candidate only, with unreconstructed historical publication vintages, no representative industrial universe and no investable equity-return evidence.

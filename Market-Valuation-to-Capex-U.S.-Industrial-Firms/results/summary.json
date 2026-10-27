@@ -1,0 +1,28 @@
+{
+  "dataset": "statsmodels.datasets.grunfeld",
+  "data_observations": 220,
+  "n_firms": 11,
+  "years": [
+    1935,
+    1954
+  ],
+  "oos_years": [
+    1945,
+    1954
+  ],
+  "oos_firm_years": 110,
+  "minimum_train_rows": 77,
+  "max_train_target_year_leq_test_minus_2": true,
+  "control_minus_full_rmse": 0.03128141485740216,
+  "bootstrap_ci_95": [
+    0.01123434062484968,
+    0.04884568957424562
+  ],
+  "placebo_exploratory_upper_tail_fraction": 0.002997002997002997,
+  "perturbation_positive_fraction": 1.0,
+  "fundamental_residual_rank_ic_mean": 0.5181818181818183,
+  "fundamental_residual_top_bottom_spread_mean": 0.34440373822161124,
+  "no_pit": true,
+  "no_equity_returns": true,
+  "full_repetitions": true
+}
