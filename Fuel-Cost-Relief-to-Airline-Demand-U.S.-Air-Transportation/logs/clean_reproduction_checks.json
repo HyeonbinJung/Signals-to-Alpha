@@ -1,0 +1,41 @@
+{
+  "result_csv_hash_matches": [
+    [
+      "oos_predictions.csv",
+      true
+    ],
+    [
+      "regime_sensitivity.csv",
+      true
+    ],
+    [
+      "scorecard.csv",
+      true
+    ],
+    [
+      "block_placebo_1000.csv",
+      true
+    ],
+    [
+      "exposure_sensitivity_1000.csv",
+      true
+    ],
+    [
+      "horizon_lag_sensitivity.csv",
+      true
+    ],
+    [
+      "ablations.csv",
+      true
+    ],
+    [
+      "block_bootstrap_2000.csv",
+      true
+    ],
+    [
+      "leave_one_year_out.csv",
+      true
+    ]
+  ],
+  "clean_analysis": true
+}

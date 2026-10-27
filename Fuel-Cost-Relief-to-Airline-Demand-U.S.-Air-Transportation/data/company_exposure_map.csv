@@ -1,0 +1,4 @@
+issuer,ticker,reference_period,as_of_disclosure,mechanism,quantitative_weight_used,link,historical_exposure_PIT
+Delta Air Lines,DAL,FY2025,2026-02-10,Fuel cost material; 2025 fuel costs 17% of operating expense per 10-K,NONE,https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/dal-20251231.htm,NO
+United Airlines,UAL,FY2025,2026-02 UNKNOWN exact day,"Aircraft fuel expense USD 11,396m vs total operating expenses USD 54,356m in 2025",NONE,https://www.sec.gov/Archives/edgar/data/100517/000010051726000023/ual-20251231.htm,NO
+Southwest Airlines,LUV,FY2024,2025-02-07,Fuel derivatives and Brent-based hedging disclosed; WTI spot proxy imperfect,NONE,https://investors.southwest.com/sec-filings/all-sec-filings/content/0000092380-25-000024/luv-20241231.htm,NO

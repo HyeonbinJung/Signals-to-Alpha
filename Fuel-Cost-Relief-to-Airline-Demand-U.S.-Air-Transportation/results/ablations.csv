@@ -1,0 +1,5 @@
+controls,n,gain_rmse
+base_all,93,-0.6935473148386677
+no_lodging,93,-1.1843379257541784
+no_food,93,0.1752402183876427
+persistence_only,93,-0.34954807778996155

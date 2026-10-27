@@ -44,6 +44,8 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Energy-Feedstock Gap — U.S. Basic Chemical Manufacturing](Energy-Feedstock-Gap-to-Alpha-U.S.-Basic-Chemicals/) | Lagged WTI–Henry Hub YoY inflation gap → 6m-ahead basic chemicals output | Negative OOS vs macro controls and mean; fixed revised snapshots, not PIT | [Open](Energy-Feedstock-Gap-to-Alpha-U.S.-Basic-Chemicals/research.ipynb) |
 
+| [Fuel-Cost Relief — U.S. Airline Transportation](Fuel-Cost-Relief-to-Airline-Demand-U.S.-Air-Transportation/) | Lagged WTI cost relief → 3m-ahead U.S. airline passenger-mile YoY | Negative incremental OOS vs macro controls and historical mean; not PIT | [Open](Fuel-Cost-Relief-to-Airline-Demand-U.S.-Air-Transportation/research.ipynb) |
+
 ## Research Summaries
 
 ### [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/)
@@ -136,3 +138,7 @@ Automated deep-research batches are managed separately from GitHub Actions. The 
 ---
 
 <sub>Maintained by [Hyeonbin Jung](https://github.com/HyeonbinJung). Source credibility, research reproducibility and falsifiable claims come before backtest headline numbers.</sub>
+
+### [Fuel-Cost Relief — U.S. Airline Transportation](Fuel-Cost-Relief-to-Airline-Demand-U.S.-Air-Transportation/)
+
+WTI crude-oil cost relief was tested against three-month-ahead U.S. airline passenger-mile growth using **93** release-purged expanding-window origins on inherited 2014–2026 BTS/BLS/EIA snapshots. The oil-augmented model worsened RMSE to **107.776 log-pp** from **107.082** for airline/lodging/foodservice controls and **94.303** for the historical mean. A 1,000-refit year-block shuffle gave an exploratory tail fraction **0.615**, while a 2,000-draw paired block-bootstrap interval **[−2.032, 2.304] log-pp** included zero and none of 1,000 oil-horizon-weight perturbations improved the controls. **Verdict:** negative retrospective U.S. airline macro-factor pilot; historical publication vintages, issuer-level fundamentals and total returns remain unverified, so no PIT or investable equity-alpha claim.

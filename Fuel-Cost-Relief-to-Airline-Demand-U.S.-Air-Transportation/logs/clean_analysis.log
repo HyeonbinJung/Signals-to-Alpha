@@ -1,0 +1,35 @@
+OOS 93 train min 36 last formation 2026-03-01 00:00:00
+          model  n       rmse       mae      bias
+historical_mean 93  94.303039 45.954930 -3.256421
+air_persistence 93 111.132551 53.811462  0.226664
+  macro_control 93 107.082185 53.196914 -0.767105
+  oil_augmented 93 107.775732 53.544144 -0.598191
+       oil_only 93  93.117478 44.703567 -1.531291
+RMSE gain -0.6935473148386677
+block placebo exploratory tail fraction 0.615
+paired block bootstrap CI [-2.032028542228564, 2.3038919360785894]
+exposure improvement fraction 0.0
+regimes
+            regime  n  gain_rmse
+              all 93  -0.693547
+exclude_2020_2021 69   2.289389
+         pre_2020 15  -0.098180
+        2022_plus 54   2.589152
+        2024_plus 30  -0.929246
+horizons
+  horizon_months  feature_lag_months  n  gain_rmse
+              1                   2 97   0.967771
+              1                   3 95  -0.621089
+              1                   4 93  -0.693547
+              3                   2 93  -0.693547
+              3                   3 91   1.037105
+              3                   4 89   1.531451
+              6                   2 87   0.096015
+              6                   3 85  -6.422912
+              6                   4 83 -10.758256
+ablations
+         controls  n  gain_rmse
+        base_all 93  -0.693547
+      no_lodging 93  -1.184338
+         no_food 93   0.175240
+persistence_only 93  -0.349548
