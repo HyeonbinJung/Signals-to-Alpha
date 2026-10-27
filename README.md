@@ -54,6 +54,8 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Relative Copper–Aluminum Cost Relief — Historical World Copper Demand](Relative-Copper-Aluminum-Cost-Relief-Global-Copper-Demand/) | Lagged copper vs aluminum relative-price relief → next-year global copper consumption growth | Tiny retrospective OOS gain, unstable, not PIT or equity alpha | [Open](Relative-Copper-Aluminum-Cost-Relief-Global-Copper-Demand/research.ipynb) |
 
+| [Manufacturing Catch-up Gap — U.S. Motor Vehicles & Parts](Manufacturing-Catchup-Gap-to-Auto-Production-U.S.-Motor-Vehicles/) | Two-month-stale manufacturing vs auto momentum → 3m-ahead auto output YoY | Negative incremental OOS; not PIT / equity alpha | [Open](Manufacturing-Catchup-Gap-to-Auto-Production-U.S.-Motor-Vehicles/research.ipynb) |
+
 ## Research Summaries
 
 ### [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/)
@@ -127,6 +129,10 @@ Using 107 frozen quarterly Census/BLS observations (2000–2026), 57 purged expa
 ### [Relative Copper–Aluminum Cost Relief — Historical World Copper Demand](Relative-Copper-Aluminum-Cost-Relief-Global-Copper-Demand/)
 
 Using the 25-year 1951–1975 statsmodels/Gill world-copper panel, 10 purged expanding-window annual origins tested whether stale relative copper/aluminum price growth predicts next-year copper consumption. The augmented model achieved **6.290 log-pp** OOS RMSE versus **6.297** for demand/income/inventory controls and **7.625** for the historical mean, an economically tiny **0.0068 log-pp** control-relative improvement. A 1,000-refit exploratory three-year-block shuffle gave tail fraction **0.273**, while a 2,000-draw block-bootstrap 95% interval **[-0.0040, 0.0155] log-pp** crosses zero and 2–3-year horizons fail. **Verdict:** a negative/indeterminate retrospective industrial-metal demand pilot, not historical PIT or investable equity alpha; original release vintages, firm fundamentals and total returns are absent.
+
+### [Manufacturing Catch-up Gap — U.S. Motor Vehicles & Parts](Manufacturing-Catchup-Gap-to-Auto-Production-U.S.-Motor-Vehicles/)
+
+The two-month-stale nonlinear manufacturing–auto momentum gap was tested against three-month-ahead U.S. motor-vehicle-and-parts production growth using 120 purged expanding-window OOS forecasts from the revised 2026-10-16 G.17 snapshot. Adding the factor worsened RMSE from 28.532 to 29.526 log-pp, and the historical-mean baseline achieved 24.621 log-pp. A 1,000-refit 12-month block-reorder placebo yielded an exploratory tail fraction 0.987, while the 2,000-draw paired block-bootstrap interval [-1.868, -0.014] log-pp and pandemic-exclusion checks did not rescue the signal. **Verdict:** a reproducible negative retrospective macro-production pilot, with manually transcribed and incompletely audited rows, no historical PIT vintages, no company fundamentals and no tested equity total-return alpha.
 
 ## Common Research Format
 

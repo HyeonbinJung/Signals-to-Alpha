@@ -1,0 +1,6 @@
+entity,scope,industry_role,source_url,source_as_of,estimated_numeric_exposure,used_in_model,limitation
+NAICS 3361,Motor vehicle manufacturing,Assembly and vehicles,https://www.census.gov/naics/,2022,UNKNOWN,NO,NAICS classification only
+NAICS 3362,Motor vehicle body and trailer manufacturing,Vehicle bodies and trailers,https://www.census.gov/naics/,2022,UNKNOWN,NO,NAICS classification only
+NAICS 3363,Motor vehicle parts manufacturing,Vehicle parts,https://www.census.gov/naics/,2022,UNKNOWN,NO,NAICS classification only
+General Motors,Listed company,Vehicle OEM and manufacturing,https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm,2025-12-31,UNKNOWN,NO,Global sales and financials not mapped to U.S. IP
+Ford Motor,Listed company,Vehicle OEM and manufacturing,https://www.sec.gov/Archives/edgar/data/37996/000003799626000015/f-20251231.htm,2025-12-31,UNKNOWN,NO,Global sales and financials not mapped to U.S. IP

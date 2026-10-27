@@ -1,0 +1,224 @@
+{
+  "all_match": false,
+  "files": [
+    {
+      "path": "results/ablations.csv",
+      "original_sha256": "42d4fdc9a0b7c4d8ffabf98bde8c89d2e0759c99162f4f9131100d40f93aea86",
+      "clean_sha256": "42d4fdc9a0b7c4d8ffabf98bde8c89d2e0759c99162f4f9131100d40f93aea86",
+      "match": true
+    },
+    {
+      "path": "results/block_placebo_draws.csv",
+      "original_sha256": "94dc47d7d14b96d7680fabf66f38ba034044aaa1764d4ac13d17eb8def0a7474",
+      "clean_sha256": "94dc47d7d14b96d7680fabf66f38ba034044aaa1764d4ac13d17eb8def0a7474",
+      "match": true
+    },
+    {
+      "path": "results/bootstrap_draws.csv",
+      "original_sha256": "3ea9937b9ac28b4c7a9e9287ebbe9ffb1a1e43b51fcfeb4ee3a9f200bb30ab9f",
+      "clean_sha256": "3ea9937b9ac28b4c7a9e9287ebbe9ffb1a1e43b51fcfeb4ee3a9f200bb30ab9f",
+      "match": true
+    },
+    {
+      "path": "results/exposure_perturbation.csv",
+      "original_sha256": "5de10787dc5a93ff861822791fb8bff1935661a8b33225530e055ae32955c873",
+      "clean_sha256": "5de10787dc5a93ff861822791fb8bff1935661a8b33225530e055ae32955c873",
+      "match": true
+    },
+    {
+      "path": "results/horizon_lag_sensitivity.csv",
+      "original_sha256": "abfecc8fc797578d3ee1778bbc72baa16ecdc261b3c3f9975df3ab6b5615539c",
+      "clean_sha256": "abfecc8fc797578d3ee1778bbc72baa16ecdc261b3c3f9975df3ab6b5615539c",
+      "match": true
+    },
+    {
+      "path": "results/leave_one_year_out.csv",
+      "original_sha256": "e215594f761ac5fb43a83832ba6207a5935f2b1c4de610b69b6e8fbaf0d903cb",
+      "clean_sha256": "e215594f761ac5fb43a83832ba6207a5935f2b1c4de610b69b6e8fbaf0d903cb",
+      "match": true
+    },
+    {
+      "path": "results/oos_predictions.csv",
+      "original_sha256": "8dca5a8be7cac72c5de28c0b930ad7807844b1c019053cacf8687d5a23746f7a",
+      "clean_sha256": "8dca5a8be7cac72c5de28c0b930ad7807844b1c019053cacf8687d5a23746f7a",
+      "match": true
+    },
+    {
+      "path": "results/oos_scorecard.csv",
+      "original_sha256": "ca9d7f64c29ef62b8e6c535275337d2c9fea0abf09e9290855e5b5d29fedeb9f",
+      "clean_sha256": "ca9d7f64c29ef62b8e6c535275337d2c9fea0abf09e9290855e5b5d29fedeb9f",
+      "match": true
+    },
+    {
+      "path": "results/regime_scores.csv",
+      "original_sha256": "3ba0ebee5d8a0526dedb00e0a9217e78e85434b99d38f6aa4d55b9519c0747ea",
+      "clean_sha256": "3ba0ebee5d8a0526dedb00e0a9217e78e85434b99d38f6aa4d55b9519c0747ea",
+      "match": true
+    },
+    {
+      "path": "results/summary.json",
+      "original_sha256": "f650fd0c6f8ee7df8f8487e22ff47bbee2647c0631bb42b3f51f0a4a0c7a0806",
+      "clean_sha256": "f650fd0c6f8ee7df8f8487e22ff47bbee2647c0631bb42b3f51f0a4a0c7a0806",
+      "match": true
+    },
+    {
+      "path": "figures/01_industry_levels.svg",
+      "original_sha256": "42386cffe515272fec9f1a816a8fbbdbe9d670a445a618de3107dfb90101d2c5",
+      "clean_sha256": "206adfcbaef8aafc6f3ce95fe27ac4bb6ff1cb0b79faf3544e88fce2450e7a4b",
+      "match": false
+    },
+    {
+      "path": "figures/02_growth_divergence.svg",
+      "original_sha256": "18e808873cf3efd692b3931b495c4403e2bb02df4477d2f5d60abef605a11b9e",
+      "clean_sha256": "668c85746149c464bb710de5f8902e1d836a1638a5530af06c6a13bcf67e1e72",
+      "match": false
+    },
+    {
+      "path": "figures/03_factor.svg",
+      "original_sha256": "c976a5d85cf527d910595efecd3646596e4ba045db2c6f111e105b31357e6a82",
+      "clean_sha256": "3febdb152171b3540a521b50f174881e1cc00f1a75e42d0963eebb9c87458935",
+      "match": false
+    },
+    {
+      "path": "figures/04_oos_predictions.svg",
+      "original_sha256": "94594fe2d884f3f3c91f1fafd9b75d7393c79944d0de3d0e8a921dc23b792437",
+      "clean_sha256": "fe20729b3a76e4d18c56ad83d57a254baed5cd7ba0345f073ec4cc2d690ab36b",
+      "match": false
+    },
+    {
+      "path": "figures/05_scorecard.svg",
+      "original_sha256": "14d10e8d584d2a1756708f10d3b87fd446426aaa6448754b92990529da7130e6",
+      "clean_sha256": "154b372fae6f30d3a5f922711561e8e4433b2db954505970b508ceecc5447c63",
+      "match": false
+    },
+    {
+      "path": "figures/06_paired_loss.svg",
+      "original_sha256": "16560879b5f322859f90e07eb60bca5470620f0f16e82725859a92a68203ae8f",
+      "clean_sha256": "f06b258b6f6c3734c2414938f227438c887543cd3f4a0ad3eef1199ef40fd838",
+      "match": false
+    },
+    {
+      "path": "figures/07_bootstrap.svg",
+      "original_sha256": "a16bafab8799cd1d7a0c0f5ba31adaa3154625f44a3f7ce3f35816740a96b6bf",
+      "clean_sha256": "60dbb64e19c9e538887159b51cf150fc5f478adb3a1b51cd595b8de916178a33",
+      "match": false
+    },
+    {
+      "path": "figures/08_placebo.svg",
+      "original_sha256": "dc9fb0be7d8a3d81ac36427cbeca26eda2a04f173ecb006d1896c03ea63e1ea7",
+      "clean_sha256": "c5cb4e101e0afbe1873d7855671f702a25bdf2024791f8ecbd65ec9d57ac08fe",
+      "match": false
+    },
+    {
+      "path": "figures/09_exposure_sensitivity.svg",
+      "original_sha256": "12fbe95598a8a2298552a9e9f5882ae54fa45d0d4560f39351c6746d737b05db",
+      "clean_sha256": "246124d9f5b75960297f52d3391375c98a242be395b7552c9fae4d54f673b844",
+      "match": false
+    },
+    {
+      "path": "figures/10_regime.svg",
+      "original_sha256": "7ef21a5da534164f51d0bb547545b030a49a2a9047eca0636519c019a883c0c1",
+      "clean_sha256": "9e54be6bfce7bc60f9805d201ce499d7ed6c17fe08c5b396dcd43ac415dc2778",
+      "match": false
+    },
+    {
+      "path": "figures/11_loyo.svg",
+      "original_sha256": "d9ea52a9683a1bad67794a2e100279879aabed27aec151b6a2ef90e909010b3f",
+      "clean_sha256": "12ef9fb08cdb1a6bcdf2a2d2bf6a0942db0a1bb000fa7ef4a93bc3d0216f55d9",
+      "match": false
+    },
+    {
+      "path": "data/derived_formation_panel.csv",
+      "original_sha256": "0d32c6afc6a3a4a648ccc09fb4590d6a49b7597c37be1edba5e4c54e4f43bfa0",
+      "clean_sha256": "0d32c6afc6a3a4a648ccc09fb4590d6a49b7597c37be1edba5e4c54e4f43bfa0",
+      "match": true
+    },
+    {
+      "path": "data/exposure_map.csv",
+      "original_sha256": "a24a6588586d932d6e6304710420be63842a7b2d9af7d118ddc1b879bec01988",
+      "clean_sha256": "a24a6588586d932d6e6304710420be63842a7b2d9af7d118ddc1b879bec01988",
+      "match": true
+    },
+    {
+      "path": "data/frozen_auto_manufacturing_2026-10-27.csv",
+      "original_sha256": "ab41182b7ddc969e9321e22a5d7c579520f55f907ef4024901cb0cb0b5eabfe4",
+      "clean_sha256": "ab41182b7ddc969e9321e22a5d7c579520f55f907ef4024901cb0cb0b5eabfe4",
+      "match": true
+    },
+    {
+      "path": "data/raw_fred_ipg3361t3s_manual_2026-10-27.csv",
+      "original_sha256": "300acbbd3c390d3345b3aa98021ee9d0561be669be283256242c33fc98ef3ca5",
+      "clean_sha256": "300acbbd3c390d3345b3aa98021ee9d0561be669be283256242c33fc98ef3ca5",
+      "match": true
+    },
+    {
+      "path": "data/raw_manufacturing_prior_study_2026-10-26.csv",
+      "original_sha256": "e64e369fc8449cf89dc0095749782bf2dfe2436157b42aa65d11d06a419f61d1",
+      "clean_sha256": "e64e369fc8449cf89dc0095749782bf2dfe2436157b42aa65d11d06a419f61d1",
+      "match": true
+    },
+    {
+      "path": "data/source_register.csv",
+      "original_sha256": "b1d4393ee5f951f93ff7261f75a03178c2e3ca6ad08eb2ab579a76376db112fa",
+      "clean_sha256": "b1d4393ee5f951f93ff7261f75a03178c2e3ca6ad08eb2ab579a76376db112fa",
+      "match": true
+    },
+    {
+      "path": "data/spot_checks.csv",
+      "original_sha256": "322b264ddb86c3cb6165c6eb6e8c91d020c932c1581024d0149a32ee80ad2ccb",
+      "clean_sha256": "322b264ddb86c3cb6165c6eb6e8c91d020c932c1581024d0149a32ee80ad2ccb",
+      "match": true
+    }
+  ],
+  "clean_exit_code": 0,
+  "figure_pixel_checks": [
+    {
+      "figure": "01_industry_levels.svg",
+      "raster_sha_match": true
+    },
+    {
+      "figure": "02_growth_divergence.svg",
+      "raster_sha_match": true
+    },
+    {
+      "figure": "03_factor.svg",
+      "raster_sha_match": true
+    },
+    {
+      "figure": "04_oos_predictions.svg",
+      "raster_sha_match": true
+    },
+    {
+      "figure": "05_scorecard.svg",
+      "raster_sha_match": true
+    },
+    {
+      "figure": "06_paired_loss.svg",
+      "raster_sha_match": true
+    },
+    {
+      "figure": "07_bootstrap.svg",
+      "raster_sha_match": true
+    },
+    {
+      "figure": "08_placebo.svg",
+      "raster_sha_match": true
+    },
+    {
+      "figure": "09_exposure_sensitivity.svg",
+      "raster_sha_match": true
+    },
+    {
+      "figure": "10_regime.svg",
+      "raster_sha_match": true
+    },
+    {
+      "figure": "11_loyo.svg",
+      "raster_sha_match": true
+    }
+  ],
+  "numerical_and_raw_csv_exact_match": true,
+  "figures_pixel_match": true,
+  "all_reproduced_outputs_semantically_match": true,
+  "svg_raw_hash_mismatch_reason": "Matplotlib embeds generation timestamps and randomized SVG path identifiers; rendered PNG pixel SHA-256 matches for each of 11 figures."
+}

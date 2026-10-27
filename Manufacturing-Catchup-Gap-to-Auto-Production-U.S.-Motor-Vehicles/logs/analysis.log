@@ -1,0 +1,30 @@
+        model   n      rmse       mae   rank_ic
+         mean 120 24.621410 10.333164 -0.191937
+  persistence 120 27.805715 11.836294 -0.144267
+macro_control 120 28.532369 13.022868 -0.061476
+  factor_only 120 24.778186 10.591203 -0.297687
+    augmented 120 29.526262 13.345777 -0.087805
+{
+  "raw_months": 201,
+  "formation_rows": 184,
+  "oos_origins": 120,
+  "first_origin": "2016-07-01",
+  "last_origin": "2026-06-01",
+  "rmse_improvement": -0.9938931412040333,
+  "bootstrap_95": [
+    -1.8680595038104508,
+    -0.013576641119763158
+  ],
+  "placebo_tail_fraction": 0.987012987012987,
+  "placebo_draws": 1000,
+  "bootstrap_draws": 2000,
+  "sensitivity_draws": 1000,
+  "sensitivity_positive_fraction": 0.0,
+  "point_in_time": false,
+  "equity_alpha_established": false
+}
+             regime  n  improvement  rmse_control  rmse_full
+           pre_2020 42    -0.022832      7.123130   7.145962
+ pandemic_2020_2021 24    -2.244399     62.130768  64.375167
+          post_2022 54    -0.120613      7.347103   7.467716
+excluding_2020_2021 96    -0.078721      7.249966   7.328687
