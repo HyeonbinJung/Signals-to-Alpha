@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "warehouse-capacity-to-us-online-retail-share-2026-10-27",
+  "industry": "U.S. retail trade (NAICS 44-45), national e-commerce share",
+  "signal": "One-quarter-stale warehouse employment YoY minus total nonfarm payroll YoY",
+  "outcome": "Two-quarter-ahead change in seasonally adjusted U.S. retail e-commerce share, percentage points",
+  "research_status": "REPRODUCED MACRO PILOT — fixed revised snapshot, NOT PIT",
+  "equity_alpha_established": false,
+  "notebook": "research.ipynb",
+  "analysis_entrypoint": "run_analysis.py",
+  "requirements": "requirements.txt",
+  "source_register": "data/source_register.csv",
+  "notes_file": "README.md",
+  "data_files": ["data/fred_quarterly_snapshot_2026-10-26.csv", "data/derived_formation_panel.csv", "data/exposure_map.csv"],
+  "result_files": ["results/oos_predictions.csv", "results/model_scorecard.csv", "results/regime_scores.csv", "results/leave_one_year_out.csv", "results/exposure_perturbations.csv", "results/alternative_horizons.csv", "results/alternative_lags.csv", "results/ablations.csv", "results/block_permutation.csv", "results/block_bootstrap.csv", "results/summary.json", "figures/01_retail_share.svg", "figures/02_capacity_factor.svg", "figures/03_scatter.svg", "figures/04_oos_predictions.svg", "figures/05_scorecard.svg", "figures/06_block_placebo.svg", "figures/07_bootstrap.svg", "figures/08_exposure.svg", "figures/09_regimes.svg", "figures/10_leave_one_year_out.svg"],
+  "test_commands": ["OPENBLAS_NUM_THREADS=1 python run_analysis.py", "PYTHONPATH=. OPENBLAS_NUM_THREADS=1 python -m pytest -q tests", "OPENBLAS_NUM_THREADS=1 jupyter nbconvert --to notebook --execute research.ipynb --output reproduced.ipynb", "python scripts/validate_studies.py (from repository root)"]
+}

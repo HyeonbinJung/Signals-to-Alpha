@@ -1,0 +1,4 @@
+segment,NAICS,link_to_signal,base_weight,scenario_weight_range,company_examples,exact_historical_company_share,asof_evidence,limitations
+Warehousing and storage,493,fulfillment capacity and inventory handling,1.0,0.5-1.0,retailers and third-party logistics providers,UNKNOWN,2026-10-26 CES snapshot,Employment may be response to prior retail demand rather than leading capacity
+Couriers and messengers,492,parcel delivery capacity,0.0,0.0-0.5,delivery networks,UNKNOWN,2026-10-26 CES snapshot,Parcel traffic can reflect returns and B2B shipments
+Retail trade,44-45,e-commerce share of total retail sales,not a factor weight,not applicable,online and omnichannel retailers,UNKNOWN,2026-08-18 Census release,Aggregate target not individual-company sales; company allocations unverified

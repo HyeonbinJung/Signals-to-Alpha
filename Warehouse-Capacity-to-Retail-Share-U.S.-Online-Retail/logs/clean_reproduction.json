@@ -1,0 +1,24 @@
+{
+  "result_file_count": 11,
+  "sha256_matching_count": 11,
+  "matching_files": [
+    "results/ablations.csv",
+    "results/alternative_horizons.csv",
+    "results/alternative_lags.csv",
+    "results/block_bootstrap.csv",
+    "results/block_permutation.csv",
+    "results/exposure_perturbations.csv",
+    "results/leave_one_year_out.csv",
+    "results/model_scorecard.csv",
+    "results/oos_predictions.csv",
+    "results/regime_scores.csv",
+    "results/summary.json"
+  ],
+  "notebook_cells": 45,
+  "code_cells": 29,
+  "executed_code_cells": 29,
+  "error_outputs": 0,
+  "figure_count": 10,
+  "unit_test_log": "...........                                                              [100%]\n11 passed in 0.75s\n",
+  "nbconvert_exit": "0"
+}

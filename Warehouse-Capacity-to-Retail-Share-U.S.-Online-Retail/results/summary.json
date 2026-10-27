@@ -1,0 +1,24 @@
+{
+  "research_status": "REPRODUCED MACRO PILOT; HISTORICAL VINTAGES UNAVAILABLE; NOT EQUITY ALPHA",
+  "raw_rows": 107,
+  "formation_rows": 99,
+  "oos_rows": 57,
+  "oos_first": "2011-10-01",
+  "oos_last": "2025-10-01",
+  "observed_delta_rmse_pp": 0.04300867732655411,
+  "rank_ic_fullsample_descriptive_not_oos": 0.11139431544940795,
+  "permutation_draws": 1000,
+  "permutation_exploratory_tail_fraction": 0.059940059940059943,
+  "bootstrap_draws": 2000,
+  "bootstrap_95pct_delta_rmse_pp": [
+    -0.04227434872700144,
+    0.10799229213237661
+  ],
+  "exposure_draws": 1000,
+  "exposure_positive_fraction": 1.0,
+  "source_snapshot_sha256": "17b99d105505b7c4ef7741012cf65d916bac0b907403474f18cffedcc4a99b2d",
+  "PIT_verified": false,
+  "firm_fundamentals_tested": false,
+  "equity_returns_tested": false,
+  "selection_note": "Retail outcome was selected as a new industry; no trading claim or causal inference."
+}

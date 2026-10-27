@@ -50,6 +50,8 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Market Valuation → Capex — Historical U.S. Industrial Firms](Market-Valuation-to-Capex-U.S.-Industrial-Firms/) | Lagged market-value/capital proxy → firm-level gross investment, 1935–1954 | Positive control-model OOS gain but loses to persistence; non-PIT historical panel, no equity returns | [Open](Market-Valuation-to-Capex-U.S.-Industrial-Firms/research.ipynb) |
 
+| [Warehouse Capacity → Online Retail Share — U.S. Retail Trade](Warehouse-Capacity-to-Retail-Share-U.S.-Online-Retail/) | Lagged warehousing hiring premium → 2Q-ahead U.S. e-commerce retail-share change | Small control-relative OOS gain but fails mean, pandemic-sensitive, not PIT | [Open](Warehouse-Capacity-to-Retail-Share-U.S.-Online-Retail/research.ipynb) |
+
 ## Research Summaries
 
 ### [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/)
@@ -115,6 +117,10 @@ Using 201 fixed/revised G.17/EIA monthly observations and 111 purged expanding-w
 ### [Printing-Demand Gap — U.S. Paper Manufacturing](Printing-Demand-Gap-to-Alpha-U.S.-Paper-Manufacturing/)
 
 Using 201 inherited revised G.17 monthly observations and 120 purged expanding-window origins, the two-month-stale printing-minus-manufacturing gap reduced three-month-ahead paper-production RMSE to **4.175 log-pp** from **4.448** for macro controls, **4.291** for persistence and **4.559** for the historical mean. A 1,000-refit 12-month block shuffle yielded an exploratory upper-tail fraction **0.01499**, while the 2,000-draw paired block-bootstrap improvement interval was **[0.033, 0.570] log-pp** and all 1,000 proxy-weight perturbations retained a positive gain. However, the pre-2020 gain was negative (**−0.107 log-pp**), 12-month-horizon gains reversed sign, and the unconditional quintile growth spread was negative; only 10 of 603 inherited source values were independently spot-checked. **Verdict:** conditional retrospective macro lead-factor candidate, **not PIT**, with no issuer fundamentals, securities returns or investable equity-alpha claim.
+
+### [Warehouse Capacity → Online Retail Share — U.S. Retail Trade](Warehouse-Capacity-to-Retail-Share-U.S.-Online-Retail/)
+
+Using 107 frozen quarterly Census/BLS observations (2000–2026), 57 purged expanding-window origins tested whether a one-quarter-stale warehouse hiring premium predicts the next two-quarter change in U.S. e-commerce retail share. The factor improved control-model RMSE from **1.3233 to 1.2803 pp**, but lagged the historical mean at **0.8223 pp** and worsened MAE. A 1,000-refit four-quarter block shuffle yielded exploratory tail fraction **0.05994**, while a 2,000-draw paired block-bootstrap 95% interval **[−0.0423, 0.1080] pp** crossed zero and excluding 2020–2021 reversed the improvement. **Verdict:** negative/unstable retrospective retail macro lead-factor pilot; inherited revised data, missing historical vintages and absent firm-level returns preclude PIT or investable equity-alpha claims.
 
 ## Common Research Format
 
