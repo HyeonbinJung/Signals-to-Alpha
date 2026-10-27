@@ -46,6 +46,8 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Fuel-Cost Relief — U.S. Airline Transportation](Fuel-Cost-Relief-to-Airline-Demand-U.S.-Air-Transportation/) | Lagged WTI cost relief → 3m-ahead U.S. airline passenger-mile YoY | Negative incremental OOS vs macro controls and historical mean; not PIT | [Open](Fuel-Cost-Relief-to-Airline-Demand-U.S.-Air-Transportation/research.ipynb) |
 
+| [Printing-Demand Gap — U.S. Paper Manufacturing](Printing-Demand-Gap-to-Alpha-U.S.-Paper-Manufacturing/) | Two-month-stale printing vs manufacturing gap → 3m-ahead paper output YoY | Positive retrospective OOS; pre-2020 and 12m horizon fail, not PIT | [Open](Printing-Demand-Gap-to-Alpha-U.S.-Paper-Manufacturing/research.ipynb) |
+
 ## Research Summaries
 
 ### [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/)
@@ -107,6 +109,10 @@ Using 201 revised-snapshot monthly aerospace/manufacturing observations and 150 
 ### [Energy-Feedstock Gap — U.S. Basic Chemical Manufacturing](Energy-Feedstock-Gap-to-Alpha-U.S.-Basic-Chemicals/)
 
 Using 201 fixed/revised G.17/EIA monthly observations and 111 purged expanding-window origins, the two-month-stale gas–oil inflation gap failed to improve six-month-ahead U.S. basic-chemicals production forecasts. The augmented Ridge returned **9.034 log-pp RMSE** versus **8.971** for manufacturing/oil controls and **8.271** for the historical mean. A 1,000-refit 12-month block shuffle gave an exploratory tail fraction **0.521**, and the 2,000-draw paired block-bootstrap improvement interval **[−0.373, 0.219] log pp** includes zero; all 1,000 exposure perturbations remained negative. **Verdict:** negative retrospective macro-factor falsification, with unreconstructed historical publication vintages, no issuer fundamentals and no security returns.
+
+### [Printing-Demand Gap — U.S. Paper Manufacturing](Printing-Demand-Gap-to-Alpha-U.S.-Paper-Manufacturing/)
+
+Using 201 inherited revised G.17 monthly observations and 120 purged expanding-window origins, the two-month-stale printing-minus-manufacturing gap reduced three-month-ahead paper-production RMSE to **4.175 log-pp** from **4.448** for macro controls, **4.291** for persistence and **4.559** for the historical mean. A 1,000-refit 12-month block shuffle yielded an exploratory upper-tail fraction **0.01499**, while the 2,000-draw paired block-bootstrap improvement interval was **[0.033, 0.570] log-pp** and all 1,000 proxy-weight perturbations retained a positive gain. However, the pre-2020 gain was negative (**−0.107 log-pp**), 12-month-horizon gains reversed sign, and the unconditional quintile growth spread was negative; only 10 of 603 inherited source values were independently spot-checked. **Verdict:** conditional retrospective macro lead-factor candidate, **not PIT**, with no issuer fundamentals, securities returns or investable equity-alpha claim.
 
 ## Common Research Format
 

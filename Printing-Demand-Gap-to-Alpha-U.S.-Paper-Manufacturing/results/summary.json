@@ -1,0 +1,17 @@
+{
+  "n_raw": 201,
+  "n_panel": 184,
+  "n_oos": 120,
+  "first_origin": "2016-07-01",
+  "last_origin": "2026-06-01",
+  "improvement_log_pp": 0.2724137045368522,
+  "block_bootstrap_ci_95": [
+    0.03289937003225969,
+    0.5703127698333431
+  ],
+  "block_permutation_exploratory_tail": 0.014985014985014986,
+  "perturbation_positive_share": 1.0,
+  "quintile_macro_growth_spread_log_pp": -2.044806984377623,
+  "historical_vintages_verified": false,
+  "equity_alpha_established": false
+}

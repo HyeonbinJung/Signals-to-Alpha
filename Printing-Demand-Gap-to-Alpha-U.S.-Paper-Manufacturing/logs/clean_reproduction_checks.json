@@ -1,0 +1,42 @@
+{
+  "analysis_returncode": 0,
+  "tests_returncode": 0,
+  "notebook_returncode": 0,
+  "sha256_checks": {
+    "results/scorecard.csv": {
+      "original": "d34088aca7c4779929edf3814591036ce4d8b28b4559fffb6975ccae3fe999dd",
+      "clean": "d34088aca7c4779929edf3814591036ce4d8b28b4559fffb6975ccae3fe999dd",
+      "match": true
+    },
+    "results/oos_predictions.csv": {
+      "original": "38d471c463d8c0d4080e4cbf044a9fd2b1cff21fb55492f3876bcfb95181342d",
+      "clean": "38d471c463d8c0d4080e4cbf044a9fd2b1cff21fb55492f3876bcfb95181342d",
+      "match": true
+    },
+    "results/block_bootstrap_2000.csv": {
+      "original": "e25c7dbec17da0ee84fa2de487d5872be5699d4d857cb5fd82bdd5dac5e05845",
+      "clean": "e25c7dbec17da0ee84fa2de487d5872be5699d4d857cb5fd82bdd5dac5e05845",
+      "match": true
+    },
+    "results/block_permutation_1000.csv": {
+      "original": "4478400e0fcb637b74a1d5464d3669dbe43ed9793f4ede805ae6e64d14119249",
+      "clean": "4478400e0fcb637b74a1d5464d3669dbe43ed9793f4ede805ae6e64d14119249",
+      "match": true
+    },
+    "results/exposure_perturbation_1000.csv": {
+      "original": "e50bd3fa1e25aa85609925de3370018b18c2f41dfba67dfa273009a8e997c5e9",
+      "clean": "e50bd3fa1e25aa85609925de3370018b18c2f41dfba67dfa273009a8e997c5e9",
+      "match": true
+    },
+    "results/horizon_lag_sensitivity.csv": {
+      "original": "5dba570a38611643a3b5f6775c6e92f033ae8135a0152d90da4e615e98af98c6",
+      "clean": "5dba570a38611643a3b5f6775c6e92f033ae8135a0152d90da4e615e98af98c6",
+      "match": true
+    },
+    "results/summary.json": {
+      "original": "831d5bef4a6ac22a25ca4837a9d612d3b85067c41eb6b95860692de51a3b38f3",
+      "clean": "831d5bef4a6ac22a25ca4837a9d612d3b85067c41eb6b95860692de51a3b38f3",
+      "match": true
+    }
+  }
+}

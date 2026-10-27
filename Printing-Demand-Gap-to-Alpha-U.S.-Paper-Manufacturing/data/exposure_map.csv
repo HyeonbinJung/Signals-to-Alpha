@@ -1,0 +1,5 @@
+entity,naics,role,proxy_weight,as_of,source_url,evidence,company_exposure_status,notes
+U.S. Paper Manufacturing,322,target,1.0,2026-10-16,https://fred.stlouisfed.org/series/IPG322S,Official industry output proxy,NOT_ESTABLISHED,Includes packaging tissue and other paper products not just printing paper
+U.S. Printing and Related Support,323,signal,1.0,2026-10-16,https://fred.stlouisfed.org/series/IPG323S,Official downstream activity proxy,NOT_ESTABLISHED,Not a documented share of paper producer revenue
+U.S. Manufacturing,31-33,control,1.0,2026-10-16,https://www.federalreserve.gov/releases/g17/,Official aggregate cyclical control,NOT_ESTABLISHED,Contains target and signal components
+Issuer universe,UNKNOWN,not_tested,,2026-10-27,UNKNOWN,No dated segment revenue/issuer universe/total returns,UNKNOWN,Leave-one-company-out and equity-alpha metrics not computable

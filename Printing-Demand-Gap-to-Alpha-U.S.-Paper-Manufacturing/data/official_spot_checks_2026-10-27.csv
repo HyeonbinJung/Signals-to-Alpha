@@ -1,0 +1,11 @@
+date,series,official_value,official_url,checked_on
+2026-05-01,paper_ip,79.9955,https://fred.stlouisfed.org/series/IPG322S,2026-10-27
+2026-06-01,paper_ip,79.6852,https://fred.stlouisfed.org/series/IPG322S,2026-10-27
+2026-07-01,paper_ip,79.3207,https://fred.stlouisfed.org/series/IPG322S,2026-10-27
+2026-08-01,paper_ip,79.2102,https://fred.stlouisfed.org/series/IPG322S,2026-10-27
+2026-09-01,paper_ip,78.3155,https://fred.stlouisfed.org/series/IPG322S,2026-10-27
+2026-05-01,printing_ip,76.1858,https://fred.stlouisfed.org/series/IPG323S,2026-10-27
+2026-06-01,printing_ip,75.7245,https://fred.stlouisfed.org/series/IPG323S,2026-10-27
+2026-07-01,printing_ip,73.0153,https://fred.stlouisfed.org/series/IPG323S,2026-10-27
+2026-08-01,printing_ip,72.6832,https://fred.stlouisfed.org/series/IPG323S,2026-10-27
+2026-09-01,printing_ip,74.0432,https://fred.stlouisfed.org/series/IPG323S,2026-10-27
