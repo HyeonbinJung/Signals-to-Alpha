@@ -1,0 +1,19 @@
+{
+  "data_and_results_sha256_match": {
+    "results/oos_predictions.csv": true,
+    "results/scorecard.csv": true,
+    "results/block_shuffle_1000.csv": true,
+    "results/block_bootstrap_2000.csv": true,
+    "results/exposure_perturbations_1000.csv": true,
+    "results/leave_one_year_out.csv": true,
+    "results/robustness.csv": true,
+    "results/regime_sensitivity.csv": true,
+    "results/summary.json": true,
+    "data/derived_formation_panel.csv": true
+  },
+  "matched": 10,
+  "total": 10,
+  "clean_code_executed": 33,
+  "clean_images": 7,
+  "clean_tests": "...............                                                          [100%]\n15 passed in 0.46s"
+}

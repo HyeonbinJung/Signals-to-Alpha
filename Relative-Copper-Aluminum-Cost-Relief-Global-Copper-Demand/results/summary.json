@@ -1,0 +1,28 @@
+{
+  "data_years": [
+    1951,
+    1975
+  ],
+  "n_raw": 25,
+  "n_formation": 22,
+  "n_oos": 10,
+  "oos_years": [
+    1965,
+    1974
+  ],
+  "rmse_gain_controls_minus_full": 0.0068135267528761645,
+  "block_shuffle_tail_fraction_exploratory": 0.2727272727272727,
+  "bootstrap_95pct_percentiles": [
+    -0.003983565905026243,
+    0.015478424478911713
+  ],
+  "exposure_positive_fraction": 0.665,
+  "not_pit": true,
+  "firm_fundamentals_tested": false,
+  "equity_returns_tested": false,
+  "model_alpha": 8.0,
+  "lag_years": 1,
+  "label_release_buffer_years": 1,
+  "permutation_draws": 1000,
+  "bootstrap_draws": 2000
+}

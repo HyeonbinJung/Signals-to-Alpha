@@ -52,6 +52,8 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Warehouse Capacity → Online Retail Share — U.S. Retail Trade](Warehouse-Capacity-to-Retail-Share-U.S.-Online-Retail/) | Lagged warehousing hiring premium → 2Q-ahead U.S. e-commerce retail-share change | Small control-relative OOS gain but fails mean, pandemic-sensitive, not PIT | [Open](Warehouse-Capacity-to-Retail-Share-U.S.-Online-Retail/research.ipynb) |
 
+| [Relative Copper–Aluminum Cost Relief — Historical World Copper Demand](Relative-Copper-Aluminum-Cost-Relief-Global-Copper-Demand/) | Lagged copper vs aluminum relative-price relief → next-year global copper consumption growth | Tiny retrospective OOS gain, unstable, not PIT or equity alpha | [Open](Relative-Copper-Aluminum-Cost-Relief-Global-Copper-Demand/research.ipynb) |
+
 ## Research Summaries
 
 ### [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/)
@@ -121,6 +123,10 @@ Using 201 inherited revised G.17 monthly observations and 120 purged expanding-w
 ### [Warehouse Capacity → Online Retail Share — U.S. Retail Trade](Warehouse-Capacity-to-Retail-Share-U.S.-Online-Retail/)
 
 Using 107 frozen quarterly Census/BLS observations (2000–2026), 57 purged expanding-window origins tested whether a one-quarter-stale warehouse hiring premium predicts the next two-quarter change in U.S. e-commerce retail share. The factor improved control-model RMSE from **1.3233 to 1.2803 pp**, but lagged the historical mean at **0.8223 pp** and worsened MAE. A 1,000-refit four-quarter block shuffle yielded exploratory tail fraction **0.05994**, while a 2,000-draw paired block-bootstrap 95% interval **[−0.0423, 0.1080] pp** crossed zero and excluding 2020–2021 reversed the improvement. **Verdict:** negative/unstable retrospective retail macro lead-factor pilot; inherited revised data, missing historical vintages and absent firm-level returns preclude PIT or investable equity-alpha claims.
+
+### [Relative Copper–Aluminum Cost Relief — Historical World Copper Demand](Relative-Copper-Aluminum-Cost-Relief-Global-Copper-Demand/)
+
+Using the 25-year 1951–1975 statsmodels/Gill world-copper panel, 10 purged expanding-window annual origins tested whether stale relative copper/aluminum price growth predicts next-year copper consumption. The augmented model achieved **6.290 log-pp** OOS RMSE versus **6.297** for demand/income/inventory controls and **7.625** for the historical mean, an economically tiny **0.0068 log-pp** control-relative improvement. A 1,000-refit exploratory three-year-block shuffle gave tail fraction **0.273**, while a 2,000-draw block-bootstrap 95% interval **[-0.0040, 0.0155] log-pp** crosses zero and 2–3-year horizons fail. **Verdict:** a negative/indeterminate retrospective industrial-metal demand pilot, not historical PIT or investable equity alpha; original release vintages, firm fundamentals and total returns are absent.
 
 ## Common Research Format
 

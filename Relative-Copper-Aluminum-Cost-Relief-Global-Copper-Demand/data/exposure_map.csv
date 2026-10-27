@@ -1,0 +1,4 @@
+segment,exposure_to_relative_price_factor,weight,as_of,confidence,reason
+World copper demand,lagged copper minus aluminum real price growth,1.0,1951-1975 dataset,B,No firm-level exposure estimates; sector-level hypothesis only
+Copper mining equities,NOT_ESTIMATED,,UNKNOWN,UNKNOWN,No company universe or historical total returns
+Aluminum substitute market,mechanism only,,UNKNOWN,C,Not an independent outcome
