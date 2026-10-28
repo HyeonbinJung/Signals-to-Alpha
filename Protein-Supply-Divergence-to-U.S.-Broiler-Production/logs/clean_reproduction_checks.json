@@ -1,0 +1,19 @@
+{
+  "independent_analysis": "PASS",
+  "independent_unit_tests": "21 passed",
+  "independent_notebook": "PASS via nbconvert",
+  "notebook_code_cells_executed": 26,
+  "notebook_code_cells_total": 26,
+  "notebook_image_outputs": 13,
+  "notebook_error_count": 0,
+  "artifacts_compared": 22,
+  "sha256_exact_matches": 22,
+  "sha256_mismatches": [],
+  "python": "3.13.5",
+  "pandas": "2.2.3",
+  "numpy": "2.3.5",
+  "matplotlib": "3.10.8",
+  "pytest": "9.0.2",
+  "nbclient": "0.10.4",
+  "original_nbclient_run": "PASS 26/26; independent direct nbclient attempt stalled; nbconvert retry succeeded"
+}

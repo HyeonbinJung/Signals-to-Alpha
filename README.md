@@ -68,7 +68,13 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Income–Consumption Gap — U.S. Household Demand (cross-sector macro)](Income-Consumption-Gap-to-U.S.-Household-Demand/) | Lagged real-income minus consumption growth → next-4Q aggregate real PCE growth | Negative incremental OOS; not industry-specific, PIT or equity alpha | [Open](Income-Consumption-Gap-to-U.S.-Household-Demand/research.ipynb) |
 
+| [Protein Supply Divergence — U.S. Broiler Production](Protein-Supply-Divergence-to-U.S.-Broiler-Production/) | Stale beef/pork vs turkey growth → 3m-ahead U.S. broiler output YoY | Negative incremental OOS; not PIT / equity alpha | [Open](Protein-Supply-Divergence-to-U.S.-Broiler-Production/research.ipynb) |
+
 ## Research Summaries
+### [Protein Supply Divergence — U.S. Broiler Production](Protein-Supply-Divergence-to-U.S.-Broiler-Production/)
+
+A frozen 1944–2023 USDA ERS-derived plotnine meat-production snapshot tests a two-month-stale beef/pork-minus-turkey growth divergence as a lead for three-month-ahead U.S. broiler output, with 165 purged expanding-window forecasts. Adding the factor worsens macro-control RMSE from 4.7506 to 4.7754 log-pp, while AR Ridge achieves 4.7309 log-pp. The 1,000-refit 12-month block-reorder exploratory tail fraction is 0.8432, the 2,000-draw paired block-bootstrap RMSE-gain interval [-0.0787, +0.0257] crosses zero, and none of 1,000 beef/pork weight perturbations improve the control. Verdict: a reproducible negative poultry-production macro pilot; historical original-release vintages, company-level fundamentals, total security returns and investable equity alpha remain unverified.
+
 ### [Income–Consumption Gap — U.S. Household Demand](Income-Consumption-Gap-to-U.S.-Household-Demand/)
 
 A frozen 1959Q1–2009Q3 statsmodels FRED/BLS snapshot tests a one-quarter-stale real disposable-income minus consumption-growth gap as a lead for next-four-quarter aggregate U.S. real PCE growth, not NAICS retail revenue. Across 126 purged expanding-window forecasts, the augmented macro model worsens RMSE from 1.7392 to 1.7514 log-pp and trails the macro-control baseline. The 1,000-refit eight-quarter block-reorder exploratory tail fraction is 0.2947, while the 2,000-draw paired moving-block bootstrap gain interval [−0.0305, +0.0064] log-pp includes zero and none of 1,000 weight perturbations improve accuracy. Verdict: negative retrospective cross-sector consumer-demand macro pilot; original publication vintages, industry-specific outcomes, firm fundamentals and investable total returns remain unverified.

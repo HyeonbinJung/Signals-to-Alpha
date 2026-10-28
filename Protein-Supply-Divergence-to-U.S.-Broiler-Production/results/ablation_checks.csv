@@ -1,0 +1,7 @@
+case,n_oos,gain_log_pp
+base_equal_beef_pork_minus_turkey,165,-0.024796332384697806
+beef_only_minus_turkey,165,-0.016727546446579034
+pork_only_minus_turkey,165,-0.019564113814111828
+red_meat_only,165,0.00323283689071463
+negative_turkey_only,165,-0.029262753928063212
+factor_sign_flipped,165,-0.024796332384697806
