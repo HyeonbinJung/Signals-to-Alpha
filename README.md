@@ -60,6 +60,8 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Inflation–Labor Pressure — U.S. Treasury Money Markets](Inflation-Labor-Pressure-to-TBill-Yields-U.S.-Money-Markets/) | Lagged CPI inflation minus unemployment-change pressure → next-quarter 3m T-bill yield change | Small retrospective control-relative gain; fails mean and zero-change, not PIT | [Open](Inflation-Labor-Pressure-to-TBill-Yields-U.S.-Money-Markets/research.ipynb) |
 
+| [Semiconductor Supply Pressure — U.S. Communications Equipment](Semiconductor-Supply-Pressure-to-Communications-Equipment-U.S.-Network-Hardware/) | Lagged semiconductor output premium → 3m-ahead U.S. communications-equipment production YoY | Small OOS gain, block placebo and bootstrap inconclusive; revised snapshot, not PIT | [Open](Semiconductor-Supply-Pressure-to-Communications-Equipment-U.S.-Network-Hardware/research.ipynb) |
+
 ## Research Summaries
 
 ### [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/)
@@ -145,6 +147,10 @@ Using 107 inherited revised quarterly Census/BLS observations, 61 purged expandi
 ### [Inflation–Labor Pressure — U.S. Treasury Money Markets](Inflation-Labor-Pressure-to-TBill-Yields-U.S.-Money-Markets/)
 
 Using the frozen 2009 FRED/BLS compilation for 1959Q1–2009Q3, 115 purged expanding-window forecasts tested whether a one-quarter-stale inflation–unemployment pressure score predicts next-quarter changes in the 3-month Treasury bill rate. The factor-augmented model improved RMSE from **0.8173** to **0.8080 percentage points** relative to the macro control, but failed the historical mean (**0.7381**) and zero-change (**0.7229**) baselines. A 1,000-refit block shuffle produced an exploratory upper-tail fraction **0.0579**, while a 2,000-draw paired block-bootstrap interval **[−0.0355, 0.0497] pp** included zero. **Verdict:** retrospective money-market rate-prediction pilot only; historical release vintages, actual Treasury bill total returns, issuer fundamentals and trading costs were not reconstructed, so neither PIT predictability nor investable alpha is established.
+
+### [Semiconductor Supply Pressure — U.S. Communications Equipment](Semiconductor-Supply-Pressure-to-Communications-Equipment-U.S.-Network-Hardware/)
+
+An inherited 2011–2026 Federal Reserve G.17 snapshot was used to test whether stale semiconductor output pressure predicts three-month-ahead U.S. communications-equipment production growth across 110 purged expanding-window forecasts. The factor improved controlled Ridge OOS RMSE only from **8.452** to **8.384 log-pp**, while the 1,000-refit block-shuffle tail fraction was **0.168** and the 2,000-draw block-bootstrap interval **[−0.188, 0.282] log-pp** included zero. The improvement reversed in 2020–2021 and at six-month horizons, and the inherited latest-revised data lack historical release vintages and independent company returns. **Verdict:** a reproducible but statistically inconclusive retrospective communications-equipment macro pilot, not point-in-time or investable equity alpha.
 
 ## Common Research Format
 

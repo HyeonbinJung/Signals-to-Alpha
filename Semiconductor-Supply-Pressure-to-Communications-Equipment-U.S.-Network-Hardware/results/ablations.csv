@@ -1,0 +1,4 @@
+ablation,rmse,delta_vs_macro
+no_momentum,8.983250999,-0.5316556344
+no_computer,8.194993226,0.2566021379
+no_manufacturing,8.789663596,-0.3380682317

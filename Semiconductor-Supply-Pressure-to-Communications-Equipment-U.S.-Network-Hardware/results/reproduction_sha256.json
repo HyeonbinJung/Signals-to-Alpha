@@ -1,0 +1,22 @@
+{
+  "results/block_bootstrap_2000.csv": "5de6ab3caee736a2b41d966a5914e66e8c5e3b6b3f8e7815a64f7045fa7ed1e6",
+  "results/scorecard.csv": "be15f9dd1eb8b2f1a73915a559efd42682b8530942ecfcc8896af159bcf0027c",
+  "results/horizon_lag.csv": "5fb3e53d33b323a0c1496dff341a4c4ffe09524dd65a14d36192b2b371263333",
+  "results/regimes.csv": "564156ccbfdb8d919767f336755e8506be7c43d39db53f468dd9f879655e390c",
+  "results/block_placebo_1000.csv": "313cd6818e2319f3677308c7694c198c386e28c8903d822ba8c10fb1fef3593f",
+  "results/ablations.csv": "8c2d7c7f6dd55952a8dfd9d9901d57fa736e845b5856c8fbf3641967adf12a7d",
+  "results/walk_forward_oos.csv": "2ae2464d1e4ceec329bc6aebb1fb06745718ebee0ea89286e670ef1f89ef351c",
+  "results/leave_one_year_out.csv": "5e5c39b9723b10318551a1808bcc701bad2ceb23d1aad5bdbe0c80820a3bf94e",
+  "results/exposure_perturbation_1000.csv": "d76ff936f47792084487058e6d0fb5f89db6b4cd8165efe6919f1e5df83b346c",
+  "figures/07_block_placebo.png": "2e150aa4850a3a55fb4f1641c54abda29cd8e0da99e1b84a06755846f97ac745",
+  "figures/04_oos_forecasts.png": "d289e7c8debf9504371039f31428e715bb00e7d55d20e12d8c3cd6b39338b0ca",
+  "figures/06_cumulative_paired_loss.png": "015557b739df3e7a5a9ef645577a85eae75ab72713df1905fac9b3b019f93479",
+  "figures/10_regime_sensitivity.png": "7ef48d79d0775a6701840faea7ab0e65e3c20d035fedf095547d32074bcc5aee",
+  "figures/02_yoy_growth.png": "c7e3ada3ecf4e9d0c8b6ca04abf3ad68b43e498383781c7628b347bb8e16aec2",
+  "figures/08_bootstrap.png": "5e6d56462094abb0cd24ab0e52235a08e902b83e54f561276af863104bef197c",
+  "figures/09_exposure_perturbation.png": "ac8911b5e901428dd3129872a907c0dc56adc7a8cb0401dd11b69706c145d9f1",
+  "figures/05_rmse_scorecard.png": "0ed2c7d4e0f69f2f0fc1aaf270fec5d22fb5b0c2b877693d5afa5e4737b3d6fc",
+  "figures/03_signal_and_target.png": "0c0a4dbbe3a30542c04689072f867e3298099897ebd3e794b9171620c66c2d5f",
+  "figures/01_output_levels.png": "3e8351fdaa7d0bfda26253191c7285098e238d5ff1356a48dfea219032542f6b",
+  "results/summary.json": "2a1501904d7a94d1f805d72a8c3d9d0f8ec1b54fc21790658e54eed5aaad49e2"
+}

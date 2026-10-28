@@ -1,0 +1,6 @@
+entity,scope,as_of,role,documented_2025_metric,value,units,source_url,model_weight,qualification
+NAICS 3342,US communications equipment manufacturing,2022 classification,target sector,US industrial production IPG3342S,UNKNOWN,index,https://fred.stlouisfed.org/series/IPG3342S,1.0,Industry target not an investable portfolio
+NAICS 3344,US semiconductor and electronic components,2022 classification,upstream supplier proxy,US industrial production IPG3344S,UNKNOWN,index,https://fred.stlouisfed.org/series/IPG3344S,1.0,Factor numerator proxy not issuer revenue
+NAICS 3341,US computer and peripheral equipment,2022 classification,related equipment control,US industrial production IPG3341S,UNKNOWN,index,https://fred.stlouisfed.org/series/IPG3341S,0.0,Used only as control and sensitivity mixture
+Ciena (CIEN),Global optical networking supplier,2025-11-01,contextual issuer,Networking Platforms revenue,3676377,USD thousands,https://www.sec.gov/Archives/edgar/data/936395/000162828025056698/cien-20251101.htm,NA,Not a 2011-2026 US NAICS exposure; not included in model
+Cisco (CSCO),Global networking supplier,2025-07-26,contextual issuer,Networking product revenue,28304,USD millions,https://www.cisco.com/c/en/us/about/annual-reports.html,NA,Not a 2011-2026 US NAICS exposure; not included in model
