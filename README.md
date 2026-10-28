@@ -58,6 +58,8 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Online-Order Pressure — U.S. Couriers & Messengers](Online-Order-Pressure-to-Courier-Employment-U.S.-Parcel-Delivery/) | Stale e-commerce share/capacity gap → 2Q-ahead courier payroll YoY | Pandemic-dependent OOS gain, not stable or PIT | [Open](Online-Order-Pressure-to-Courier-Employment-U.S.-Parcel-Delivery/research.ipynb) |
 
+| [Inflation–Labor Pressure — U.S. Treasury Money Markets](Inflation-Labor-Pressure-to-TBill-Yields-U.S.-Money-Markets/) | Lagged CPI inflation minus unemployment-change pressure → next-quarter 3m T-bill yield change | Small retrospective control-relative gain; fails mean and zero-change, not PIT | [Open](Inflation-Labor-Pressure-to-TBill-Yields-U.S.-Money-Markets/research.ipynb) |
+
 ## Research Summaries
 
 ### [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/)
@@ -139,6 +141,10 @@ The two-month-stale nonlinear manufacturing–auto momentum gap was tested again
 ### [Online-Order Pressure — U.S. Couriers & Messengers](Online-Order-Pressure-to-Courier-Employment-U.S.-Parcel-Delivery/)
 
 Using 107 inherited revised quarterly Census/BLS observations, 61 purged expanding-window forecasts tested whether lagged online-order pressure anticipates U.S. couriers-and-messengers employment growth two quarters ahead. The augmented model reduced OOS RMSE to **4.629 log-pp** from **5.148** for payroll controls but barely exceeded simple courier persistence (**4.639**). A 1,000-refit four-quarter block placebo produced exploratory tail fraction **0.0010**, while the 2,000-draw paired block-bootstrap interval **[−0.390, +1.388] log-pp** crossed zero and pre/post-pandemic gains were negative. **Verdict:** pandemic-dependent retrospective macro-factor falsification, with unreconstructed historical vintages, reused quarterly aggregates and no issuer fundamentals, total returns or investable equity-alpha evidence.
+
+### [Inflation–Labor Pressure — U.S. Treasury Money Markets](Inflation-Labor-Pressure-to-TBill-Yields-U.S.-Money-Markets/)
+
+Using the frozen 2009 FRED/BLS compilation for 1959Q1–2009Q3, 115 purged expanding-window forecasts tested whether a one-quarter-stale inflation–unemployment pressure score predicts next-quarter changes in the 3-month Treasury bill rate. The factor-augmented model improved RMSE from **0.8173** to **0.8080 percentage points** relative to the macro control, but failed the historical mean (**0.7381**) and zero-change (**0.7229**) baselines. A 1,000-refit block shuffle produced an exploratory upper-tail fraction **0.0579**, while a 2,000-draw paired block-bootstrap interval **[−0.0355, 0.0497] pp** included zero. **Verdict:** retrospective money-market rate-prediction pilot only; historical release vintages, actual Treasury bill total returns, issuer fundamentals and trading costs were not reconstructed, so neither PIT predictability nor investable alpha is established.
 
 ## Common Research Format
 

@@ -1,0 +1,139 @@
+{
+  "n_files": 22,
+  "matches": 22,
+  "all_match": true,
+  "files": [
+    {
+      "path": "data/derived_formation_panel.csv",
+      "same": true,
+      "original_sha256": "9475c41a44af93e756b8dcec654218f6a63062bb0bea29c7b2591f3f4cef13d7",
+      "clean_sha256": "9475c41a44af93e756b8dcec654218f6a63062bb0bea29c7b2591f3f4cef13d7"
+    },
+    {
+      "path": "results/ablations.csv",
+      "same": true,
+      "original_sha256": "5ed844987689983fb0d271c6e12026ce6e961b64f8ce66af86604aad6e1403ca",
+      "clean_sha256": "5ed844987689983fb0d271c6e12026ce6e961b64f8ce66af86604aad6e1403ca"
+    },
+    {
+      "path": "results/block_placebo_1000.csv",
+      "same": true,
+      "original_sha256": "acf322120d2c233e3a5a35023bfa5abfecbd933915e43aead3453db9f60f32fa",
+      "clean_sha256": "acf322120d2c233e3a5a35023bfa5abfecbd933915e43aead3453db9f60f32fa"
+    },
+    {
+      "path": "results/exposure_perturbation_1000.csv",
+      "same": true,
+      "original_sha256": "df6615594dfc2c81858ea50f6eee85d0af376351a38ab193c7e3cfd14db7d7c3",
+      "clean_sha256": "df6615594dfc2c81858ea50f6eee85d0af376351a38ab193c7e3cfd14db7d7c3"
+    },
+    {
+      "path": "results/factor_association.csv",
+      "same": true,
+      "original_sha256": "9ec705ecfe45e8a000d8e0f3f536882c4622f83f960569226dfb996c326a546d",
+      "clean_sha256": "9ec705ecfe45e8a000d8e0f3f536882c4622f83f960569226dfb996c326a546d"
+    },
+    {
+      "path": "results/horizon_lag_robustness.csv",
+      "same": true,
+      "original_sha256": "158f0264e1d3c6e9158b57406c8d15445518106a6050b21fcb46ff12ad34e99e",
+      "clean_sha256": "158f0264e1d3c6e9158b57406c8d15445518106a6050b21fcb46ff12ad34e99e"
+    },
+    {
+      "path": "results/leave_one_decade_out.csv",
+      "same": true,
+      "original_sha256": "d1461c279d38af0daab129f1cf1a8f721e33a4bdca2bff05f455fb0394fc5e75",
+      "clean_sha256": "d1461c279d38af0daab129f1cf1a8f721e33a4bdca2bff05f455fb0394fc5e75"
+    },
+    {
+      "path": "results/paired_block_bootstrap_2000.csv",
+      "same": true,
+      "original_sha256": "d4f5ea7bd82344e62c07b218f12cdf7c7e90d115647114973083c47aee1c1786",
+      "clean_sha256": "d4f5ea7bd82344e62c07b218f12cdf7c7e90d115647114973083c47aee1c1786"
+    },
+    {
+      "path": "results/regime_sensitivity.csv",
+      "same": true,
+      "original_sha256": "f066222aa3578b8f2cdffae71472ac282015b8abb8f810c521690547e90646dd",
+      "clean_sha256": "f066222aa3578b8f2cdffae71472ac282015b8abb8f810c521690547e90646dd"
+    },
+    {
+      "path": "results/scorecard.csv",
+      "same": true,
+      "original_sha256": "825abc1eaa79ada9a5236b3409686776089def69ab23075f39c850bc6e02c9e8",
+      "clean_sha256": "825abc1eaa79ada9a5236b3409686776089def69ab23075f39c850bc6e02c9e8"
+    },
+    {
+      "path": "results/walk_forward_oos.csv",
+      "same": true,
+      "original_sha256": "1ad72f72839e36b6c53faadb83945f31345fb94ba3ec180857d0113cbad8e2f8",
+      "clean_sha256": "1ad72f72839e36b6c53faadb83945f31345fb94ba3ec180857d0113cbad8e2f8"
+    },
+    {
+      "path": "results/metrics.json",
+      "same": true,
+      "original_sha256": "ab1ae75139c3e06fce2bec6c949ab86ba08581fb78a4917e69b93a25b0bdb2fc",
+      "clean_sha256": "ab1ae75139c3e06fce2bec6c949ab86ba08581fb78a4917e69b93a25b0bdb2fc"
+    },
+    {
+      "path": "figures/01_rate_and_inflation.png",
+      "same": true,
+      "original_sha256": "8efe5dac8a8dc94329216662e9b0bc477a96c7c2d86d17cfdeaee31ab2a38246",
+      "clean_sha256": "8efe5dac8a8dc94329216662e9b0bc477a96c7c2d86d17cfdeaee31ab2a38246"
+    },
+    {
+      "path": "figures/02_factor_and_target.png",
+      "same": true,
+      "original_sha256": "f1de41577ef7b9bc1502fba76e08a361478663a437baa7cfe0121a58d190449c",
+      "clean_sha256": "f1de41577ef7b9bc1502fba76e08a361478663a437baa7cfe0121a58d190449c"
+    },
+    {
+      "path": "figures/03_factor_scatter.png",
+      "same": true,
+      "original_sha256": "d94b257222742b58394981adeee2b84d09efb580812ed50d393dbeb31d642734",
+      "clean_sha256": "d94b257222742b58394981adeee2b84d09efb580812ed50d393dbeb31d642734"
+    },
+    {
+      "path": "figures/04_baseline_scorecard.png",
+      "same": true,
+      "original_sha256": "ce5d9e9385ab51bb3e6fee21cd1473238979b15c57c616c8c5e6fa056aedb416",
+      "clean_sha256": "ce5d9e9385ab51bb3e6fee21cd1473238979b15c57c616c8c5e6fa056aedb416"
+    },
+    {
+      "path": "figures/05_oos_forecasts.png",
+      "same": true,
+      "original_sha256": "84cdbc32f6bf075361d05fefdfd51cf6e3a123d63a0ddd695eec6fa37edd81b2",
+      "clean_sha256": "84cdbc32f6bf075361d05fefdfd51cf6e3a123d63a0ddd695eec6fa37edd81b2"
+    },
+    {
+      "path": "figures/06_cumulative_loss.png",
+      "same": true,
+      "original_sha256": "8079d5cd66f2487377211f80f75c04e7dae8b163e601091958d862b592734de4",
+      "clean_sha256": "8079d5cd66f2487377211f80f75c04e7dae8b163e601091958d862b592734de4"
+    },
+    {
+      "path": "figures/07_block_placebo.png",
+      "same": true,
+      "original_sha256": "c9823f608993f32828423b4870ee08f058487f810525c087fba2c88f596d8b94",
+      "clean_sha256": "c9823f608993f32828423b4870ee08f058487f810525c087fba2c88f596d8b94"
+    },
+    {
+      "path": "figures/08_bootstrap.png",
+      "same": true,
+      "original_sha256": "981f2704e2e323b25902bb30263dfcb7c8bf35aad801f236851427a27dadc1a9",
+      "clean_sha256": "981f2704e2e323b25902bb30263dfcb7c8bf35aad801f236851427a27dadc1a9"
+    },
+    {
+      "path": "figures/09_exposure_weights.png",
+      "same": true,
+      "original_sha256": "d66061bbd236f43adc6f7635191c62eb69f41de946b3fe5c6da56e9dda0124ac",
+      "clean_sha256": "d66061bbd236f43adc6f7635191c62eb69f41de946b3fe5c6da56e9dda0124ac"
+    },
+    {
+      "path": "figures/10_regime_losses.png",
+      "same": true,
+      "original_sha256": "4a96c0782d115488e5828602d7071f6dc92cb5aab6385c7ef4d8d1540e6d2123",
+      "clean_sha256": "4a96c0782d115488e5828602d7071f6dc92cb5aab6385c7ef4d8d1540e6d2123"
+    }
+  ]
+}

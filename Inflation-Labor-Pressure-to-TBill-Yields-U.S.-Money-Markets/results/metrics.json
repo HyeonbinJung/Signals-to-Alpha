@@ -1,0 +1,30 @@
+{
+  "factor_target_pearson": 0.03158299501513082,
+  "dataset_rows": 203,
+  "formation_rows": 196,
+  "oos_n": 115,
+  "first_oos": "1980Q4",
+  "last_oos": "2009Q2",
+  "main_gain_rmse_pp": 0.009320636680685501,
+  "rmse": {
+    "mean": 0.7380750422741069,
+    "persistence": 0.7229234128658203,
+    "momentum": 1.0865401811333952,
+    "ar_ridge": 0.8028652658554603,
+    "control": 0.8172940428201786,
+    "factor_only": 0.7395131720151168,
+    "full": 0.8079734061394931
+  },
+  "placebo_draws": 1000,
+  "placebo_upper_tail_fraction": 0.057942057942057944,
+  "bootstrap_draws": 2000,
+  "bootstrap_ci_95": [
+    -0.03553153338009717,
+    0.04966929784348751
+  ],
+  "exposure_draws": 1000,
+  "exposure_positive_share": 1.0,
+  "source_vintage_pit_verified": false,
+  "equity_alpha_established": false,
+  "raw_sha256": "d93c0d3a7a77ef83c3af14e46032bb1d02ae3a512b22ab94159a8ca226fcf708"
+}
