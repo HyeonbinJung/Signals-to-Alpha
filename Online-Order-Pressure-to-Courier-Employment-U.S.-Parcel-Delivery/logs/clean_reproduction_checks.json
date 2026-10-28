@@ -1,0 +1,10 @@
+{
+  "snapshot_date": "2026-10-26",
+  "run_date_utc": "2026-10-28",
+  "unit_tests": {"passed": 13, "failed": 0},
+  "notebook_clean_run": {"cells": 49, "code_cells_executed": 32, "svg_outputs": 9, "error_outputs": 0},
+  "analysis": {"oos_origins": 61, "block_placebo_draws": 1000, "bootstrap_draws": 2000, "exposure_perturbations": 1000},
+  "independent_oos_rmse_max_abs_error": 1.7763568394002505e-15,
+  "pit_validated": false,
+  "equity_alpha_established": false
+}

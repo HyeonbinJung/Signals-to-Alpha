@@ -1,0 +1,5 @@
+entity,kind,mapping,as_of,source_url,quantified_weight,included_in_panel
+NAICS 492,industry target,Couriers and messengers payroll; not packages or revenue,2026-10-02,https://fred.stlouisfed.org/series/CES4349200001,not estimated,yes
+NAICS 493,upstream capacity,Warehousing and storage payroll; not physical capacity,2026-10-02,https://fred.stlouisfed.org/series/CES4349300001,0.10 fixed coefficient in signal,yes
+UPS,illustrative issuer,U.S. Domestic Package segment is exposed to parcel volumes,2026-02-17,https://investors.ups.com/sec-filings/annual-filings,UNKNOWN,no
+FedEx,illustrative issuer,Parcel delivery operations; company mix and fiscal period differ,2025-07-21,https://www.sec.gov/Archives/edgar/data/1048911/000104891125000011/fdx-20250531.htm,UNKNOWN,no

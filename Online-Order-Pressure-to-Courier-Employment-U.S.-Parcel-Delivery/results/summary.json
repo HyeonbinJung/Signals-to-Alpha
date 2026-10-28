@@ -1,0 +1,23 @@
+{
+  "raw_rows": 107,
+  "oos_origins": 61,
+  "oos_first": "2010-10-01",
+  "oos_last": "2025-10-01",
+  "gain_macro": 0.5192010746074471,
+  "gain_warehouse": 0.8277244148037681,
+  "block_permutation_tail_macro": 0.000999000999000999,
+  "block_permutation_tail_warehouse": 0.000999000999000999,
+  "bootstrap_macro_95": [
+    -0.38967724207541804,
+    1.3877844560658512
+  ],
+  "bootstrap_warehouse_95": [
+    -0.32816541989284237,
+    1.9034009812367638
+  ],
+  "perturb_positive_share_macro": 0.301,
+  "perturb_positive_share_warehouse": 0.643,
+  "time_series_spearman_factor_vs_target": 0.004970914859862506,
+  "frozen_input_sha256": "17b99d105505b7c4ef7741012cf65d916bac0b907403474f18cffedcc4a99b2d",
+  "pit_status": "NOT PIT: fixed revised snapshot with assumed one-quarter release buffer"
+}

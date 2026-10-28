@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "online-order-pressure-us-courier-messengers-2026-10-27",
+  "industry": "U.S. couriers and messengers (NAICS 492), not warehousing",
+  "signal": "One-quarter-stale e-commerce share YoY change minus 0.10x warehouse-payroll hiring premium",
+  "outcome": "Two-quarter-ahead U.S. couriers-and-messengers employment YoY log growth",
+  "research_status": "REPRODUCED MACRO PILOT — revised snapshot, NOT PIT; regime unstable",
+  "equity_alpha_established": false,
+  "notebook": "research.ipynb",
+  "analysis_entrypoint": "run_analysis.py",
+  "requirements": "requirements.txt",
+  "source_register": "data/source_register.csv",
+  "notes_file": "README.md",
+  "data_files": [
+    "data/frozen_quarterly_courier_ecommerce_2026-10-26.csv",
+    "data/derived_formation_panel.csv",
+    "data/exposure_map.csv",
+    "data/source_qa.md"
+  ],
+  "result_files": [
+    "results/summary.json",
+    "results/model_scorecard.csv",
+    "results/regimes.csv",
+    "results/ablations.csv",
+    "results/horizon_sensitivity.csv",
+    "results/lag_sensitivity.csv",
+    "results/leave_one_year_out.csv",
+    "results/oos_predictions.csv",
+    "figures/01_courier_warehouse_levels.svg",
+    "figures/02_ecommerce_share.svg",
+    "figures/03_factor_target.svg",
+    "figures/04_oos_predictions.svg",
+    "figures/05_model_scorecard.svg",
+    "figures/06_placebo.svg",
+    "figures/07_bootstrap.svg",
+    "figures/08_perturbations.svg",
+    "figures/09_regimes.svg"
+  ],
+  "test_commands": [
+    "OPENBLAS_NUM_THREADS=1 python run_analysis.py",
+    "PYTHONPATH=. OPENBLAS_NUM_THREADS=1 python -m pytest -q tests",
+    "OPENBLAS_NUM_THREADS=1 jupyter nbconvert --to notebook --execute research.ipynb --output reproduced.ipynb",
+    "python scripts/validate_studies.py (repository root)"
+  ]
+}

@@ -56,6 +56,8 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Manufacturing Catch-up Gap — U.S. Motor Vehicles & Parts](Manufacturing-Catchup-Gap-to-Auto-Production-U.S.-Motor-Vehicles/) | Two-month-stale manufacturing vs auto momentum → 3m-ahead auto output YoY | Negative incremental OOS; not PIT / equity alpha | [Open](Manufacturing-Catchup-Gap-to-Auto-Production-U.S.-Motor-Vehicles/research.ipynb) |
 
+| [Online-Order Pressure — U.S. Couriers & Messengers](Online-Order-Pressure-to-Courier-Employment-U.S.-Parcel-Delivery/) | Stale e-commerce share/capacity gap → 2Q-ahead courier payroll YoY | Pandemic-dependent OOS gain, not stable or PIT | [Open](Online-Order-Pressure-to-Courier-Employment-U.S.-Parcel-Delivery/research.ipynb) |
+
 ## Research Summaries
 
 ### [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/)
@@ -133,6 +135,10 @@ Using the 25-year 1951–1975 statsmodels/Gill world-copper panel, 10 purged exp
 ### [Manufacturing Catch-up Gap — U.S. Motor Vehicles & Parts](Manufacturing-Catchup-Gap-to-Auto-Production-U.S.-Motor-Vehicles/)
 
 The two-month-stale nonlinear manufacturing–auto momentum gap was tested against three-month-ahead U.S. motor-vehicle-and-parts production growth using 120 purged expanding-window OOS forecasts from the revised 2026-10-16 G.17 snapshot. Adding the factor worsened RMSE from 28.532 to 29.526 log-pp, and the historical-mean baseline achieved 24.621 log-pp. A 1,000-refit 12-month block-reorder placebo yielded an exploratory tail fraction 0.987, while the 2,000-draw paired block-bootstrap interval [-1.868, -0.014] log-pp and pandemic-exclusion checks did not rescue the signal. **Verdict:** a reproducible negative retrospective macro-production pilot, with manually transcribed and incompletely audited rows, no historical PIT vintages, no company fundamentals and no tested equity total-return alpha.
+
+### [Online-Order Pressure — U.S. Couriers & Messengers](Online-Order-Pressure-to-Courier-Employment-U.S.-Parcel-Delivery/)
+
+Using 107 inherited revised quarterly Census/BLS observations, 61 purged expanding-window forecasts tested whether lagged online-order pressure anticipates U.S. couriers-and-messengers employment growth two quarters ahead. The augmented model reduced OOS RMSE to **4.629 log-pp** from **5.148** for payroll controls but barely exceeded simple courier persistence (**4.639**). A 1,000-refit four-quarter block placebo produced exploratory tail fraction **0.0010**, while the 2,000-draw paired block-bootstrap interval **[−0.390, +1.388] log-pp** crossed zero and pre/post-pandemic gains were negative. **Verdict:** pandemic-dependent retrospective macro-factor falsification, with unreconstructed historical vintages, reused quarterly aggregates and no issuer fundamentals, total returns or investable equity-alpha evidence.
 
 ## Common Research Format
 
