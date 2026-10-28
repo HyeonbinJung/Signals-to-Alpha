@@ -1,0 +1,32 @@
+{
+  "status": "REPRODUCED RETROSPECTIVE HOSPITAL-EMPLOYMENT MACRO FALSIFICATION — NOT PIT / NOT EQUITY ALPHA",
+  "raw_rows": 201,
+  "panel_rows": 181,
+  "oos_origins": 99,
+  "first_oos": "2018-01-01",
+  "last_oos": "2026-03-01",
+  "raw_sha256": "f1d5a8ff28a55f2d1798cbdb9cac239d46db6c006b0a9e1801abae1b3b1665f6",
+  "lag_months": 2,
+  "horizon_months": 6,
+  "target_release_buffer_months": 1,
+  "macro_rmse": 4.550098152340667,
+  "full_rmse": 4.274216085095206,
+  "gain_log_pp": 0.2758820672454618,
+  "mean_rmse": 1.7680638351269324,
+  "persistence_rmse": 1.418447680245777,
+  "ar_rmse": 1.493323446945001,
+  "placebo_draws": 1000,
+  "placebo_right_tail_fraction": 0.22477522477522477,
+  "bootstrap_draws": 2000,
+  "bootstrap_gain_ci95": [
+    -0.17815146249590524,
+    0.5870106835070128
+  ],
+  "weight_draws": 1000,
+  "weight_positive_fraction": 1.0,
+  "effective_loss_n": 33.832600084731325,
+  "temporal_rank_corr_not_equity_ic": -0.36583287798757413,
+  "historical_publication_vintages": "UNKNOWN — NOT PIT",
+  "security_total_returns": "NOT AVAILABLE",
+  "firm_level_OOS": "NOT AVAILABLE"
+}

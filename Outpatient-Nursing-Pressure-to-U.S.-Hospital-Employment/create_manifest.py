@@ -1,0 +1,6 @@
+from pathlib import Path
+import json
+r=Path(__file__).resolve().parent
+manifest={'schema_version':1,'id':'outpatient-nursing-pressure-us-hospital-employment-2026-10-28','title':'Outpatient–Nursing Pressure → U.S. Hospital Employment','industry':'U.S. hospitals (NAICS 622), distinct outcome from prior nursing/residential-care study (NAICS 623)','notebook':'research.ipynb','source_register':'data/source_register.csv','analysis_entrypoint':'run_analysis.py','requirements':'requirements.txt','notes_file':'README.md','equity_alpha_established':False,'evidence_level':'REPRODUCED RETROSPECTIVE MACRO FALSIFICATION — NOT HISTORICAL PIT OR EQUITY ALPHA','as_of':'2026-10-28','data_files':sorted(str(p.relative_to(r)) for p in (r/'data').glob('*.csv')),'result_files':sorted(str(p.relative_to(r)) for folder in ('results','figures') for p in (r/folder).glob('*') if p.is_file()),'test_commands':['OPENBLAS_NUM_THREADS=1 python run_analysis.py','PYTHONPATH=. OPENBLAS_NUM_THREADS=1 pytest -q tests','OPENBLAS_NUM_THREADS=1 jupyter nbconvert --to notebook --execute research.ipynb --output /tmp/hospital-reexecuted.ipynb','python scripts/validate_studies.py']}
+(r/'study.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n')
+print(len(manifest['data_files']),len(manifest['result_files']))

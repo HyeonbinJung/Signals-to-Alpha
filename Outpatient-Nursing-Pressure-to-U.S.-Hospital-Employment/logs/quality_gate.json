@@ -1,0 +1,20 @@
+{
+  "readme_headings": 15,
+  "notebook_cells": 58,
+  "executed_code_cells": 42,
+  "code_cells": 42,
+  "saved_image_outputs": 12,
+  "error_outputs": 0,
+  "source_sha256": "f1d5a8ff28a55f2d1798cbdb9cac239d46db6c006b0a9e1801abae1b3b1665f6",
+  "local_unit_tests": "22 passed",
+  "clean_reproduction": {
+    "clean_analysis_exit": 0,
+    "clean_tests_exit": 0,
+    "clean_notebook_exit": 0,
+    "notebook_executed_code_cells": 42,
+    "notebook_error_outputs": 0,
+    "sha_matches": 26,
+    "sha_compared": 26,
+    "mismatches": []
+  }
+}

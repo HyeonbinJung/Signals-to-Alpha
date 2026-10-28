@@ -1,0 +1,6 @@
+segment,naics,series,role,fixed_weight,weight_sensitivity_range,asof,source_url
+Hospitals,622,CES6562200001,independent employment outcome,0,not applicable,2026-10-26,https://fred.stlouisfed.org/series/CES6562200001
+Ambulatory care excluding home health,621 minus 6216,CES6562100001 minus CES6562160001,primary candidate upstream demand proxy,+1.0,0.5 to 1.0,2026-10-26,https://fred.stlouisfed.org/series/CES6562100001
+Home health care services,6216,CES6562160001,alternative candidate upstream proxy,0.0,0.0 to 0.5,2026-10-26,https://fred.stlouisfed.org/series/CES6562160001
+Nursing and residential care,623,CES6562300001,negative factor leg and control,-1.0,fixed,2026-10-26,https://fred.stlouisfed.org/series/CES6562300001
+Total nonfarm payrolls,all,PAYEMS,macro control,0,not applicable,2026-10-26,https://fred.stlouisfed.org/series/PAYEMS

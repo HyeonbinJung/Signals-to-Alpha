@@ -1,0 +1,3 @@
+issuer,fiscal_year,consolidated_revenue_usd_billions,filing_date,source_url,role
+HCA Healthcare,2024,70.603,2026-02-10,https://www.sec.gov/Archives/edgar/data/860730/000119312526044769/hca-20251231.htm,descriptive contemporaneous filing not backtest
+HCA Healthcare,2025,75.600,2026-02-10,https://www.sec.gov/Archives/edgar/data/860730/000119312526044769/hca-20251231.htm,descriptive contemporaneous filing not backtest

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "outpatient-nursing-pressure-us-hospital-employment-2026-10-28",
+  "title": "Outpatient–Nursing Pressure → U.S. Hospital Employment",
+  "industry": "U.S. hospitals (NAICS 622), distinct outcome from prior nursing/residential-care study (NAICS 623)",
+  "notebook": "research.ipynb",
+  "source_register": "data/source_register.csv",
+  "analysis_entrypoint": "run_analysis.py",
+  "requirements": "requirements.txt",
+  "notes_file": "README.md",
+  "equity_alpha_established": false,
+  "evidence_level": "REPRODUCED RETROSPECTIVE MACRO FALSIFICATION — NOT HISTORICAL PIT OR EQUITY ALPHA",
+  "as_of": "2026-10-28",
+  "data_files": [
+    "data/derived_formation_panel.csv",
+    "data/issuer_exposure_map.csv",
+    "data/issuer_fundamentals_descriptive.csv",
+    "data/raw_fred_ces_2010_2026_snapshot.csv",
+    "data/sector_exposure_map.csv",
+    "data/source_register.csv"
+  ],
+  "result_files": [
+    "figures/01_sector_levels.png",
+    "figures/02_growth_rates.png",
+    "figures/03_factor_target.png",
+    "figures/04_scatter.png",
+    "figures/05_scorecard.png",
+    "figures/06_oos_forecasts.png",
+    "figures/07_paired_loss.png",
+    "figures/08_placebo.png",
+    "figures/09_bootstrap.png",
+    "figures/10_weight_sensitivity.png",
+    "figures/11_robustness.png",
+    "figures/12_rolling_errors.png",
+    "results/block_placebo_draws.csv",
+    "results/bootstrap_draws.csv",
+    "results/exposure_weight_draws.csv",
+    "results/leave_one_year_out.csv",
+    "results/metrics.json",
+    "results/robustness.csv",
+    "results/scorecard.csv",
+    "results/walk_forward_oos.csv"
+  ],
+  "test_commands": [
+    "OPENBLAS_NUM_THREADS=1 python run_analysis.py",
+    "PYTHONPATH=. OPENBLAS_NUM_THREADS=1 pytest -q tests",
+    "OPENBLAS_NUM_THREADS=1 jupyter nbconvert --to notebook --execute research.ipynb --output /tmp/hospital-reexecuted.ipynb",
+    "python scripts/validate_studies.py"
+  ]
+}

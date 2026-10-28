@@ -72,7 +72,13 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Poultry–Pork Pressure — U.S. Beef Processing](Protein-Substitution-Pressure-to-U.S.-Beef-Processing/) | Lagged poultry–pork output divergence → 6m-ahead U.S. beef production YoY | Negative incremental OOS; not PIT or equity alpha | [Open](Protein-Substitution-Pressure-to-U.S.-Beef-Processing/research.ipynb) |
 
+| [Outpatient–Nursing Pressure — U.S. Hospital Employment](Outpatient-Nursing-Pressure-to-U.S.-Hospital-Employment/) | Stale outpatient-nonhome minus nursing hiring growth → 6m-ahead hospital payroll YoY | Pandemic-sensitive control-relative gain, fails simple persistence/mean; not PIT or equity alpha | [Open](Outpatient-Nursing-Pressure-to-U.S.-Hospital-Employment/research.ipynb) |
+
 ## Research Summaries
+### [Outpatient–Nursing Pressure — U.S. Hospital Employment](Outpatient-Nursing-Pressure-to-U.S.-Hospital-Employment/)
+
+A byte-verified inherited 2010–2026 BLS CES snapshot tests two-month-stale outpatient-nonhome minus nursing employment growth against six-month-ahead U.S. hospital payroll growth across **99** purged expanding-window origins. Adding the factor improves macro-control RMSE from **4.5501** to **4.2742 log-pp** but is far worse than hospital persistence (**1.4184 log-pp**) and historical mean (**1.7681 log-pp**). A 1,000-refit block-shuffle exploratory tail fraction of **0.2248**, a 2,000-draw paired block-bootstrap gain interval **[−0.1782, +0.5870] log-pp**, and negative gains after excluding 2020–2021 do not establish stable incremental value. **Verdict:** negative retrospective hospital-employment macro pilot; historical first-release vintages, issuer-level OOS fundamentals, total security returns and investable equity alpha remain unverified.
+
 ### [Poultry–Pork Pressure — U.S. Beef Processing](Protein-Substitution-Pressure-to-U.S.-Beef-Processing/)
 
 Using a frozen USDA-origin monthly meat-production snapshot, 186 purged expanding-window origins tested whether two-month-stale poultry-versus-pork output divergence predicts six-month-ahead U.S. beef production growth. The augmented Ridge model worsened OOS RMSE to **5.8986 log pp** versus **5.8723** for matched supply controls and **5.8591** for the AR Ridge baseline. A 1,000-draw block-reorder exploratory upper-tail fraction of **0.7522**, a 2,000-draw paired block-bootstrap gain interval **[−0.1152, +0.0631] log pp**, and 1,000 input-weight perturbations offered no stable support. **Verdict:** negative retrospective beef-processing macro-factor falsification; unverified historical publication vintages, a single-issuer descriptive SEC exposure map and missing security total returns preclude PIT, fundamental-alpha or investable-equity claims.
