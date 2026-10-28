@@ -1,0 +1,7 @@
+case,n_oos,gain_log_pp
+primary_70_30_poultry_minus_pork,186,-0.02626379920255495
+broiler_only_minus_pork,186,-0.009886887251527199
+turkey_only_minus_pork,186,-0.041140083922925896
+poultry_only_no_pork,186,-0.029720284891889825
+negative_pork_only,186,0.004016681138545586
+linear_unbounded_factor,186,-0.024583859326582136

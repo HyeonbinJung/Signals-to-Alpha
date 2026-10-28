@@ -70,7 +70,13 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Protein Supply Divergence — U.S. Broiler Production](Protein-Supply-Divergence-to-U.S.-Broiler-Production/) | Stale beef/pork vs turkey growth → 3m-ahead U.S. broiler output YoY | Negative incremental OOS; not PIT / equity alpha | [Open](Protein-Supply-Divergence-to-U.S.-Broiler-Production/research.ipynb) |
 
+| [Poultry–Pork Pressure — U.S. Beef Processing](Protein-Substitution-Pressure-to-U.S.-Beef-Processing/) | Lagged poultry–pork output divergence → 6m-ahead U.S. beef production YoY | Negative incremental OOS; not PIT or equity alpha | [Open](Protein-Substitution-Pressure-to-U.S.-Beef-Processing/research.ipynb) |
+
 ## Research Summaries
+### [Poultry–Pork Pressure — U.S. Beef Processing](Protein-Substitution-Pressure-to-U.S.-Beef-Processing/)
+
+Using a frozen USDA-origin monthly meat-production snapshot, 186 purged expanding-window origins tested whether two-month-stale poultry-versus-pork output divergence predicts six-month-ahead U.S. beef production growth. The augmented Ridge model worsened OOS RMSE to **5.8986 log pp** versus **5.8723** for matched supply controls and **5.8591** for the AR Ridge baseline. A 1,000-draw block-reorder exploratory upper-tail fraction of **0.7522**, a 2,000-draw paired block-bootstrap gain interval **[−0.1152, +0.0631] log pp**, and 1,000 input-weight perturbations offered no stable support. **Verdict:** negative retrospective beef-processing macro-factor falsification; unverified historical publication vintages, a single-issuer descriptive SEC exposure map and missing security total returns preclude PIT, fundamental-alpha or investable-equity claims.
+
 ### [Protein Supply Divergence — U.S. Broiler Production](Protein-Supply-Divergence-to-U.S.-Broiler-Production/)
 
 A frozen 1944–2023 USDA ERS-derived plotnine meat-production snapshot tests a two-month-stale beef/pork-minus-turkey growth divergence as a lead for three-month-ahead U.S. broiler output, with 165 purged expanding-window forecasts. Adding the factor worsens macro-control RMSE from 4.7506 to 4.7754 log-pp, while AR Ridge achieves 4.7309 log-pp. The 1,000-refit 12-month block-reorder exploratory tail fraction is 0.8432, the 2,000-draw paired block-bootstrap RMSE-gain interval [-0.0787, +0.0257] crosses zero, and none of 1,000 beef/pork weight perturbations improve the control. Verdict: a reproducible negative poultry-production macro pilot; historical original-release vintages, company-level fundamentals, total security returns and investable equity alpha remain unverified.

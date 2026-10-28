@@ -1,0 +1,4 @@
+company,segment,fiscal_year,filing_date,source_url,observed_sales_usd_millions,segment_exposure_type,model_weight,valid_from,limitation
+Tyson Foods,Beef,2023,2023-11-13,https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/tsn-20230930.htm,19325,Direct beef processing segment,NOT USED,2023-11-13,No earlier dated issuer weights; descriptive only
+Tyson Foods,Pork,2023,2023-11-13,https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/tsn-20230930.htm,5768,Competing pork segment,NOT USED,2023-11-13,Company segment is not national production
+Tyson Foods,Chicken,2023,2023-11-13,https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/tsn-20230930.htm,17060,Competing poultry segment,NOT USED,2023-11-13,Company segment is not national production

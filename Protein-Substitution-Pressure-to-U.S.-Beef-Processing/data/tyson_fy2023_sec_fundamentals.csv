@@ -1,0 +1,10 @@
+fiscal_year,segment,sales_usd_millions,operating_income_usd_millions,filing_date,filing_url
+2021,Beef,17999,3240,2023-11-13,https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/tsn-20230930.htm
+2022,Beef,19854,2502,2023-11-13,https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/tsn-20230930.htm
+2023,Beef,19325,-91,2023-11-13,https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/tsn-20230930.htm
+2021,Pork,6277,328,2023-11-13,https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/tsn-20230930.htm
+2022,Pork,6414,193,2023-11-13,https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/tsn-20230930.htm
+2023,Pork,5768,-139,2023-11-13,https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/tsn-20230930.htm
+2021,Chicken,13733,-625,2023-11-13,https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/tsn-20230930.htm
+2022,Chicken,16961,955,2023-11-13,https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/tsn-20230930.htm
+2023,Chicken,17060,-770,2023-11-13,https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/tsn-20230930.htm

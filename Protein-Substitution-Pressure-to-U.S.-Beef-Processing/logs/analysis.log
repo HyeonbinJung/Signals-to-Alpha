@@ -1,0 +1,21 @@
+{
+  "raw_n": 960,
+  "panel_n": 748,
+  "oos_n": 186,
+  "observed_rmse_gain_log_pp": -0.02626379920255495,
+  "placebo_exploratory_tail_fraction": 0.7522477522477522,
+  "bootstrap_gain_ci_95": [
+    -0.11520044919967218,
+    0.0630903743523934
+  ],
+  "weight_positive_gain_fraction": 0.0
+}
+          model  n_oos  rmse_log_pp  mae_log_pp  bias_log_pp
+       ar_ridge    186     5.859057    4.372929     0.807760
+ supply_control    186     5.872345    4.371908     0.799144
+      augmented    186     5.898608    4.396403     1.114625
+historical_mean    186     6.072084    4.544264     1.020148
+    factor_only    186     6.076099    4.547361     1.009093
+    persistence    186     7.592569    5.806400     0.302895
+       momentum    186    12.731409    9.434701     0.157800
+TIME 0:23.07
