@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "clean_reproduction_method": "Monte Carlo phases independently run, then analysis and notebook run in a fresh directory",
+  "matching_sha256_count": 22,
+  "file_sha256": {
+    "data/derived_formation_panel.csv": {
+      "primary": "f5855bd460e4473ab1dfa646668f5cfd1a48e55c0a9d5a7db5bce026a61b052a",
+      "clean": "f5855bd460e4473ab1dfa646668f5cfd1a48e55c0a9d5a7db5bce026a61b052a"
+    },
+    "results/metrics.json": {
+      "primary": "54c052c79f01720528699ac31444c63dc4fcd7f15f7b97631e45bee92a2fac52",
+      "clean": "54c052c79f01720528699ac31444c63dc4fcd7f15f7b97631e45bee92a2fac52"
+    },
+    "results/scorecard.csv": {
+      "primary": "adb0283500d0e871fa2c48359d4d780da74bbc69b3f0eeb6e58193c17538baf1",
+      "clean": "adb0283500d0e871fa2c48359d4d780da74bbc69b3f0eeb6e58193c17538baf1"
+    },
+    "results/walk_forward_oos.csv": {
+      "primary": "4366fe67f8fd02bf1adf6ad17a6a3fe02f5f0e5853138d0d55e10563e9258048",
+      "clean": "4366fe67f8fd02bf1adf6ad17a6a3fe02f5f0e5853138d0d55e10563e9258048"
+    },
+    "results/block_placebo_1000.csv": {
+      "primary": "644cb3d6d24699bef14de645cf0fcc6a263eb7a793b58ec9ebd984ad4a3501bc",
+      "clean": "644cb3d6d24699bef14de645cf0fcc6a263eb7a793b58ec9ebd984ad4a3501bc"
+    },
+    "results/paired_block_bootstrap_2000.csv": {
+      "primary": "129ecb112367e4f626af59df6fa3bc012b31d5308bd3073ee7deae6fde3e57a0",
+      "clean": "129ecb112367e4f626af59df6fa3bc012b31d5308bd3073ee7deae6fde3e57a0"
+    },
+    "results/exposure_perturbation_1000.csv": {
+      "primary": "9a1c44d2d62b5a641fecc51d8b5da4539ec1313b3ac5860eb8240a4a27434196",
+      "clean": "9a1c44d2d62b5a641fecc51d8b5da4539ec1313b3ac5860eb8240a4a27434196"
+    },
+    "results/horizon_lag_robustness.csv": {
+      "primary": "e056240a70934f8647d50f1c0111920fd47f3a3830b5ff58594099eaec94afff",
+      "clean": "e056240a70934f8647d50f1c0111920fd47f3a3830b5ff58594099eaec94afff"
+    },
+    "results/regime_sensitivity.csv": {
+      "primary": "613d020145a2f038e2fed84158ecdc7fceb031104129bfbd2d259dd2f385b388",
+      "clean": "613d020145a2f038e2fed84158ecdc7fceb031104129bfbd2d259dd2f385b388"
+    },
+    "results/leave_one_year_out.csv": {
+      "primary": "a4ac3056982504ad4e0d973d66c7b10d66d1a1cfb89d6e348180df66a50ed404",
+      "clean": "a4ac3056982504ad4e0d973d66c7b10d66d1a1cfb89d6e348180df66a50ed404"
+    },
+    "results/ablations.csv": {
+      "primary": "14b05b1397984539e2bc2123d234f72ead0563c9ef1d32039c48398dc642093f",
+      "clean": "14b05b1397984539e2bc2123d234f72ead0563c9ef1d32039c48398dc642093f"
+    },
+    "figures/01_computer_network_chip_indices.png": {
+      "primary": "304b65b6121de3e3c6a246fc7fe014d94972cc4aded931a5894bb02b73574a22",
+      "clean": "304b65b6121de3e3c6a246fc7fe014d94972cc4aded931a5894bb02b73574a22"
+    },
+    "figures/02_yoy_sector_growth.png": {
+      "primary": "91b7758f6e320fbcb869ae6e80710480c55a415e3dc8b65529d05b80f97d1388",
+      "clean": "91b7758f6e320fbcb869ae6e80710480c55a415e3dc8b65529d05b80f97d1388"
+    },
+    "figures/03_factor_vs_future_growth.png": {
+      "primary": "cc65f714693a9495ea0053c4a1505fb56f519781fca60f37036662baeda185a9",
+      "clean": "cc65f714693a9495ea0053c4a1505fb56f519781fca60f37036662baeda185a9"
+    },
+    "figures/04_signal_scatter.png": {
+      "primary": "fdf0ddc4db24275887ca0397fc48ac592149c4ebe2e003d7a18d67ae46a28add",
+      "clean": "fdf0ddc4db24275887ca0397fc48ac592149c4ebe2e003d7a18d67ae46a28add"
+    },
+    "figures/05_oos_forecast_paths.png": {
+      "primary": "904a4f5978ebfae060e9cc2db1020834f50929a61df3267a597beae64e80c95d",
+      "clean": "904a4f5978ebfae060e9cc2db1020834f50929a61df3267a597beae64e80c95d"
+    },
+    "figures/06_baseline_scorecard.png": {
+      "primary": "6b12542566a9e1c6692fa310687b440d18735d28e999777c4e4f373e522777dd",
+      "clean": "6b12542566a9e1c6692fa310687b440d18735d28e999777c4e4f373e522777dd"
+    },
+    "figures/07_cumulative_loss_differential.png": {
+      "primary": "ed16485cbe770e382b43008dea21b859978297ea8d33b80e3e2d9137477ba9fc",
+      "clean": "ed16485cbe770e382b43008dea21b859978297ea8d33b80e3e2d9137477ba9fc"
+    },
+    "figures/08_block_placebo.png": {
+      "primary": "17ca2e3dd836da32498a88eab036fc956b72d829624ed6a72940aa23edc5ccb1",
+      "clean": "17ca2e3dd836da32498a88eab036fc956b72d829624ed6a72940aa23edc5ccb1"
+    },
+    "figures/09_bootstrap_uncertainty.png": {
+      "primary": "9033e5477526c983121330788bcedc5e664c7b0bb051dc563922b390d2c09ccc",
+      "clean": "9033e5477526c983121330788bcedc5e664c7b0bb051dc563922b390d2c09ccc"
+    },
+    "figures/10_exposure_sensitivity.png": {
+      "primary": "89c4f0f5911d4dfc9d20941caf3fbfeb629e6a1931e840f9024c91c7f04df46e",
+      "clean": "89c4f0f5911d4dfc9d20941caf3fbfeb629e6a1931e840f9024c91c7f04df46e"
+    },
+    "figures/11_regime_sensitivity.png": {
+      "primary": "c411478afd3fd4d4a83b3ae5680141672e6a9869480316132994467afa9d56d2",
+      "clean": "c411478afd3fd4d4a83b3ae5680141672e6a9869480316132994467afa9d56d2"
+    }
+  },
+  "notebook_cells": 74,
+  "notebook_code_cells": 43,
+  "executed_code_cells": 43,
+  "saved_image_outputs": 11,
+  "error_outputs": 0,
+  "unit_tests_passed": 17,
+  "caveat": "No historical first-release PIT vintages; source inherited; no corporate fundamentals or total returns."
+}

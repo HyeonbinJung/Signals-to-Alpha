@@ -62,7 +62,13 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Semiconductor Supply Pressure — U.S. Communications Equipment](Semiconductor-Supply-Pressure-to-Communications-Equipment-U.S.-Network-Hardware/) | Lagged semiconductor output premium → 3m-ahead U.S. communications-equipment production YoY | Small OOS gain, block placebo and bootstrap inconclusive; revised snapshot, not PIT | [Open](Semiconductor-Supply-Pressure-to-Communications-Equipment-U.S.-Network-Hardware/research.ipynb) |
 
+| [Network–Chip Balance — U.S. Computer & Peripheral Manufacturing](Network-Demand-Balance-to-Computer-Hardware-U.S.-Computer-Peripherals/) | Lagged network–semiconductor output gap → 3m-ahead U.S. computer/peripheral output YoY | Negative OOS vs controls and AR; retrospective revised data, not PIT or equity alpha | [Open](Network-Demand-Balance-to-Computer-Hardware-U.S.-Computer-Peripherals/research.ipynb) |
+
 ## Research Summaries
+### [Network–Chip Balance — U.S. Computer & Peripheral Manufacturing](Network-Demand-Balance-to-Computer-Hardware-U.S.-Computer-Peripherals/)
+
+A byte-verified inherited 2011–2026 Federal Reserve G.17 snapshot tests the communications-equipment-minus-chip production gap against U.S. computer/peripheral output, but the source is not an independently collected historical release-vintage panel. Across **117** purged expanding-window three-month-ahead forecasts, the augmented model worsens macro-control RMSE from **11.3479** to **11.4716 log-pp** and trails AR Ridge at **9.8988 log-pp**. A 1,000-refit block-reorder exploratory tail fraction of **0.4096**, a 2,000-draw paired block-bootstrap interval **[−0.6418, +0.1520] log-pp**, and zero positive gains in 1,000 factor-weight perturbations do not support stable improvement; only 2020–2021 is positive. **Verdict:** a reproducible negative retrospective macro-factor falsification, with historical PIT revisions, corporate fundamentals and investable equity returns unverified.
+
 
 ### [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/)
 

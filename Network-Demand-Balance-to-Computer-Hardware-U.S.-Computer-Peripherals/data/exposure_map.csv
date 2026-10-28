@@ -1,0 +1,7 @@
+entity,entity_type,naics_or_ticker,mechanism,role,evidence_date,evidence_url,historical_weight,usable_for_backtest,limitation
+Computer and peripheral equipment,industry,3341,Computer and storage device manufacturing,independent outcome,2017,https://www.census.gov/naics/2017NAICS/2017_Definition_File.pdf,NA,yes as aggregate series,Not firm sales
+Communications equipment,industry,3342,Networking and communications equipment production,network proxy,2017,https://www.census.gov/naics/2017NAICS/2017_Definition_File.pdf,1.0 factor coefficient,yes as aggregate series,Not direct network capex demand
+Semiconductors and electronic components,industry,3344,Component supply and technology cycle,chip proxy,2017,https://www.census.gov/naics/2017NAICS/2017_Definition_File.pdf,-1.0 factor coefficient,yes as aggregate series,Not an observed supply shortage
+Dell Technologies,issuer,DELL,Servers and client devices,descriptive downstream issuer,2025-03-25,https://www.sec.gov/Archives/edgar/data/1571996/000157199625000034/dell-20250131.htm,UNKNOWN,no,Global operations and segment mix not historical U.S. NAICS weights
+HP Inc.,issuer,HPQ,Personal systems and printing,descriptive downstream issuer,2025-12-10,https://www.sec.gov/Archives/edgar/data/47217/000004721725000071/hpq-20251031.htm,UNKNOWN,no,No time-series sales or U.S. manufacturing mapping
+Cisco Systems,issuer,CSCO,Network equipment and systems,descriptive upstream/demand issuer,2025,https://www.cisco.com/c/en/us/about/annual-reports.html,UNKNOWN,no,Not a direct comparable output series

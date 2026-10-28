@@ -1,0 +1,5 @@
+model,n,rmse
+no_chip_control,117,11.192984157214338
+no_manufacturing_control,117,10.197348276953367
+network_level_only,117,11.564819720556862
+base_full,117,11.471550516881154

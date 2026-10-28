@@ -1,0 +1,1 @@
+PASS run_analysis.py; reuse_draws=True; raw_n=189; oos_n=117; placebo=1000; bootstrap=2000; perturbations=1000; elapsed_seconds=2.01

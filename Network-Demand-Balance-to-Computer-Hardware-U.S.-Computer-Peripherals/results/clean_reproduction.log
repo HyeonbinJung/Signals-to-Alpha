@@ -1,0 +1,23 @@
+START exposure
+START placebo
+START bootstrap
+START horizon
+START regimes
+START figures
+{
+  "oos_n": 117,
+  "delta_rmse": -0.12368073248044631,
+  "mean": 13.148216566498233,
+  "control": 11.347869784400707,
+  "full": 11.471550516881154,
+  "placebo_tail": 0.4095904095904096,
+  "bootstrap_ci": [
+    -0.6418424169265807,
+    0.15201196858935986
+  ],
+  "exposure_fraction_positive": 0.0
+}
+.................                                                        [100%]
+17 passed in 0.92s
+[NbConvertApp] Converting notebook research.ipynb to notebook
+[NbConvertApp] Writing 776352 bytes to research.ipynb
