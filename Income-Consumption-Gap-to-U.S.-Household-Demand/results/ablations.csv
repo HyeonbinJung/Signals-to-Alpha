@@ -1,0 +1,5 @@
+model,rmse,n
+without_income,1.739228700736885,126
+without_unemployment,1.7785778056857815,126
+without_gdp,1.8398315332787365,126
+factor_only,1.9072996648361384,126

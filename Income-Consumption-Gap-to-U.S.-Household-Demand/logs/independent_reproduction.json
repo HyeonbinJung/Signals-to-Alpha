@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "independent_run_directory": "/mnt/data/s2a_consumer_repro_20261028",
+  "hashes": [
+    {
+      "path": "figures/01_income_consumption_levels.png",
+      "match": true,
+      "sha256": "f9b4d90e84801457251881984313bb86b75e3549632915d1903cb8542ed04457"
+    },
+    {
+      "path": "figures/02_income_gap_factor.png",
+      "match": true,
+      "sha256": "da2cdb625c2e6cd4c9f1d3cf4869a7e62ee4f593cb908eb5eb28b691b0e7490c"
+    },
+    {
+      "path": "figures/03_factor_outcome_scatter.png",
+      "match": true,
+      "sha256": "9e60a951f965d4e096a1e097f6fadfa91fca619f67c543a5159b4c20768f28b5"
+    },
+    {
+      "path": "figures/04_oos_rmse.png",
+      "match": true,
+      "sha256": "dbaf848080129b3213bfd41b2372184932c7627979018b5f49a201c6bb1ce311"
+    },
+    {
+      "path": "figures/05_oos_forecasts.png",
+      "match": true,
+      "sha256": "6c7e5450825f25ce8bf5ff4f92717b9bcdeadd1a816f2e35687ab99166b3584a"
+    },
+    {
+      "path": "figures/06_cumulative_loss.png",
+      "match": true,
+      "sha256": "a57193161a018295a2f40f4638217e9673a33a7238b91543207fd142414e6dc5"
+    },
+    {
+      "path": "figures/07_block_placebo.png",
+      "match": true,
+      "sha256": "635c4c5a00bc7e745771ccc6854c8199ba9f8910ca78b42cff1500b5c70c3599"
+    },
+    {
+      "path": "figures/08_bootstrap.png",
+      "match": true,
+      "sha256": "50887c57ab1ec2475f8f1476c52505f10310c879cecf59a78790a593507389fc"
+    },
+    {
+      "path": "figures/09_exposure_sensitivity.png",
+      "match": true,
+      "sha256": "f152f3b1df44fb011ff0394dd043e3affc0e805c19fa6dfa7d2e9f7e0d48bd4b"
+    },
+    {
+      "path": "results/ablations.csv",
+      "match": true,
+      "sha256": "2561ee019f812a7c951665a8d353e50eba8eaacf8252f8bc9a3541ae46075259"
+    },
+    {
+      "path": "results/block_placebo_1000.csv",
+      "match": true,
+      "sha256": "e840ac381cd86a37694126a76258091f9811b17265187bf658b5e9f995856b3a"
+    },
+    {
+      "path": "results/exposure_perturbation_1000.csv",
+      "match": true,
+      "sha256": "9dd40d295c53b7d2793392a2795994c0524101c64e546d012be195d6985b1a4e"
+    },
+    {
+      "path": "results/horizon_lag_sensitivity.csv",
+      "match": true,
+      "sha256": "47751c73053c7c7e5bd8ad0fb2ffd1521b84c61649d53d1a6f4656d5cd9ba8ca"
+    },
+    {
+      "path": "results/leave_one_decade_out.csv",
+      "match": true,
+      "sha256": "6012c8dc2e16baa81e08ad4bdfcd5cfde6d51b63d68cd88566311eefae30685f"
+    },
+    {
+      "path": "results/metrics.json",
+      "match": true,
+      "sha256": "f0db66cc356275e2c9314dc5440f4d258828def38578dd084ebc349c20956c6f"
+    },
+    {
+      "path": "results/paired_block_bootstrap_2000.csv",
+      "match": true,
+      "sha256": "1d8e267b0d70595d7d8b474c24615796f4e2c4d5da6aa56b840bf6d5aa6312ab"
+    },
+    {
+      "path": "results/regime_sensitivity.csv",
+      "match": true,
+      "sha256": "b6d2421146221d6a62361f892612f044af329a4616d4162b0d7135f584f547f1"
+    },
+    {
+      "path": "results/scorecard.csv",
+      "match": true,
+      "sha256": "0892a5b3664cf2a445cd65496a6dca633fdc54e7ffbe6f68084f7dd9c0669533"
+    },
+    {
+      "path": "results/walk_forward_oos.csv",
+      "match": true,
+      "sha256": "983d3a0bc604f58d57dff5905b9b35ab43d7c267e21f97b49158406707df6921"
+    }
+  ],
+  "tests": "18 passed",
+  "notebook_execution": "35/35 code cells, 9 PNG outputs, no errors"
+}

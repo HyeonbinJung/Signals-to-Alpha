@@ -66,7 +66,13 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | [Digital-Platform Relative Strength — U.S. Digital Advertising & Streaming](Digital-Platform-Relative-Strength-U.S.-Digital-Media-Services/) | Fixed exposure-weighted 8-week relative momentum → 4-week benchmark-adjusted *price* changes | Negative OOS vs controls; 2018–2019 demo data, non-PIT / not total returns | [Open](Digital-Platform-Relative-Strength-U.S.-Digital-Media-Services/research.ipynb) |
 
+| [Income–Consumption Gap — U.S. Household Demand (cross-sector macro)](Income-Consumption-Gap-to-U.S.-Household-Demand/) | Lagged real-income minus consumption growth → next-4Q aggregate real PCE growth | Negative incremental OOS; not industry-specific, PIT or equity alpha | [Open](Income-Consumption-Gap-to-U.S.-Household-Demand/research.ipynb) |
+
 ## Research Summaries
+### [Income–Consumption Gap — U.S. Household Demand](Income-Consumption-Gap-to-U.S.-Household-Demand/)
+
+A frozen 1959Q1–2009Q3 statsmodels FRED/BLS snapshot tests a one-quarter-stale real disposable-income minus consumption-growth gap as a lead for next-four-quarter aggregate U.S. real PCE growth, not NAICS retail revenue. Across 126 purged expanding-window forecasts, the augmented macro model worsens RMSE from 1.7392 to 1.7514 log-pp and trails the macro-control baseline. The 1,000-refit eight-quarter block-reorder exploratory tail fraction is 0.2947, while the 2,000-draw paired moving-block bootstrap gain interval [−0.0305, +0.0064] log-pp includes zero and none of 1,000 weight perturbations improve accuracy. Verdict: negative retrospective cross-sector consumer-demand macro pilot; original publication vintages, industry-specific outcomes, firm fundamentals and investable total returns remain unverified.
+
 ### [Digital-Platform Relative Strength — U.S. Digital Advertising & Streaming Services](Digital-Platform-Relative-Strength-U.S.-Digital-Media-Services/)
 
 A frozen 105-week Plotly six-stock sample yields **65** purged expanding-window origins and **260** four-company forecasts testing whether exposure-weighted eight-week relative momentum predicts subsequent four-week benchmark-adjusted **price** changes. Adding the factor worsens controlled OOS RMSE from **6.9437** to **7.0143 percentage points**, with mean weekly four-stock rank IC **−0.160**. The 1,000-refit block-shuffle tail fraction is **0.540**, and the 2,000-draw block-bootstrap improvement interval **[−0.353, +0.191] pp** includes zero. **Verdict:** negative retrospective digital-media price-factor pilot; the demo basket is selected, historical price vendor/vintages and total-return adjustments are unknown, and no independent fundamental lead or investable equity alpha is established.

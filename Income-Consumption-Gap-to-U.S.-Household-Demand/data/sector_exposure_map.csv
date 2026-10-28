@@ -1,0 +1,5 @@
+sector,naics_2022,mechanism,quantitative_weight,reference,exposure_as_of,empirically_validated
+Retail trade,44-45,Household discretionary purchasing affects retailer sales,UNKNOWN,https://www.census.gov/data/tables/2022/econ/economic-census/naics-sector-44-45.html,2022,false
+Food services,722,Consumer spending affects restaurant receipts,UNKNOWN,https://www.census.gov/data/tables/2022/econ/economic-census/naics-sector-72.html,2022,false
+Arts and recreation,71,Discretionary income may affect admissions and recreation,UNKNOWN,https://www.census.gov/programs-surveys/economic-census/data/tables.html,2022,false
+Other personal services,81,Household purchasing power may affect paid services,UNKNOWN,https://www.census.gov/programs-surveys/economic-census/data/tables.html,2022,false

@@ -1,0 +1,27 @@
+{
+  "status": "REPRODUCED RETROSPECTIVE CONSUMER-DEMAND MACRO PILOT \u2014 NOT PIT / NOT INDUSTRY-SPECIFIC / NOT EQUITY ALPHA",
+  "observations": 203,
+  "panel_n": 194,
+  "n_oos": 126,
+  "horizon_quarters": 4,
+  "lag_quarters": 1,
+  "first_oos": "1977Q2",
+  "last_oos": "2008Q3",
+  "factor_target_corr_in_sample": -0.024867058179719962,
+  "control_rmse": 1.739228700736885,
+  "augmented_rmse": 1.75141773754819,
+  "gain_log_pp": -0.01218903681130512,
+  "placebo_tail_fraction_exploratory": 0.2947052947052947,
+  "bootstrap_ci95": [
+    -0.030530578443057843,
+    0.006446582163417134
+  ],
+  "exposure_gain_positive_fraction": 0.0,
+  "n_placebo": 1000,
+  "n_bootstrap": 2000,
+  "n_exposure": 1000,
+  "source_snapshot_asof": "2009-12-15 (FRED/BLS accessed, NOT original release vintage)",
+  "pit_verified": false,
+  "company_fundamentals_tested": false,
+  "security_total_returns_tested": false
+}
