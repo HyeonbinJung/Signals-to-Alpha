@@ -1,0 +1,27 @@
+from pathlib import Path
+import pandas as pd,hashlib,datetime,json
+from analysis import CORE,CONTROL,EXPOSURE,load_prices,panel
+ROOT=Path(__file__).resolve().parent
+PLOTLY='https://github.com/plotly/plotly.py/blob/v6.5.2/plotly/package_data/datasets/stocks.csv.gz'
+SEC={
+ 'GOOG':('2018-02-06','https://www.sec.gov/Archives/edgar/data/1652044/000165204418000007/0001652044-18-000007-index.htm','Alphabet 2017 Form 10-K; advertising/search and YouTube'),
+ 'FB':('2018-02-01','https://www.sec.gov/Archives/edgar/data/1326801/000132680118000009/0001326801-18-000009-index.html','Facebook 2017 Form 10-K; advertising/social platform'),
+ 'NFLX':('2018-01-29','https://www.sec.gov/Archives/edgar/data/1065280/000106528018000069/0001065280-18-000069-index.htm','Netflix 2017 Form 10-K; streaming subscriptions'),
+ 'AMZN':('2018-02-02','https://www.sec.gov/Archives/edgar/data/1018724/000101872418000005/0001018724-18-000005-index.htm','Amazon 2017 Form 10-K; retail/cloud with partial digital-media exposure')}
+regs=[{'source_id':'B01','grade':'B','publisher':'Plotly','series':'plotly.express.data.stocks() normalized weekly example prices','url':PLOTLY,'publication_date':'UNKNOWN','period_start':'2018-01-01','period_end':'2019-12-30','units':'unitless normalized weekly closing price (2018-01-01=1)','retrieved_utc':'2026-10-28','release_lag':'UNKNOWN','vintage_revisions':'Original exchange/vendor and adjustment history UNKNOWN; local plotly 6.5.2 package snapshot frozen','role':'price features and benchmark-adjusted price-change outcomes; not certified total returns','limitations':'Plotly educational dataset, not independently verified vendor tape; no corporate actions or dividends audit'}]
+for firm,(date,url,descr) in SEC.items():
+ regs.append({'source_id':'A_'+firm,'grade':'A','publisher':'SEC EDGAR','series':descr,'url':url,'publication_date':date,'period_start':'2017-01-01','period_end':'2017-12-31','units':'2017 annual Form 10-K descriptive business lines','retrieved_utc':'2026-10-28','release_lag':'known filing date, after fiscal year-end','vintage_revisions':'2017 filing as indexed at SEC; subsequent amended filings not used for weights','role':'industry/exposure narrative only; not training features or independent numerical fundamentals','limitations':'qualitative classification, analyst exposure priors not audited revenue weights'})
+regs.append({'source_id':'C01','grade':'C','publisher':'Original market-data vendor UNKNOWN','series':'underlying six stock weekly normalized closing prices','url':'UNKNOWN','publication_date':'UNKNOWN','period_start':'2018-01-01','period_end':'2019-12-30','units':'UNKNOWN original vendor units','retrieved_utc':'2026-10-28','release_lag':'UNKNOWN','vintage_revisions':'UNKNOWN','role':'unverified upstream provenance; not used independently','limitations':'No vendor, price adjustment, dividend, or survivorship audit'})
+pd.DataFrame(regs).to_csv(ROOT/'data'/'source_register.csv',index=False)
+ex=[]
+for f in CORE:
+ date,url,descr=SEC[f]
+ ex.append({'ticker':f,'role':'core digital media/services (mixed exposure)','analyst_digital_exposure':EXPOSURE[f],'mapping_asof':'2018-02-06','filing_date':date,'filing_url':url,'description':descr,'quality':'analyst prior; not disclosed exact segment weight'})
+for f in CONTROL:
+ ex.append({'ticker':f,'role':'two-stock technology comparison basket (NOT market benchmark)','analyst_digital_exposure':0.0,'mapping_asof':'2018-02-06','filing_date':'UNKNOWN','filing_url':'UNKNOWN','description':'Control basket only, no sector purity claim','quality':'control selection ex post; bias risk'})
+pd.DataFrame(ex).to_csv(ROOT/'data'/'exposure_map.csv',index=False)
+prices=load_prices(ROOT/'data'/'plotly_stocks_2018_2019_frozen.csv')
+panel(prices).to_csv(ROOT/'data'/'derived_formation_panel.csv',index=False,float_format='%.12g')
+sha=hashlib.sha256((ROOT/'data'/'plotly_stocks_2018_2019_frozen.csv').read_bytes()).hexdigest()
+(ROOT/'data'/'source_qa.md').write_text(f'''# Frozen-data provenance and quality audit — 2026-10-28\n\n- Input: Plotly 6.5.2 `plotly.express.data.stocks()`, **105** weekly rows from **2018-01-01** to **2019-12-30**, six columns of normalized positive prices.\n- Raw frozen CSV SHA-256: `{sha}`.\n- Plotly documentation: https://plotly.com/python-api-reference/generated/plotly.express.data.html .\n- Exact packaged dataset URL: {PLOTLY} .\n- Original exchange/vendor, publication date, corporate-action adjustment, dividend treatment and per-week availability: **UNKNOWN**. This is **not** a verified PIT tape, not certified total-return data, and cannot support an investable-alpha claim.\n- Rows checked for nonmissing, unique monotonic dates, exact 7-day spacing, positive prices, and base value 1.0. No external vendor cross-check was possible in this execution environment.\n- Source grade: B for developer-distributed snapshot, C for its unverified upstream provenance. SEC 2017 10-K filings are grade A and used only for qualitative business exposure mapping.\n- Selection: all four chosen digital-platform/media names were selected retrospectively from a six-ticker demo basket, introducing survivorship/selection risk. AAPL/MSFT are **not** an investable broad-market benchmark.\n- Formation after 2018-02-06 means all four selected 2017 10-K filing dates precede evaluated OOS origins; historical weekly price availability still **unverified**.\n''')
+print('wrote sources',len(regs),'and frozen panel',len(panel(prices)))

@@ -1,0 +1,22 @@
+{
+  "n_raw_weeks": 105,
+  "n_panel_rows": 372,
+  "n_oos_origins": 65,
+  "n_oos_predictions_per_model": 260,
+  "control_rmse_pp": 6.943659225438157,
+  "augmented_rmse_pp": 7.014253048711788,
+  "improvement_pp": -0.07059382327363029,
+  "rank_ic_mean": -0.16,
+  "rank_spread_mean_pp": -1.5088385093172885,
+  "rank_spread_net_20bps_roundtrip_pp": -1.7088385093172884,
+  "placebo_upper_tail_fraction": 0.5404595404595405,
+  "bootstrap_ci_95_pp": [
+    -0.35266635026661053,
+    0.191118305445654
+  ],
+  "exposure_positive_fraction": 0.0,
+  "rolling_40wk_improvement_pp": -0.39952655266986703,
+  "status": "REPRODUCED RETROSPECTIVE PRICE-RETURN PILOT — NOT PIT / NOT TOTAL RETURN / NOT INVESTABLE ALPHA",
+  "publication_vintage": "UNKNOWN",
+  "total_return_adjustment": "UNKNOWN"
+}

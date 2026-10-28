@@ -1,0 +1,4 @@
+regime,origins,predictions_per_model,rmse_improvement_pp
+2018,17,68,-0.087279537842
+2019H1,25,100,0.0461961075765
+2019H2,23,92,-0.195802551174

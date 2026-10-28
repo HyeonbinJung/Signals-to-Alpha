@@ -1,0 +1,5 @@
+ablation,n_origins,rmse_improvement_vs_control_pp
+no_vol,65,0.131997851834
+no_bench,65,-0.143261189576
+no_lag1,65,0.00381355022131
+no_dummies,65,0.145300102316

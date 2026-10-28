@@ -1,0 +1,10 @@
+# Verified in execution environment 2026-10-28. Data is frozen; plotly only needed to re-extract original sample.
+numpy>=2.0,<3
+pandas>=2.0,<3
+scipy>=1.14,<2
+matplotlib>=3.8,<4
+plotly>=6.5,<7
+nbformat>=5.10,<6
+nbclient>=0.10,<1
+ipykernel>=6,<8
+pytest>=8,<10
