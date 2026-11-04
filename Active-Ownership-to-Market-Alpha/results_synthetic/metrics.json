@@ -1,0 +1,80 @@
+{
+  "signal_days": 850,
+  "signal_coverage": 1.0,
+  "n_trading_days": 850,
+  "active_fraction": 0.74,
+  "trade_days": 629,
+  "predictive_hac": {
+    "n": 849,
+    "beta_signal": 0.3427991030461223,
+    "t_hac": 7.192368458588795,
+    "p_hac": 6.367690614102086e-13,
+    "r2": 0.0626501680439101
+  },
+  "predictive_with_same_day_market_control_hac": {
+    "n": 849,
+    "beta_signal": 0.34251319129334656,
+    "t_hac": 7.233093804064798,
+    "p_hac": 4.721130552304063e-13,
+    "r2": 0.06265987946249763
+  },
+  "strategy_gross": {
+    "days": 850,
+    "cumulative_return": 4.3595330905073935,
+    "cagr": 0.6449954374826998,
+    "sharpe": 3.378557440978254,
+    "sortino": 5.8271029202473725,
+    "max_drawdown": -0.11544850842241527,
+    "hit_rate": 0.4505882352941176
+  },
+  "strategy_net": {
+    "days": 850,
+    "cumulative_return": 3.1698599616186964,
+    "cagr": 0.527030730429833,
+    "sharpe": 2.890241439352136,
+    "sortino": 4.824834807135904,
+    "max_drawdown": -0.12324345773361534,
+    "hit_rate": 0.44
+  },
+  "strategy_net_first_70pct": {
+    "days": 595,
+    "cumulative_return": 1.8778499007582203,
+    "cagr": 0.5646919880885153,
+    "sharpe": 3.1132948589760727,
+    "sortino": 5.199710508276257,
+    "max_drawdown": -0.12324345773361534,
+    "hit_rate": 0.43529411764705883
+  },
+  "strategy_net_last_30pct": {
+    "days": 255,
+    "cumulative_return": 0.44894977341245923,
+    "cagr": 0.44264204801229945,
+    "sharpe": 2.4036879228280816,
+    "sortino": 4.014791863014998,
+    "max_drawdown": -0.06517123438458516,
+    "hit_rate": 0.45098039215686275
+  },
+  "market_close_to_close_buy_hold": {
+    "days": 850,
+    "cumulative_return": -0.48081397074140586,
+    "cagr": -0.17661748242282427,
+    "sharpe": -1.0096567731245685,
+    "sortino": -1.375699995073707,
+    "max_drawdown": -0.5279116312289149,
+    "hit_rate": 0.47294117647058825
+  },
+  "market_intraday_long_no_cost": {
+    "days": 850,
+    "cumulative_return": -0.4649332498236727,
+    "cagr": -0.16922972442613005,
+    "sharpe": -0.964045374180401,
+    "sortino": -1.312119590898601,
+    "max_drawdown": -0.5458358262369742,
+    "hit_rate": 0.4611764705882353
+  },
+  "sharpe_block_bootstrap_95pct": [
+    1.8900254553494877,
+    4.018014689020044
+  ],
+  "note": "Split is only descriptive; the threshold/lookback must be prespecified, not optimized on full-sample outcomes."
+}
