@@ -1,4 +1,7 @@
 {
+  "schema_version": 1,
+  "id": "active-ownership-market-information-pit-backtest",
+  "equity_alpha_established": false,
   "title": "Active Ownership and Market-Wide Information: Point-in-Time Backtest",
   "paper": "Between the Bells: Active Management and the Aggregation of Market-Wide Information",
   "authors": ["Shuaiyu Chen", "Cynthia Yin"],
@@ -8,5 +11,13 @@
   "evidence_status": "Synthetic fixture only; no empirical market alpha claim",
   "signal": "daily high-minus-low return spread by lagged, point-in-time active ownership",
   "target": "next-day S&P 500 close-to-close for prediction; next-day ETF open-to-close for executable strategy",
-  "notes": "Exact paper portfolio rules not available from abstract; explicitly labeled inspired-by implementation."
+  "notes": "Exact paper portfolio rules not available from abstract; explicitly labeled inspired-by implementation.",
+  "notebook": "research.ipynb",
+  "source_register": "data_sources.csv",
+  "analysis_entrypoint": "backtest.py",
+  "requirements": "requirements.txt",
+  "notes_file": "DETAILS.md",
+  "data_files": [],
+  "result_files": ["results_synthetic/RESULTS.md", "results_synthetic/metrics.json", "results_synthetic/equity.png", "results_synthetic/robustness.csv"],
+  "test_commands": ["python -m unittest discover -s tests -v", "python backtest.py --prices data/synthetic/prices.csv --holdings data/synthetic/holdings.csv --market data/synthetic/market.csv --source-label synthetic --out outputs/synthetic"]
 }
