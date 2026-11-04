@@ -291,7 +291,7 @@ def save_report(daily: pd.DataFrame, metrics: dict, outdir: Path,
         return "n/a" if v is None else f"{v:.4f}"
     report = f"""# Backtest Results — {source_label.upper()}
 
-**EVIDENCE STATUS: {'SYNTHETIC TEST ONLY — NOT EMPIRICAL ALPHA' if source_label == 'synthetic' else 'USER-SUPPLIED DATA — VERIFY PROVENANCE AND PAPER SPECIFICATION'}**
+**EVIDENCE STATUS: {('SYNTHETIC TEST ONLY — NOT EMPIRICAL ALPHA' if source_label == 'synthetic' else 'PUBLIC HISTORICAL DATA — EXPLORATORY PROXY, NOT PAPER REPLICATION' if source_label == 'public' else 'USER-SUPPLIED DATA — VERIFY PROVENANCE AND PAPER SPECIFICATION')}**
 
 This is an **inspired-by** implementation of Chen & Yin (2026), not an exact replication.
 No paper result (including Sharpe ≈ 1) is claimed to have been reproduced.

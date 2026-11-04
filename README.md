@@ -20,7 +20,7 @@ Signals to Alpha tests whether observable shifts in consumption, production, con
 
 | Study | Signal → outcome | Current evidence | Notebook |
 |:--|:--|:--|:--|
-| [Active Ownership → Market-Wide Information](Active-Ownership-to-Market-Alpha/) | High-minus-low active-ownership stock return spread → next-day S&P 500 returns | **Synthetic code test only**; PIT empirical backtest pending real 13F/CRSP data | [Study & results](Active-Ownership-to-Market-Alpha/README.md) |
+| [Active Ownership → Market-Wide Information](Active-Ownership-to-Market-Alpha/) | High-minus-low active-ownership stock return spread → next-day S&P 500 returns | **2024 public-data pilot: −8.77% net, Sharpe −1.05, HAC p=0.803**; selected-manager breadth proxy only, not paper replication | [Study & results](Active-Ownership-to-Market-Alpha/README.md) |
 | [Consumption-to-Alpha — U.S. K-Food Demand](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/) | K-Food category demand → firm sales / equity excess returns | Fundamental lead plausible; equity alpha unproven | [Open](Consumption-to-Alpha-A-U.S.-K-Food-Alternative-Data-Factor-Model/kfood_research_grade_alpha_v3.ipynb) |
 | [Grid-Capex-to-Alpha — U.S. Electrical Equipment](Grid-Capex-to-Alpha-U.S.-Electric-Equipment/) | Power output gap → electrical-equipment output | Fails mean baseline | [Open](Grid-Capex-to-Alpha-U.S.-Electric-Equipment/grid_capex_alpha_research.ipynb) |
 | [Housing-Permits-to-Alpha — U.S. Building Materials](Housing-Permits-to-Alpha-U.S.-Building-Materials/) | Housing permits / starts → materials output | Fails mean and macro baselines | [Open](Housing-Permits-to-Alpha-U.S.-Building-Materials/housing_permits_alpha_research.ipynb) |

@@ -1,0 +1,4 @@
+-r requirements.txt
+duckdb>=1.1,<2
+pyarrow>=18,<25
+
