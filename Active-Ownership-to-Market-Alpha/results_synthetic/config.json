@@ -1,0 +1,17 @@
+{
+  "prices": "data/synthetic/prices.csv",
+  "holdings": "data/synthetic/holdings.csv",
+  "market": "data/synthetic/market.csv",
+  "out": "outputs/synthetic_2026_11_04",
+  "source_label": "synthetic",
+  "owner_type": "all_active",
+  "quantile": 0.2,
+  "min_names": 20,
+  "weighting": "equal",
+  "sector_neutral": false,
+  "lookback": 126,
+  "threshold": 0.25,
+  "side_cost_bps": 2.0,
+  "short_borrow_bps_daily": 0,
+  "max_age_days": 200
+}

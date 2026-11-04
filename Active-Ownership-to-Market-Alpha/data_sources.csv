@@ -1,0 +1,6 @@
+source,dataset,url,access,usage,limitations
+SEC,Form 13F filings and public datasets,https://www.sec.gov/data-research/sec-markets-data/form-13f-data-sets,public,Historical manager holdings with filing timestamps,Quarterly holdings; long-only; amendments and late filings require care
+SEC,13F overview,https://www.investor.gov/introduction-investing/investing-basics/glossary/form-13f-reports-filed-institutional-investment,public,45-day filing delay and coverage rule,Does not reveal intraday holdings or short positions
+WRDS,CRSP daily security file,https://wrds-www.wharton.upenn.edu/,licensed,Delisting-adjusted total returns and historical security identifiers,Requires institution subscription
+WRDS,Thomson/LSEG s34 ownership,https://wrds-www.wharton.upenn.edu/,licensed,Manager classification and long ownership history,Requires subscription and PIT release verification
+Paper,Chen and Yin 2026,https://ssrn.com/abstract=7367200,public abstract,Conceptual inspiration and reported Sharpe near 1,Exact portfolio construction not verified from 82-page PDF
