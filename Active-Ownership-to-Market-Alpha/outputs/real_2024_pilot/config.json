@@ -1,0 +1,7 @@
+{
+  "lookback": 63,
+  "side_cost_bps": 2.0,
+  "threshold": 0.25,
+  "source": "SEC 13F / Johnbrick123 S&P 500 prices",
+  "signal": "selected-manager breadth fraction; not ownership of shares outstanding"
+}

@@ -1,0 +1,238 @@
+{
+  "evidence_status": "REAL PUBLIC DATA; EXPLORATORY NON-REPLICATING PROXY",
+  "source_checksums": {
+    "13f_2023q4.zip": "aaccf592ab3c329fbb02a8d99eb1ed59aaeb1d578c57676273fcb89a69bdd6c4",
+    "13f_2024janfeb.zip": "ea5e5a9a0124a3d068d723cff502dc33b4ecbf7d0bf1b1ddad9e216a815ed6d9",
+    "13f_2024marmay.zip": "fe723ad7d3e58f7e5f0bb3d5e46158c4c3bacc8a23a69b2d6eef3c97782d5cf8",
+    "13f_2024junaug.zip": "b4f31fb944016f6317fcc20d42227c9bd27c16ae94b73cc489dccd24849c3597",
+    "13f_2024sepnov.zip": "1a34fe4db7865656e2fe5ac2f27fca30e8712e2fd3ceeba4a5fa867fdd9345c1",
+    "prices_real.parquet": "e60bb63c211ebcfa5f147d0e1436a7f7152175094d54b9cae4405b856392eaeb",
+    "membership_intervals.parquet": "1fbc779f4c534e2ef41f62105bcfb95a7eefb55904966ea391b888d96eb51840",
+    "ticker_cusip_snapshot.csv": "24a7975a9a4f0b9e586d201c2375a57f8408e061291d29d56895398105022355"
+  },
+  "manager_name_pattern": "AQR CAPITAL MANAGEMENT|CITADEL ADVISORS|RENAISSANCE TECHNOLOGIES|MILLENNIUM MANAGEMENT|POINT72 ASSET MANAGEMENT|BRIDGEWATER ASSOCIATES|TWO SIGMA INVESTMENTS|TWO SIGMA ADVISERS|TIGER GLOBAL MANAGEMENT|COATUE MANAGEMENT|PERSHING SQUARE CAPITAL MANAGEMENT|BAUPOST GROUP|VIKING GLOBAL INVESTORS|LONE PINE CAPITAL|FARALLON CAPITAL MANAGEMENT|GREENLIGHT CAPITAL|DEERFIELD MANAGEMENT|MARSHALL WACE|VERITION FUND MANAGEMENT|JANE STREET GROUP|D. E. SHAW|GOLDMAN SACHS ASSET MANAGEMENT|BAMCO INC|APPALOOSA MANAGEMENT|SUSQUEHANNA INTERNATIONAL|RUBRIC CAPITAL MANAGEMENT",
+  "selected_managers": [
+    {
+      "CIK": "0001061768",
+      "FILINGMANAGER_NAME": "BAUPOST GROUP LLC/MA"
+    },
+    {
+      "CIK": "0001350694",
+      "FILINGMANAGER_NAME": "Bridgewater Associates, LP"
+    },
+    {
+      "CIK": "0001037389",
+      "FILINGMANAGER_NAME": "RENAISSANCE TECHNOLOGIES LLC"
+    },
+    {
+      "CIK": "0001687509",
+      "FILINGMANAGER_NAME": "Rubric Capital Management LP"
+    },
+    {
+      "CIK": "0001318757",
+      "FILINGMANAGER_NAME": "MARSHALL WACE, LLP"
+    },
+    {
+      "CIK": "0001167557",
+      "FILINGMANAGER_NAME": "AQR CAPITAL MANAGEMENT LLC"
+    },
+    {
+      "CIK": "0001423053",
+      "FILINGMANAGER_NAME": "CITADEL ADVISORS LLC"
+    },
+    {
+      "CIK": "0001061165",
+      "FILINGMANAGER_NAME": "LONE PINE CAPITAL LLC"
+    },
+    {
+      "CIK": "0001135730",
+      "FILINGMANAGER_NAME": "COATUE MANAGEMENT LLC"
+    },
+    {
+      "CIK": "0001336528",
+      "FILINGMANAGER_NAME": "Pershing Square Capital Management, L.P."
+    },
+    {
+      "CIK": "0001167483",
+      "FILINGMANAGER_NAME": "TIGER GLOBAL MANAGEMENT LLC"
+    },
+    {
+      "CIK": "0001478735",
+      "FILINGMANAGER_NAME": "TWO SIGMA ADVISERS, LP"
+    },
+    {
+      "CIK": "0001009258",
+      "FILINGMANAGER_NAME": "DEERFIELD MANAGEMENT COMPANY, L.P. (SERIES C)"
+    },
+    {
+      "CIK": "0001103804",
+      "FILINGMANAGER_NAME": "VIKING GLOBAL INVESTORS LP"
+    },
+    {
+      "CIK": "0000909661",
+      "FILINGMANAGER_NAME": "FARALLON CAPITAL MANAGEMENT LLC"
+    },
+    {
+      "CIK": "0001454027",
+      "FILINGMANAGER_NAME": "Verition Fund Management LLC"
+    },
+    {
+      "CIK": "0001273087",
+      "FILINGMANAGER_NAME": "MILLENNIUM MANAGEMENT LLC"
+    },
+    {
+      "CIK": "0001603466",
+      "FILINGMANAGER_NAME": "Point72 Asset Management, L.P."
+    },
+    {
+      "CIK": "0001179392",
+      "FILINGMANAGER_NAME": "TWO SIGMA INVESTMENTS, LP"
+    },
+    {
+      "CIK": "0001446194",
+      "FILINGMANAGER_NAME": "SUSQUEHANNA INTERNATIONAL GROUP, LLP"
+    },
+    {
+      "CIK": "0001765923",
+      "FILINGMANAGER_NAME": "Susquehanna International Securities, Ltd."
+    },
+    {
+      "CIK": "0001009207",
+      "FILINGMANAGER_NAME": "D. E. Shaw & Co., Inc."
+    },
+    {
+      "CIK": "0001765924",
+      "FILINGMANAGER_NAME": "Susquehanna International Group Ltd."
+    },
+    {
+      "CIK": "0001079114",
+      "FILINGMANAGER_NAME": "GREENLIGHT CAPITAL INC"
+    },
+    {
+      "CIK": "0001017918",
+      "FILINGMANAGER_NAME": "BAMCO INC /NY/"
+    },
+    {
+      "CIK": "0001595888",
+      "FILINGMANAGER_NAME": "JANE STREET GROUP, LLC"
+    }
+  ],
+  "selected_filing_count": 127,
+  "manager_count": 26,
+  "mapped_universe_size": 481,
+  "mapping_audit": {
+    "selected_13f_line_count": 282853,
+    "mapped_line_count": 210929,
+    "selected_13f_line_mapping_fraction": 0.7457195080129961
+  },
+  "snapshot_count": 18,
+  "snapshot_audit": [
+    {
+      "date": "2023-11-14",
+      "reporting_managers": 25,
+      "covered_tickers": 469
+    },
+    {
+      "date": "2023-11-15",
+      "reporting_managers": 26,
+      "covered_tickers": 469
+    },
+    {
+      "date": "2024-02-13",
+      "reporting_managers": 26,
+      "covered_tickers": 469
+    },
+    {
+      "date": "2024-02-14",
+      "reporting_managers": 26,
+      "covered_tickers": 468
+    },
+    {
+      "date": "2024-02-15",
+      "reporting_managers": 26,
+      "covered_tickers": 466
+    },
+    {
+      "date": "2024-05-07",
+      "reporting_managers": 26,
+      "covered_tickers": 466
+    },
+    {
+      "date": "2024-05-10",
+      "reporting_managers": 26,
+      "covered_tickers": 466
+    },
+    {
+      "date": "2024-05-13",
+      "reporting_managers": 26,
+      "covered_tickers": 466
+    },
+    {
+      "date": "2024-05-14",
+      "reporting_managers": 26,
+      "covered_tickers": 466
+    },
+    {
+      "date": "2024-05-15",
+      "reporting_managers": 26,
+      "covered_tickers": 466
+    },
+    {
+      "date": "2024-05-16",
+      "reporting_managers": 26,
+      "covered_tickers": 464
+    },
+    {
+      "date": "2024-08-09",
+      "reporting_managers": 26,
+      "covered_tickers": 464
+    },
+    {
+      "date": "2024-08-13",
+      "reporting_managers": 26,
+      "covered_tickers": 464
+    },
+    {
+      "date": "2024-08-14",
+      "reporting_managers": 26,
+      "covered_tickers": 464
+    },
+    {
+      "date": "2024-08-15",
+      "reporting_managers": 26,
+      "covered_tickers": 462
+    },
+    {
+      "date": "2024-11-13",
+      "reporting_managers": 25,
+      "covered_tickers": 462
+    },
+    {
+      "date": "2024-11-14",
+      "reporting_managers": 25,
+      "covered_tickers": 462
+    },
+    {
+      "date": "2024-11-15",
+      "reporting_managers": 25,
+      "covered_tickers": 460
+    }
+  ],
+  "pit_check": {
+    "checked_rows": 125145,
+    "filing_always_before_signal_date": true,
+    "report_period_never_after_filing_date": true
+  },
+  "signal_days": 269,
+  "max_ticker_sample": 481,
+  "limitations": [
+    "13F CUSIP crosswalk is a retrospective snapshot, not historical verified PIT mapping",
+    "Manager list is hand-picked and cannot stand for all active funds",
+    "Breadth fraction is NOT institutional shares outstanding ownership",
+    "Third-party price dataset is not a licensed point-in-time CRSP feed",
+    "Index membership source accuracy is not independently audited here",
+    "Related managers (e.g. Susquehanna affiliates) are not consolidated to ultimate parent",
+    "No explicit filtering of vendor-flagged halted shares is applied, though the source no_trade_days.csv shows no affected dates in the pilot window",
+    "Short selling, futures execution and factor neutrality not fully modeled"
+  ]
+}

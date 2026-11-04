@@ -1,0 +1,80 @@
+{
+  "signal_days": 262,
+  "signal_coverage": 0.9632352941176471,
+  "n_trading_days": 272,
+  "active_fraction": 0.6838235294117647,
+  "trade_days": 186,
+  "predictive_hac": {
+    "n": 261,
+    "beta_signal": -0.031336159332734884,
+    "t_hac": -0.24949098872691486,
+    "p_hac": 0.8029810105247057,
+    "r2": 0.00029505508177662954
+  },
+  "predictive_with_same_day_market_control_hac": {
+    "n": 261,
+    "beta_signal": -0.03838386249659806,
+    "t_hac": -0.27810287794282174,
+    "p_hac": 0.780933386575154,
+    "r2": 0.0005415401812957077
+  },
+  "strategy_gross": {
+    "days": 272,
+    "cumulative_return": -0.01726417371332223,
+    "cagr": -0.0160049645245256,
+    "sharpe": -0.16816763298321386,
+    "sortino": -0.22672639095082275,
+    "max_drawdown": -0.11261732438507166,
+    "hit_rate": 0.36764705882352944
+  },
+  "strategy_net": {
+    "days": 272,
+    "cumulative_return": -0.08774716994466492,
+    "cagr": -0.08156606118697951,
+    "sharpe": -1.0516860842202376,
+    "sortino": -1.355210103565353,
+    "max_drawdown": -0.1378561595000708,
+    "hit_rate": 0.3492647058823529
+  },
+  "strategy_net_first_70pct": {
+    "days": 190,
+    "cumulative_return": 0.03293897714872962,
+    "cagr": 0.04392055997197297,
+    "sharpe": 0.6431352153577088,
+    "sortino": 0.9224478414593134,
+    "max_drawdown": -0.059518493313566734,
+    "hit_rate": 0.3526315789473684
+  },
+  "strategy_net_last_30pct": {
+    "days": 82,
+    "cumulative_return": -0.11683763490707855,
+    "cagr": -0.3173888005692439,
+    "sharpe": -4.171530843737422,
+    "sortino": -4.67379795123148,
+    "max_drawdown": -0.11765380745139065,
+    "hit_rate": 0.34146341463414637
+  },
+  "market_close_to_close_buy_hold": {
+    "days": 272,
+    "cumulative_return": 0.4603562444995466,
+    "cagr": 0.4202547562259791,
+    "sharpe": 2.948946205676387,
+    "sortino": 4.58021467846682,
+    "max_drawdown": -0.08405619392423225,
+    "hit_rate": 0.6176470588235294
+  },
+  "market_intraday_long_no_cost": {
+    "days": 272,
+    "cumulative_return": 0.11281435981915666,
+    "cagr": 0.10410222683910719,
+    "sharpe": 1.1287546164507303,
+    "sortino": 1.5379400673490211,
+    "max_drawdown": -0.06747888958189019,
+    "hit_rate": 0.5588235294117647
+  },
+  "sharpe_block_bootstrap_95pct": [
+    -3.0255576911849555,
+    1.0159549736101199
+  ],
+  "note": "Retrospective public-price/13F proxy; no PIT crosswalk or true active ownership. 70/30 descriptive."
+}
